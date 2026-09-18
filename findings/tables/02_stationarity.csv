@@ -1,0 +1,95 @@
+series,form,n,adf_p,kpss_p,stationary
+Nasdaq Composite,level,600,1.0,0.01,False
+Nasdaq Composite,change,600,0.0,0.1,True
+VIX,level,441,0.0028478212202198276,0.1,True
+VIX,change,440,5.80836322836036e-22,0.1,True
+US 10-year yield,level,600,0.6145256870639113,0.01,False
+US 10-year yield,change,600,3.69738914947527e-30,0.1,True
+US 2-year yield,level,600,0.3138541277344906,0.01,False
+US 2-year yield,change,600,9.408367233954225e-07,0.1,True
+US 3-month yield,level,541,0.15314313352867154,0.01,False
+US 3-month yield,change,540,1.4054228194760386e-09,0.07591146695773276,True
+10y minus 2y spread,level,600,0.0057332412113949216,0.1,True
+10y minus 2y spread,change,600,9.384572137936592e-13,0.1,True
+10y minus 3m spread,level,537,0.002243188844186298,0.022138248013393428,False
+10y minus 3m spread,change,536,4.638894818071913e-30,0.1,True
+10y inflation breakeven,level,285,0.001535123378386902,0.1,True
+10y inflation breakeven,change,284,1.9086466704809137e-05,0.1,True
+10y real yield (TIPS),level,285,0.45321758773189935,0.01721607431089902,False
+10y real yield (TIPS),change,284,1.2826646725894074e-29,0.1,True
+USD broad index,level,249,0.7403112374667571,0.01,False
+USD broad index,change,248,1.2919436515482654e-27,0.1,True
+USD per EUR,level,333,0.3259582789652509,0.04805556778719966,False
+USD per EUR,change,332,4.63592803440606e-30,0.1,True
+JPY per USD,level,600,0.021106839562705752,0.01,False
+JPY per USD,change,600,1.4596082224998095e-28,0.08544763745156886,True
+CAD per USD,level,600,0.2395258791737797,0.1,False
+CAD per USD,change,600,1.331802711587191e-09,0.1,True
+MXN per USD,level,395,0.2698543732316615,0.01,False
+MXN per USD,change,394,3.9013986684899064e-30,0.04298461271171933,False
+Brent (long),level,473,0.5375759245970682,0.01,False
+Brent (long),change,472,5.266202639752554e-22,0.1,True
+WTI (long),level,489,0.19080654897105603,0.01,False
+WTI (long),change,488,7.58648377546535e-22,0.1,True
+Gold,level,600,0.9981216290488213,0.01,False
+Gold,change,600,5.7769977707593164e-11,0.1,True
+Bitcoin,level,177,0.8689772105850508,0.01,False
+Bitcoin,change,176,0.031433058389115864,0.1,True
+Henry Hub natural gas,level,356,0.08413843090115697,0.03778067351033253,False
+Henry Hub natural gas,change,354,2.737175247332282e-12,0.1,True
+US CPI,level,600,0.9959051706747336,0.01,False
+US CPI,change,600,0.06165320715698199,0.01,False
+US core CPI,level,600,0.9933578819335727,0.01,False
+US core CPI,change,600,0.2163637813493911,0.01,False
+Sticky CPI,level,600,0.06928114550811564,0.01,False
+Sticky CPI,change,600,0.0002419318684260121,0.1,True
+US unemployment rate,level,600,0.04643198018642963,0.01452552816189626,False
+US unemployment rate,change,600,4.1613687611396764e-26,0.1,True
+US nonfarm payrolls,level,600,0.6710854330355948,0.01,False
+US nonfarm payrolls,change,600,0.0,0.09303780266443584,True
+US industrial production,level,600,0.6621410563527562,0.01,False
+US industrial production,change,600,1.7601264455635415e-08,0.08702772361900557,True
+Initial jobless claims,level,600,1.2405114953212565e-14,0.1,True
+Initial jobless claims,change,600,4.304396914045646e-25,0.1,True
+US housing starts,level,600,0.16444475832289074,0.024537827698170932,False
+US housing starts,change,600,0.0,0.1,True
+US house prices (Case-Shiller),level,474,0.9923223025333243,0.01,False
+US house prices (Case-Shiller),change,473,0.004575993812672699,0.1,True
+Consumer sentiment,level,600,0.16479193721970892,0.0726736692977097,False
+Consumer sentiment,change,582,3.441844637957278e-26,0.1,True
+US M2 money supply,level,600,0.9990619383143767,0.01,False
+US M2 money supply,change,600,2.1939195260830936e-05,0.1,True
+Fed total assets,level,286,0.7339470728793162,0.01,False
+Fed total assets,change,285,5.2381576845389395e-08,0.1,True
+Fed funds effective,level,600,0.1402084797005939,0.01,False
+Fed funds effective,change,600,0.00029692690596288884,0.1,True
+Recession probability,level,600,3.4776095648850306e-08,0.1,True
+Recession probability,change,600,5.331299001872512e-15,0.1,True
+Chicago financial conditions,level,600,0.04648050782050344,0.01,False
+Chicago financial conditions,change,600,3.3569877049205795e-09,0.1,True
+St. Louis financial stress,level,394,0.0002462948218088706,0.1,True
+St. Louis financial stress,change,393,6.96143908282194e-30,0.1,True
+US economic policy uncertainty,level,501,3.6579706182266767e-10,0.01,False
+US economic policy uncertainty,change,500,9.286401796263956e-20,0.1,True
+US equity market uncertainty,level,501,9.272355452698611e-16,0.08166159884026618,True
+US equity market uncertainty,change,500,7.66821879219346e-18,0.1,True
+Geopolitical risk,level,501,7.135185536508437e-07,0.1,True
+Geopolitical risk,change,500,4.89553283573337e-17,0.1,True
+Geopolitical threats,level,501,1.5163023003773124e-08,0.028552274799042696,False
+Geopolitical threats,change,500,8.720621663933376e-18,0.1,True
+Geopolitical acts,level,501,1.7717212433421505e-07,0.1,True
+Geopolitical acts,change,500,1.536834559085371e-28,0.1,True
+Supply chain pressure,level,344,0.002176657461372995,0.01,False
+Supply chain pressure,change,343,2.1910214060753337e-26,0.1,True
+POS S&P 500,level,425,0.9187290826009826,0.01,False
+POS S&P 500,change,420,4.830507554146461e-15,0.1,True
+POS Gold,level,489,0.6996382909177474,0.01,False
+POS Gold,change,488,1.785758110363998e-12,0.1,True
+POS Crude oil,level,489,0.43220426903026304,0.01,False
+POS Crude oil,change,488,1.0480757323434926e-20,0.1,True
+POS US 10-year notes,level,489,0.01875529726574324,0.01,False
+POS US 10-year notes,change,488,2.0380376039871472e-16,0.1,True
+POS USD index,level,405,8.667428250033887e-08,0.01,False
+POS USD index,change,400,7.367061452844998e-12,0.1,True
+S&P PE10,level,600,0.6099219073478904,0.01,False
+S&P PE10,change,600,0.0,0.1,True

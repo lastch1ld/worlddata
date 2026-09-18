@@ -1,0 +1,2968 @@
+{
+ "panel": {
+  "series": 133,
+  "months": 1293,
+  "start": "1919-01-31",
+  "end": "2026-09-30"
+ },
+ "truncated_series": [
+  {
+   "series": "Ethereum",
+   "n_months": 110,
+   "start": "2017-08-31"
+  },
+  {
+   "series": "Dow Jones Industrial",
+   "n_months": 121,
+   "start": "2016-09-30"
+  },
+  {
+   "series": "S&P 500 index",
+   "n_months": 121,
+   "start": "2016-09-30"
+  },
+  {
+   "series": "TPU TPUD_ARTICLES",
+   "n_months": 141,
+   "start": "2015-01-31"
+  },
+  {
+   "series": "TPU TPUD_index",
+   "n_months": 141,
+   "start": "2015-01-31"
+  },
+  {
+   "series": "TPU NUMBER_ARTICLES",
+   "n_months": 141,
+   "start": "2015-01-31"
+  },
+  {
+   "series": "TPU TPUD_index_MA7",
+   "n_months": 141,
+   "start": "2015-01-31"
+  },
+  {
+   "series": "TPU TPUD_index_MA30",
+   "n_months": 141,
+   "start": "2015-01-31"
+  },
+  {
+   "series": "Bitcoin",
+   "n_months": 177,
+   "start": "2012-01-31"
+  },
+  {
+   "series": "Overnight reverse repo",
+   "n_months": 182,
+   "start": "2003-02-28"
+  }
+ ],
+ "stationarity": {
+  "levels_stationary": 9,
+  "levels_tested": 47,
+  "changes_stationary": 44,
+  "changes_tested": 47
+ },
+ "spurious": [
+  {
+   "x": "Nasdaq Composite",
+   "y": "US CPI",
+   "n_levels": 666,
+   "r_levels": 0.8007,
+   "n_changes": 664,
+   "r_changes": -0.0703,
+   "hac_t_changes": -1.2388,
+   "hac_p_changes": 0.2154
+  },
+  {
+   "x": "Nasdaq Composite",
+   "y": "US M2 money supply",
+   "n_levels": 666,
+   "r_levels": 0.9253,
+   "n_changes": 665,
+   "r_changes": 0.047,
+   "hac_t_changes": 0.9013,
+   "hac_p_changes": 0.3674
+  },
+  {
+   "x": "Nasdaq Composite",
+   "y": "Gold",
+   "n_levels": 667,
+   "r_levels": 0.9192,
+   "n_changes": 666,
+   "r_changes": -0.0096,
+   "hac_t_changes": -0.2147,
+   "hac_p_changes": 0.83
+  },
+  {
+   "x": "Gold",
+   "y": "US CPI",
+   "n_levels": 955,
+   "r_levels": 0.8433,
+   "n_changes": 953,
+   "r_changes": 0.119,
+   "hac_t_changes": 2.2346,
+   "hac_p_changes": 0.0254
+  },
+  {
+   "x": "Bitcoin",
+   "y": "Fed total assets",
+   "n_levels": 177,
+   "r_levels": 0.6173,
+   "n_changes": 176,
+   "r_changes": 0.0587,
+   "hac_t_changes": 0.9794,
+   "hac_p_changes": 0.3274
+  },
+  {
+   "x": "Nasdaq Composite",
+   "y": "US nonfarm payrolls",
+   "n_levels": 667,
+   "r_levels": 0.7085,
+   "n_changes": 666,
+   "r_changes": -0.063,
+   "hac_t_changes": -0.9122,
+   "hac_p_changes": 0.3617
+  },
+  {
+   "x": "Brent (long)",
+   "y": "US M2 money supply",
+   "n_levels": 471,
+   "r_levels": 0.6299,
+   "n_changes": 470,
+   "r_changes": -0.0305,
+   "hac_t_changes": -0.2888,
+   "hac_p_changes": 0.7727
+  },
+  {
+   "x": "Nasdaq Composite",
+   "y": "US house prices (Case-Shiller)",
+   "n_levels": 474,
+   "r_levels": 0.9139,
+   "n_changes": 473,
+   "r_changes": 0.0199,
+   "hac_t_changes": 0.3163,
+   "hac_p_changes": 0.7518
+  }
+ ],
+ "redundancy": {
+  "pairs_over_0.95": 17,
+  "groups": [
+   [
+    "Brent (long)",
+    "Brent crude spot"
+   ],
+   [
+    "US 10-year yield",
+    "US 30-year yield"
+   ],
+   [
+    "WTI (long)",
+    "WTI crude spot"
+   ],
+   [
+    "EPU Singapore",
+    "EPU global"
+   ],
+   [
+    "TPU TPU",
+    "TPU TPUD_ARTICLES",
+    "TPU TPUD_index",
+    "TPU TPUD_index_MA7",
+    "TPU TPU_RAW",
+    "TPU TPU_SHARE"
+   ]
+  ],
+  "series_in_groups": 14,
+  "effective_independent_series": 122,
+  "series_scanned": 131
+ },
+ "contemporaneous": {
+  "pairs_tested": 8367,
+  "sig_fdr": 1184,
+  "expected_false_at_p05": 418.4,
+  "top": [
+   {
+    "x": "TPU TPUD_ARTICLES",
+    "y": "TPU TPUD_index_MA7",
+    "n": 140,
+    "r": 0.9491,
+    "spearman": 0.9127,
+    "hac_t": 43.099,
+    "hac_p": 0.0
+   },
+   {
+    "x": "US 10-year yield",
+    "y": "US 5-year yield",
+    "n": 776,
+    "r": 0.9482,
+    "spearman": 0.9363,
+    "hac_t": 35.1137,
+    "hac_p": 0.0
+   },
+   {
+    "x": "US 2-year yield",
+    "y": "US 5-year yield",
+    "n": 603,
+    "r": 0.9447,
+    "spearman": 0.9393,
+    "hac_t": 24.8092,
+    "hac_p": 0.0
+   },
+   {
+    "x": "Nasdaq Composite",
+    "y": "S&P 500 index",
+    "n": 120,
+    "r": 0.9406,
+    "spearman": 0.9144,
+    "hac_t": 22.9351,
+    "hac_p": 0.0
+   },
+   {
+    "x": "Dow Jones Industrial",
+    "y": "S&P 500 index",
+    "n": 120,
+    "r": 0.9352,
+    "spearman": 0.912,
+    "hac_t": 25.0325,
+    "hac_p": 0.0
+   },
+   {
+    "x": "TPU TPUD_index_MA7",
+    "y": "TPU TPU_RAW",
+    "n": 139,
+    "r": 0.9342,
+    "spearman": 0.8723,
+    "hac_t": 29.0611,
+    "hac_p": 0.0
+   },
+   {
+    "x": "Brent crude spot",
+    "y": "WTI (long)",
+    "n": 472,
+    "r": 0.9089,
+    "spearman": 0.8804,
+    "hac_t": 26.5954,
+    "hac_p": 0.0
+   },
+   {
+    "x": "WTI crude spot",
+    "y": "Brent (long)",
+    "n": 472,
+    "r": 0.9089,
+    "spearman": 0.8804,
+    "hac_t": 18.5148,
+    "hac_p": 0.0
+   },
+   {
+    "x": "Brent (long)",
+    "y": "WTI (long)",
+    "n": 472,
+    "r": 0.9089,
+    "spearman": 0.8804,
+    "hac_t": 26.5954,
+    "hac_p": 0.0
+   },
+   {
+    "x": "Brent crude spot",
+    "y": "WTI crude spot",
+    "n": 472,
+    "r": 0.9089,
+    "spearman": 0.8804,
+    "hac_t": 26.5954,
+    "hac_p": 0.0
+   },
+   {
+    "x": "Geopolitical risk",
+    "y": "Geopolitical threats",
+    "n": 500,
+    "r": 0.9066,
+    "spearman": 0.8932,
+    "hac_t": 20.3069,
+    "hac_p": 0.0
+   },
+   {
+    "x": "US nonfarm payrolls",
+    "y": "US unemployment rate",
+    "n": 941,
+    "r": -0.8839,
+    "spearman": -0.4281,
+    "hac_t": -11.9916,
+    "hac_p": 0.0
+   },
+   {
+    "x": "US 30-year yield",
+    "y": "US 5-year yield",
+    "n": 595,
+    "r": 0.8793,
+    "spearman": 0.8593,
+    "hac_t": 20.1235,
+    "hac_p": 0.0
+   },
+   {
+    "x": "US 10-year yield",
+    "y": "US 2-year yield",
+    "n": 603,
+    "r": 0.8658,
+    "spearman": 0.8633,
+    "hac_t": 12.5582,
+    "hac_p": 0.0
+   },
+   {
+    "x": "USD broad index",
+    "y": "USD per EUR",
+    "n": 248,
+    "r": -0.8615,
+    "spearman": -0.8474,
+    "hac_t": -19.2619,
+    "hac_p": 0.0
+   },
+   {
+    "x": "USD broad index",
+    "y": "USD per AUD",
+    "n": 248,
+    "r": -0.8541,
+    "spearman": -0.8091,
+    "hac_t": -18.7249,
+    "hac_p": 0.0
+   },
+   {
+    "x": "Geopolitical risk",
+    "y": "Geopolitical acts",
+    "n": 500,
+    "r": 0.8244,
+    "spearman": 0.7619,
+    "hac_t": 18.0662,
+    "hac_p": 0.0
+   },
+   {
+    "x": "CHF per USD",
+    "y": "USD per EUR",
+    "n": 332,
+    "r": -0.8077,
+    "spearman": -0.8334,
+    "hac_t": -15.0189,
+    "hac_p": 0.0
+   },
+   {
+    "x": "CAD per USD",
+    "y": "USD broad index",
+    "n": 248,
+    "r": 0.8016,
+    "spearman": 0.7978,
+    "hac_t": 15.6624,
+    "hac_p": 0.0
+   },
+   {
+    "x": "Dow Jones Industrial",
+    "y": "Nasdaq Composite",
+    "n": 120,
+    "r": 0.7954,
+    "spearman": 0.7556,
+    "hac_t": 12.4152,
+    "hac_p": 0.0
+   },
+   {
+    "x": "US 2-year yield",
+    "y": "US 30-year yield",
+    "n": 595,
+    "r": 0.7781,
+    "spearman": 0.7493,
+    "hac_t": 14.6423,
+    "hac_p": 0.0
+   },
+   {
+    "x": "10y real yield (TIPS)",
+    "y": "US 10-year yield",
+    "n": 284,
+    "r": 0.7625,
+    "spearman": 0.7664,
+    "hac_t": 12.6838,
+    "hac_p": 0.0
+   },
+   {
+    "x": "10y real yield (TIPS)",
+    "y": "US 5-year yield",
+    "n": 284,
+    "r": 0.7569,
+    "spearman": 0.7587,
+    "hac_t": 8.9694,
+    "hac_p": 0.0
+   },
+   {
+    "x": "S&P 500 index",
+    "y": "VIX",
+    "n": 120,
+    "r": -0.7532,
+    "spearman": -0.727,
+    "hac_t": -10.9903,
+    "hac_p": 0.0
+   },
+   {
+    "x": "Bitcoin",
+    "y": "Ethereum",
+    "n": 109,
+    "r": 0.7499,
+    "spearman": 0.7639,
+    "hac_t": 10.2282,
+    "hac_p": 0.0
+   },
+   {
+    "x": "Dow Jones Industrial",
+    "y": "VIX",
+    "n": 120,
+    "r": -0.7427,
+    "spearman": -0.6962,
+    "hac_t": -9.2965,
+    "hac_p": 0.0
+   },
+   {
+    "x": "MXN per USD",
+    "y": "USD broad index",
+    "n": 248,
+    "r": 0.7384,
+    "spearman": 0.7,
+    "hac_t": 11.9632,
+    "hac_p": 0.0
+   },
+   {
+    "x": "TPU TPUD_index_MA30",
+    "y": "TPU TPUD_index_MA7",
+    "n": 140,
+    "r": 0.7374,
+    "spearman": 0.7012,
+    "hac_t": 12.7473,
+    "hac_p": 0.0
+   },
+   {
+    "x": "10y inflation breakeven",
+    "y": "5y inflation breakeven",
+    "n": 284,
+    "r": 0.7304,
+    "spearman": 0.8716,
+    "hac_t": 7.6561,
+    "hac_p": 0.0
+   },
+   {
+    "x": "KRW per USD",
+    "y": "USD broad index",
+    "n": 248,
+    "r": 0.7266,
+    "spearman": 0.7464,
+    "hac_t": 9.311,
+    "hac_p": 0.0
+   },
+   {
+    "x": "CHF per USD",
+    "y": "USD broad index",
+    "n": 248,
+    "r": 0.7211,
+    "spearman": 0.7381,
+    "hac_t": 11.9545,
+    "hac_p": 0.0
+   },
+   {
+    "x": "USD broad index",
+    "y": "USD per GBP",
+    "n": 248,
+    "r": -0.7172,
+    "spearman": -0.7197,
+    "hac_t": -15.2216,
+    "hac_p": 0.0
+   },
+   {
+    "x": "Chicago financial conditions",
+    "y": "St. Louis financial stress",
+    "n": 393,
+    "r": 0.7065,
+    "spearman": 0.5257,
+    "hac_t": 6.877,
+    "hac_p": 0.0
+   },
+   {
+    "x": "US 2-year yield",
+    "y": "US 3-month yield",
+    "n": 540,
+    "r": 0.6995,
+    "spearman": 0.5627,
+    "hac_t": 7.6393,
+    "hac_p": 0.0
+   },
+   {
+    "x": "EPU europe",
+    "y": "EPU global",
+    "n": 354,
+    "r": 0.6947,
+    "spearman": 0.6283,
+    "hac_t": 15.9044,
+    "hac_p": 0.0
+   },
+   {
+    "x": "10y real yield (TIPS)",
+    "y": "US 30-year mortgage rate",
+    "n": 284,
+    "r": 0.691,
+    "spearman": 0.6479,
+    "hac_t": 11.0575,
+    "hac_p": 0.0
+   },
+   {
+    "x": "BRL per USD",
+    "y": "USD broad index",
+    "n": 248,
+    "r": 0.6803,
+    "spearman": 0.6735,
+    "hac_t": 11.7982,
+    "hac_p": 0.0
+   },
+   {
+    "x": "US CPI",
+    "y": "US core CPI",
+    "n": 833,
+    "r": 0.6781,
+    "spearman": 0.6086,
+    "hac_t": 9.0602,
+    "hac_p": 0.0
+   },
+   {
+    "x": "USD per AUD",
+    "y": "USD per EUR",
+    "n": 332,
+    "r": 0.6703,
+    "spearman": 0.602,
+    "hac_t": 13.8831,
+    "hac_p": 0.0
+   },
+   {
+    "x": "USD per EUR",
+    "y": "USD per GBP",
+    "n": 332,
+    "r": 0.6652,
+    "spearman": 0.6653,
+    "hac_t": 10.5596,
+    "hac_p": 0.0
+   }
+  ]
+ },
+ "clusters": {
+  "1": [
+   "VIX",
+   "MXN per USD",
+   "CAD per USD",
+   "USD broad index",
+   "Initial jobless claims",
+   "US M2 money supply",
+   "Fed total assets",
+   "US unemployment rate",
+   "US economic policy uncertainty",
+   "POS S&P 500",
+   "Supply chain pressure",
+   "US equity market uncertainty",
+   "Chicago financial conditions",
+   "St. Louis financial stress",
+   "Recession probability"
+  ],
+  "2": [
+   "POS US 10-year notes"
+  ],
+  "3": [
+   "USD per EUR",
+   "Gold",
+   "POS Gold"
+  ],
+  "4": [
+   "10y real yield (TIPS)",
+   "US 3-month yield",
+   "Sticky CPI",
+   "US CPI",
+   "JPY per USD",
+   "WTI (long)",
+   "Brent (long)",
+   "10y minus 2y spread",
+   "10y minus 3m spread",
+   "10y inflation breakeven",
+   "Nasdaq Composite",
+   "US 10-year yield",
+   "US 2-year yield",
+   "Henry Hub natural gas",
+   "Fed funds effective",
+   "US housing starts",
+   "Consumer sentiment",
+   "US industrial production",
+   "US core CPI",
+   "US nonfarm payrolls",
+   "US house prices (Case-Shiller)",
+   "S&P PE10",
+   "POS Crude oil"
+  ],
+  "5": [
+   "Geopolitical acts",
+   "Geopolitical risk",
+   "Geopolitical threats"
+  ],
+  "6": [
+   "Bitcoin",
+   "POS USD index"
+  ]
+ },
+ "pca": {
+  "n_months": 180,
+  "n_series": 46,
+  "explained": [
+   0.1867,
+   0.1041,
+   0.0857,
+   0.0718,
+   0.0555,
+   0.0406
+  ],
+  "cum_top3": 0.3765,
+  "pc_top": {
+   "PC1": [
+    "Brent (long)",
+    "WTI (long)",
+    "S&P PE10",
+    "St. Louis financial stress",
+    "Chicago financial conditions",
+    "10y inflation breakeven"
+   ],
+   "PC2": [
+    "US nonfarm payrolls",
+    "US unemployment rate",
+    "US industrial production",
+    "US M2 money supply",
+    "US core CPI",
+    "Sticky CPI"
+   ],
+   "PC3": [
+    "10y minus 3m spread",
+    "US 10-year yield",
+    "10y real yield (TIPS)",
+    "10y minus 2y spread",
+    "JPY per USD",
+    "POS US 10-year notes"
+   ],
+   "PC4": [
+    "USD per EUR",
+    "US 3-month yield",
+    "USD broad index",
+    "10y minus 2y spread",
+    "10y minus 3m spread",
+    "POS USD index"
+   ]
+  }
+ },
+ "leadlag": {
+  "tests": 12960,
+  "sig_fdr": 502,
+  "max_abs_r_any": 0.865,
+  "top_any": [
+   {
+    "driver": "Initial jobless claims",
+    "target": "US nonfarm payrolls",
+    "lag_months": 1,
+    "n": 714,
+    "r": -0.865,
+    "p_fdr": 0.0
+   },
+   {
+    "driver": "Initial jobless claims",
+    "target": "US unemployment rate",
+    "lag_months": 1,
+    "n": 712,
+    "r": 0.8412,
+    "p_fdr": 0.0
+   },
+   {
+    "driver": "Initial jobless claims",
+    "target": "US industrial production",
+    "lag_months": 1,
+    "n": 713,
+    "r": -0.6079,
+    "p_fdr": 0.0
+   },
+   {
+    "driver": "US CPI",
+    "target": "US core CPI",
+    "lag_months": 1,
+    "n": 832,
+    "r": 0.5855,
+    "p_fdr": 0.0
+   },
+   {
+    "driver": "US core CPI",
+    "target": "US CPI",
+    "lag_months": 1,
+    "n": 831,
+    "r": 0.5617,
+    "p_fdr": 0.0
+   },
+   {
+    "driver": "WTI (long)",
+    "target": "US CPI",
+    "lag_months": 1,
+    "n": 484,
+    "r": 0.5487,
+    "p_fdr": 0.0
+   },
+   {
+    "driver": "US CPI",
+    "target": "US core CPI",
+    "lag_months": 2,
+    "n": 831,
+    "r": 0.5409,
+    "p_fdr": 0.0
+   },
+   {
+    "driver": "Brent (long)",
+    "target": "US CPI",
+    "lag_months": 1,
+    "n": 468,
+    "r": 0.5363,
+    "p_fdr": 0.0
+   },
+   {
+    "driver": "US CPI",
+    "target": "US core CPI",
+    "lag_months": 6,
+    "n": 831,
+    "r": 0.5251,
+    "p_fdr": 0.0
+   },
+   {
+    "driver": "St. Louis financial stress",
+    "target": "US nonfarm payrolls",
+    "lag_months": 1,
+    "n": 391,
+    "r": -0.522,
+    "p_fdr": 0.0
+   },
+   {
+    "driver": "Chicago financial conditions",
+    "target": "Fed total assets",
+    "lag_months": 1,
+    "n": 285,
+    "r": 0.5159,
+    "p_fdr": 0.0
+   },
+   {
+    "driver": "Brent (long)",
+    "target": "US nonfarm payrolls",
+    "lag_months": 1,
+    "n": 470,
+    "r": 0.5124,
+    "p_fdr": 0.0
+   },
+   {
+    "driver": "St. Louis financial stress",
+    "target": "US unemployment rate",
+    "lag_months": 1,
+    "n": 389,
+    "r": 0.5074,
+    "p_fdr": 0.0
+   },
+   {
+    "driver": "US CPI",
+    "target": "US core CPI",
+    "lag_months": 3,
+    "n": 831,
+    "r": 0.5046,
+    "p_fdr": 0.0
+   },
+   {
+    "driver": "US core CPI",
+    "target": "US CPI",
+    "lag_months": 2,
+    "n": 829,
+    "r": 0.5026,
+    "p_fdr": 0.0
+   },
+   {
+    "driver": "US CPI",
+    "target": "US core CPI",
+    "lag_months": 5,
+    "n": 831,
+    "r": 0.4999,
+    "p_fdr": 0.0
+   },
+   {
+    "driver": "Brent (long)",
+    "target": "US unemployment rate",
+    "lag_months": 1,
+    "n": 468,
+    "r": -0.4922,
+    "p_fdr": 0.0
+   },
+   {
+    "driver": "US CPI",
+    "target": "US core CPI",
+    "lag_months": 4,
+    "n": 831,
+    "r": 0.4845,
+    "p_fdr": 0.0
+   },
+   {
+    "driver": "St. Louis financial stress",
+    "target": "Fed total assets",
+    "lag_months": 1,
+    "n": 285,
+    "r": 0.4821,
+    "p_fdr": 0.0
+   },
+   {
+    "driver": "Brent (long)",
+    "target": "US industrial production",
+    "lag_months": 1,
+    "n": 469,
+    "r": 0.4787,
+    "p_fdr": 0.0
+   },
+   {
+    "driver": "US core CPI",
+    "target": "US CPI",
+    "lag_months": 3,
+    "n": 828,
+    "r": 0.4698,
+    "p_fdr": 0.0
+   },
+   {
+    "driver": "Recession probability",
+    "target": "US nonfarm payrolls",
+    "lag_months": 1,
+    "n": 709,
+    "r": -0.4571,
+    "p_fdr": 0.0
+   },
+   {
+    "driver": "US core CPI",
+    "target": "US CPI",
+    "lag_months": 4,
+    "n": 827,
+    "r": 0.4544,
+    "p_fdr": 0.0
+   },
+   {
+    "driver": "US core CPI",
+    "target": "US CPI",
+    "lag_months": 6,
+    "n": 825,
+    "r": 0.4529,
+    "p_fdr": 0.0
+   },
+   {
+    "driver": "US core CPI",
+    "target": "US CPI",
+    "lag_months": 5,
+    "n": 826,
+    "r": 0.452,
+    "p_fdr": 0.0
+   }
+  ],
+  "equity_tests": 276,
+  "equity_sig_fdr": 1,
+  "equity_top": [
+   {
+    "driver": "Chicago financial conditions",
+    "lag_months": 1,
+    "n": 667,
+    "r": -0.1916,
+    "t_ols": -5.0346,
+    "hac_t": -5.2297,
+    "hac_p": 0.0,
+    "p_fdr": 0.0001,
+    "sig_fdr": true
+   },
+   {
+    "driver": "10y real yield (TIPS)",
+    "lag_months": 3,
+    "n": 281,
+    "r": -0.1821,
+    "t_ols": -3.094,
+    "hac_t": -3.5024,
+    "hac_p": 0.0005,
+    "p_fdr": 0.0543,
+    "sig_fdr": false
+   },
+   {
+    "driver": "Bitcoin",
+    "lag_months": 1,
+    "n": 175,
+    "r": 0.144,
+    "t_ols": 1.9137,
+    "hac_t": 2.3314,
+    "hac_p": 0.0197,
+    "p_fdr": 0.4245,
+    "sig_fdr": false
+   },
+   {
+    "driver": "10y inflation breakeven",
+    "lag_months": 3,
+    "n": 281,
+    "r": 0.1392,
+    "t_ols": 2.3483,
+    "hac_t": 1.9898,
+    "hac_p": 0.0466,
+    "p_fdr": 0.2382,
+    "sig_fdr": false
+   },
+   {
+    "driver": "VIX",
+    "lag_months": 6,
+    "n": 434,
+    "r": 0.1099,
+    "t_ols": 2.2981,
+    "hac_t": 2.2344,
+    "hac_p": 0.0255,
+    "p_fdr": 0.2542,
+    "sig_fdr": false
+   },
+   {
+    "driver": "Sticky CPI",
+    "lag_months": 1,
+    "n": 667,
+    "r": -0.1025,
+    "t_ols": -2.6573,
+    "hac_t": -2.4894,
+    "hac_p": 0.0128,
+    "p_fdr": 0.1385,
+    "sig_fdr": false
+   },
+   {
+    "driver": "POS Gold",
+    "lag_months": 2,
+    "n": 486,
+    "r": 0.1024,
+    "t_ols": 2.2655,
+    "hac_t": 2.2692,
+    "hac_p": 0.0233,
+    "p_fdr": 0.2657,
+    "sig_fdr": false
+   },
+   {
+    "driver": "Sticky CPI",
+    "lag_months": 2,
+    "n": 667,
+    "r": -0.0978,
+    "t_ols": -2.5343,
+    "hac_t": -2.217,
+    "hac_p": 0.0266,
+    "p_fdr": 0.1716,
+    "sig_fdr": false
+   },
+   {
+    "driver": "US 2-year yield",
+    "lag_months": 1,
+    "n": 602,
+    "r": -0.0966,
+    "t_ols": -2.3778,
+    "hac_t": -2.0174,
+    "hac_p": 0.0437,
+    "p_fdr": 0.2251,
+    "sig_fdr": false
+   },
+   {
+    "driver": "Geopolitical acts",
+    "lag_months": 1,
+    "n": 499,
+    "r": 0.0964,
+    "t_ols": 2.1583,
+    "hac_t": 1.9811,
+    "hac_p": 0.0476,
+    "p_fdr": 0.3136,
+    "sig_fdr": false
+   },
+   {
+    "driver": "US 10-year yield",
+    "lag_months": 5,
+    "n": 667,
+    "r": -0.0959,
+    "t_ols": -2.4856,
+    "hac_t": -2.702,
+    "hac_p": 0.0069,
+    "p_fdr": 0.1863,
+    "sig_fdr": false
+   },
+   {
+    "driver": "WTI (long)",
+    "lag_months": 4,
+    "n": 484,
+    "r": -0.0914,
+    "t_ols": -2.0141,
+    "hac_t": -2.0844,
+    "hac_p": 0.0371,
+    "p_fdr": 0.3764,
+    "sig_fdr": false
+   },
+   {
+    "driver": "JPY per USD",
+    "lag_months": 5,
+    "n": 663,
+    "r": -0.091,
+    "t_ols": -2.349,
+    "hac_t": -2.5249,
+    "hac_p": 0.0116,
+    "p_fdr": 0.2353,
+    "sig_fdr": false
+   },
+   {
+    "driver": "Chicago financial conditions",
+    "lag_months": 2,
+    "n": 666,
+    "r": -0.0908,
+    "t_ols": -2.3493,
+    "hac_t": -2.08,
+    "hac_p": 0.0375,
+    "p_fdr": 0.2353,
+    "sig_fdr": false
+   },
+   {
+    "driver": "USD per EUR",
+    "lag_months": 4,
+    "n": 328,
+    "r": 0.0901,
+    "t_ols": 1.634,
+    "hac_t": 1.4959,
+    "hac_p": 0.1347,
+    "p_fdr": 0.5662,
+    "sig_fdr": false
+   },
+   {
+    "driver": "Brent (long)",
+    "lag_months": 4,
+    "n": 468,
+    "r": -0.0896,
+    "t_ols": -1.9411,
+    "hac_t": -2.1174,
+    "hac_p": 0.0342,
+    "p_fdr": 0.4106,
+    "sig_fdr": false
+   },
+   {
+    "driver": "US 10-year yield",
+    "lag_months": 1,
+    "n": 667,
+    "r": -0.0894,
+    "t_ols": -2.314,
+    "hac_t": -2.0392,
+    "hac_p": 0.0414,
+    "p_fdr": 0.2485,
+    "sig_fdr": false
+   },
+   {
+    "driver": "USD per EUR",
+    "lag_months": 5,
+    "n": 327,
+    "r": 0.0885,
+    "t_ols": 1.6011,
+    "hac_t": 1.7167,
+    "hac_p": 0.086,
+    "p_fdr": 0.5831,
+    "sig_fdr": false
+   },
+   {
+    "driver": "US core CPI",
+    "lag_months": 1,
+    "n": 665,
+    "r": -0.0884,
+    "t_ols": -2.2861,
+    "hac_t": -2.0289,
+    "hac_p": 0.0425,
+    "p_fdr": 0.2563,
+    "sig_fdr": false
+   },
+   {
+    "driver": "POS US 10-year notes",
+    "lag_months": 2,
+    "n": 486,
+    "r": -0.0877,
+    "t_ols": -1.9361,
+    "hac_t": -1.8946,
+    "hac_p": 0.0581,
+    "p_fdr": 0.4127,
+    "sig_fdr": false
+   }
+  ]
+ },
+ "same_vs_next": [
+  {
+   "series": "VIX",
+   "r_same_month": -0.576,
+   "r_next_month": -0.0412,
+   "hac_p_same": 0.0,
+   "hac_p_next": 0.4009,
+   "n": 439
+  },
+  {
+   "series": "USD broad index",
+   "r_same_month": -0.528,
+   "r_next_month": -0.047,
+   "hac_p_same": 0.0,
+   "hac_p_next": 0.5935,
+   "n": 247
+  },
+  {
+   "series": "St. Louis financial stress",
+   "r_same_month": -0.4604,
+   "r_next_month": -0.037,
+   "hac_p_same": 0.0,
+   "hac_p_next": 0.6508,
+   "n": 392
+  },
+  {
+   "series": "CAD per USD",
+   "r_same_month": -0.3657,
+   "r_next_month": 0.0008,
+   "hac_p_same": 0.0,
+   "hac_p_next": 0.9842,
+   "n": 667
+  },
+  {
+   "series": "MXN per USD",
+   "r_same_month": -0.3131,
+   "r_next_month": -0.0118,
+   "hac_p_same": 0.003,
+   "hac_p_next": 0.821,
+   "n": 393
+  },
+  {
+   "series": "Chicago financial conditions",
+   "r_same_month": -0.3013,
+   "r_next_month": -0.1916,
+   "hac_p_same": 0.0,
+   "hac_p_next": 0.0,
+   "n": 667
+  },
+  {
+   "series": "10y real yield (TIPS)",
+   "r_same_month": -0.2257,
+   "r_next_month": -0.0292,
+   "hac_p_same": 0.014,
+   "hac_p_next": 0.7185,
+   "n": 283
+  },
+  {
+   "series": "US economic policy uncertainty",
+   "r_same_month": -0.2104,
+   "r_next_month": -0.0044,
+   "hac_p_same": 0.0001,
+   "hac_p_next": 0.9228,
+   "n": 499
+  },
+  {
+   "series": "US equity market uncertainty",
+   "r_same_month": -0.2089,
+   "r_next_month": -0.0002,
+   "hac_p_same": 0.0,
+   "hac_p_next": 0.9968,
+   "n": 499
+  },
+  {
+   "series": "Fed total assets",
+   "r_same_month": -0.1763,
+   "r_next_month": -0.0706,
+   "hac_p_same": 0.1588,
+   "hac_p_next": 0.661,
+   "n": 284
+  },
+  {
+   "series": "Recession probability",
+   "r_same_month": -0.1625,
+   "r_next_month": -0.0481,
+   "hac_p_same": 0.0002,
+   "hac_p_next": 0.3298,
+   "n": 665
+  },
+  {
+   "series": "Sticky CPI",
+   "r_same_month": -0.1384,
+   "r_next_month": -0.1025,
+   "hac_p_same": 0.0001,
+   "hac_p_next": 0.0128,
+   "n": 666
+  },
+  {
+   "series": "Initial jobless claims",
+   "r_same_month": -0.1239,
+   "r_next_month": 0.0493,
+   "hac_p_same": 0.0,
+   "hac_p_next": 0.144,
+   "n": 667
+  },
+  {
+   "series": "Geopolitical acts",
+   "r_same_month": -0.1206,
+   "r_next_month": 0.0964,
+   "hac_p_same": 0.0696,
+   "hac_p_next": 0.0476,
+   "n": 499
+  },
+  {
+   "series": "Geopolitical risk",
+   "r_same_month": -0.1193,
+   "r_next_month": 0.0714,
+   "hac_p_same": 0.0613,
+   "hac_p_next": 0.172,
+   "n": 499
+  },
+  {
+   "series": "Fed funds effective",
+   "r_same_month": -0.09,
+   "r_next_month": -0.0482,
+   "hac_p_same": 0.062,
+   "hac_p_next": 0.2299,
+   "n": 667
+  },
+  {
+   "series": "US core CPI",
+   "r_same_month": -0.0879,
+   "r_next_month": -0.0884,
+   "hac_p_same": 0.0481,
+   "hac_p_next": 0.0425,
+   "n": 664
+  },
+  {
+   "series": "Geopolitical threats",
+   "r_same_month": -0.0822,
+   "r_next_month": 0.0174,
+   "hac_p_same": 0.1458,
+   "hac_p_next": 0.7408,
+   "n": 499
+  },
+  {
+   "series": "10y minus 3m spread",
+   "r_same_month": -0.0812,
+   "r_next_month": -0.0185,
+   "hac_p_same": 0.1529,
+   "hac_p_next": 0.6892,
+   "n": 535
+  },
+  {
+   "series": "US CPI",
+   "r_same_month": -0.0703,
+   "r_next_month": -0.063,
+   "hac_p_same": 0.2256,
+   "hac_p_next": 0.1558,
+   "n": 664
+  },
+  {
+   "series": "US nonfarm payrolls",
+   "r_same_month": -0.063,
+   "r_next_month": -0.0351,
+   "hac_p_same": 0.0088,
+   "hac_p_next": 0.0808,
+   "n": 666
+  },
+  {
+   "series": "POS Gold",
+   "r_same_month": -0.0605,
+   "r_next_month": 0.0364,
+   "hac_p_same": 0.2464,
+   "hac_p_next": 0.4703,
+   "n": 487
+  },
+  {
+   "series": "US 10-year yield",
+   "r_same_month": -0.052,
+   "r_next_month": -0.0894,
+   "hac_p_same": 0.2869,
+   "hac_p_next": 0.0414,
+   "n": 667
+  },
+  {
+   "series": "POS USD index",
+   "r_same_month": -0.0478,
+   "r_next_month": 0.0371,
+   "hac_p_same": 0.2449,
+   "hac_p_next": 0.3917,
+   "n": 399
+  },
+  {
+   "series": "US industrial production",
+   "r_same_month": -0.0334,
+   "r_next_month": -0.008,
+   "hac_p_same": 0.4237,
+   "hac_p_next": 0.8739,
+   "n": 665
+  },
+  {
+   "series": "10y minus 2y spread",
+   "r_same_month": -0.0311,
+   "r_next_month": 0.0725,
+   "hac_p_same": 0.5684,
+   "hac_p_next": 0.1541,
+   "n": 602
+  },
+  {
+   "series": "US 2-year yield",
+   "r_same_month": -0.0216,
+   "r_next_month": -0.0966,
+   "hac_p_same": 0.6816,
+   "hac_p_next": 0.0437,
+   "n": 602
+  },
+  {
+   "series": "Gold",
+   "r_same_month": -0.0096,
+   "r_next_month": 0.0057,
+   "hac_p_same": 0.8318,
+   "hac_p_next": 0.8727,
+   "n": 666
+  },
+  {
+   "series": "JPY per USD",
+   "r_same_month": 0.0164,
+   "r_next_month": -0.0283,
+   "hac_p_same": 0.7087,
+   "hac_p_next": 0.4924,
+   "n": 667
+  },
+  {
+   "series": "US house prices (Case-Shiller)",
+   "r_same_month": 0.0199,
+   "r_next_month": -0.0172,
+   "hac_p_same": 0.7473,
+   "hac_p_next": 0.7822,
+   "n": 473
+  },
+  {
+   "series": "POS US 10-year notes",
+   "r_same_month": 0.028,
+   "r_next_month": -0.0112,
+   "hac_p_same": 0.546,
+   "hac_p_next": 0.8289,
+   "n": 487
+  },
+  {
+   "series": "US housing starts",
+   "r_same_month": 0.0355,
+   "r_next_month": 0.0695,
+   "hac_p_same": 0.3352,
+   "hac_p_next": 0.0374,
+   "n": 666
+  },
+  {
+   "series": "Henry Hub natural gas",
+   "r_same_month": 0.0461,
+   "r_next_month": -0.004,
+   "hac_p_same": 0.3906,
+   "hac_p_next": 0.9544,
+   "n": 353
+  },
+  {
+   "series": "US M2 money supply",
+   "r_same_month": 0.047,
+   "r_next_month": 0.0405,
+   "hac_p_same": 0.2618,
+   "hac_p_next": 0.3586,
+   "n": 665
+  },
+  {
+   "series": "US 3-month yield",
+   "r_same_month": 0.0549,
+   "r_next_month": -0.0327,
+   "hac_p_same": 0.3994,
+   "hac_p_next": 0.4328,
+   "n": 539
+  },
+  {
+   "series": "US unemployment rate",
+   "r_same_month": 0.0622,
+   "r_next_month": 0.0464,
+   "hac_p_same": 0.0147,
+   "hac_p_next": 0.0264,
+   "n": 664
+  },
+  {
+   "series": "POS Crude oil",
+   "r_same_month": 0.0777,
+   "r_next_month": -0.0484,
+   "hac_p_same": 0.0656,
+   "hac_p_next": 0.2824,
+   "n": 487
+  },
+  {
+   "series": "Brent (long)",
+   "r_same_month": 0.1116,
+   "r_next_month": -0.0622,
+   "hac_p_same": 0.0927,
+   "hac_p_next": 0.3593,
+   "n": 471
+  },
+  {
+   "series": "Supply chain pressure",
+   "r_same_month": 0.1134,
+   "r_next_month": 0.0446,
+   "hac_p_same": 0.0597,
+   "hac_p_next": 0.3967,
+   "n": 343
+  },
+  {
+   "series": "WTI (long)",
+   "r_same_month": 0.1185,
+   "r_next_month": -0.065,
+   "hac_p_same": 0.0683,
+   "hac_p_next": 0.2849,
+   "n": 487
+  },
+  {
+   "series": "POS S&P 500",
+   "r_same_month": 0.1389,
+   "r_next_month": 0.0311,
+   "hac_p_same": 0.0009,
+   "hac_p_next": 0.3687,
+   "n": 420
+  },
+  {
+   "series": "Consumer sentiment",
+   "r_same_month": 0.1494,
+   "r_next_month": -0.0329,
+   "hac_p_same": 0.0011,
+   "hac_p_next": 0.4126,
+   "n": 582
+  },
+  {
+   "series": "USD per EUR",
+   "r_same_month": 0.1995,
+   "r_next_month": 0.0555,
+   "hac_p_same": 0.0021,
+   "hac_p_next": 0.4545,
+   "n": 331
+  },
+  {
+   "series": "Bitcoin",
+   "r_same_month": 0.2796,
+   "r_next_month": 0.144,
+   "hac_p_same": 0.0048,
+   "hac_p_next": 0.0197,
+   "n": 175
+  },
+  {
+   "series": "S&P PE10",
+   "r_same_month": 0.3405,
+   "r_next_month": -0.0367,
+   "hac_p_same": 0.1188,
+   "hac_p_next": 0.3467,
+   "n": 666
+  },
+  {
+   "series": "10y inflation breakeven",
+   "r_same_month": 0.4361,
+   "r_next_month": 0.0295,
+   "hac_p_same": 0.0,
+   "hac_p_next": 0.745,
+   "n": 283
+  }
+ ],
+ "granger": {
+  "tests": 2162,
+  "sig_fdr": 220,
+  "top": [
+   {
+    "driver": "US nonfarm payrolls",
+    "target": "Recession probability",
+    "F": 393.14036,
+    "p": 0.0,
+    "p_fdr": 0.0,
+    "n": 706
+   },
+   {
+    "driver": "US nonfarm payrolls",
+    "target": "POS USD index",
+    "F": 373.63116,
+    "p": 0.0,
+    "p_fdr": 0.0,
+    "n": 396
+   },
+   {
+    "driver": "Initial jobless claims",
+    "target": "US industrial production",
+    "F": 180.98241,
+    "p": 0.0,
+    "p_fdr": 0.0,
+    "n": 711
+   },
+   {
+    "driver": "Initial jobless claims",
+    "target": "US housing starts",
+    "F": 122.54979,
+    "p": 0.0,
+    "p_fdr": 0.0,
+    "n": 712
+   },
+   {
+    "driver": "US nonfarm payrolls",
+    "target": "US housing starts",
+    "F": 119.07002,
+    "p": 0.0,
+    "p_fdr": 0.0,
+    "n": 808
+   },
+   {
+    "driver": "US nonfarm payrolls",
+    "target": "US equity market uncertainty",
+    "F": 116.30312,
+    "p": 0.0,
+    "p_fdr": 0.0,
+    "n": 496
+   },
+   {
+    "driver": "US nonfarm payrolls",
+    "target": "USD broad index",
+    "F": 109.35931,
+    "p": 0.0,
+    "p_fdr": 0.0,
+    "n": 244
+   },
+   {
+    "driver": "US nonfarm payrolls",
+    "target": "10y real yield (TIPS)",
+    "F": 101.47558,
+    "p": 0.0,
+    "p_fdr": 0.0,
+    "n": 280
+   },
+   {
+    "driver": "Initial jobless claims",
+    "target": "Consumer sentiment",
+    "F": 95.35907,
+    "p": 0.0,
+    "p_fdr": 0.0,
+    "n": 579
+   },
+   {
+    "driver": "US nonfarm payrolls",
+    "target": "USD per EUR",
+    "F": 94.14131,
+    "p": 0.0,
+    "p_fdr": 0.0,
+    "n": 328
+   },
+   {
+    "driver": "Initial jobless claims",
+    "target": "US core CPI",
+    "F": 86.44401,
+    "p": 0.0,
+    "p_fdr": 0.0,
+    "n": 710
+   },
+   {
+    "driver": "US nonfarm payrolls",
+    "target": "MXN per USD",
+    "F": 85.98155,
+    "p": 0.0,
+    "p_fdr": 0.0,
+    "n": 390
+   },
+   {
+    "driver": "Fed total assets",
+    "target": "St. Louis financial stress",
+    "F": 79.21974,
+    "p": 0.0,
+    "p_fdr": 0.0,
+    "n": 282
+   },
+   {
+    "driver": "Recession probability",
+    "target": "Supply chain pressure",
+    "F": 75.61307,
+    "p": 0.0,
+    "p_fdr": 0.0,
+    "n": 339
+   },
+   {
+    "driver": "US 3-month yield",
+    "target": "Fed funds effective",
+    "F": 71.75979,
+    "p": 0.0,
+    "p_fdr": 0.0,
+    "n": 537
+   },
+   {
+    "driver": "WTI (long)",
+    "target": "US CPI",
+    "F": 70.18914,
+    "p": 0.0,
+    "p_fdr": 0.0,
+    "n": 482
+   },
+   {
+    "driver": "Nasdaq Composite",
+    "target": "S&P PE10",
+    "F": 68.45642,
+    "p": 0.0,
+    "p_fdr": 0.0,
+    "n": 663
+   },
+   {
+    "driver": "US nonfarm payrolls",
+    "target": "US M2 money supply",
+    "F": 65.06124,
+    "p": 0.0,
+    "p_fdr": 0.0,
+    "n": 807
+   },
+   {
+    "driver": "Initial jobless claims",
+    "target": "US unemployment rate",
+    "F": 61.56371,
+    "p": 0.0,
+    "p_fdr": 0.0,
+    "n": 710
+   },
+   {
+    "driver": "Initial jobless claims",
+    "target": "US CPI",
+    "F": 61.36088,
+    "p": 0.0,
+    "p_fdr": 0.0,
+    "n": 710
+   },
+   {
+    "driver": "US unemployment rate",
+    "target": "Recession probability",
+    "F": 61.11823,
+    "p": 0.0,
+    "p_fdr": 0.0,
+    "n": 704
+   },
+   {
+    "driver": "Initial jobless claims",
+    "target": "POS USD index",
+    "F": 60.005,
+    "p": 0.0,
+    "p_fdr": 0.0,
+    "n": 397
+   },
+   {
+    "driver": "US unemployment rate",
+    "target": "US housing starts",
+    "F": 56.77267,
+    "p": 0.0,
+    "p_fdr": 0.0,
+    "n": 806
+   },
+   {
+    "driver": "Nasdaq Composite",
+    "target": "Consumer sentiment",
+    "F": 54.7409,
+    "p": 0.0,
+    "p_fdr": 0.0,
+    "n": 579
+   },
+   {
+    "driver": "Initial jobless claims",
+    "target": "Supply chain pressure",
+    "F": 51.96668,
+    "p": 0.0,
+    "p_fdr": 0.0,
+    "n": 340
+   }
+  ],
+  "into_equity_sig": 2,
+  "into_equity_top": [
+   {
+    "driver": "Chicago financial conditions",
+    "F": 33.16611,
+    "p": 0.0,
+    "p_fdr": 1e-05,
+    "n": 664
+   },
+   {
+    "driver": "Bitcoin",
+    "F": 15.00828,
+    "p": 0.00181,
+    "p_fdr": 0.02508,
+    "n": 173
+   },
+   {
+    "driver": "10y real yield (TIPS)",
+    "F": 11.77304,
+    "p": 0.0082,
+    "p_fdr": 0.07145,
+    "n": 281
+   },
+   {
+    "driver": "US nonfarm payrolls",
+    "F": 11.43183,
+    "p": 0.00961,
+    "p_fdr": 0.0805,
+    "n": 663
+   },
+   {
+    "driver": "S&P PE10",
+    "F": 9.5222,
+    "p": 0.0231,
+    "p_fdr": 0.13928,
+    "n": 663
+   },
+   {
+    "driver": "POS Gold",
+    "F": 7.12822,
+    "p": 0.06792,
+    "p_fdr": 0.2638,
+    "n": 485
+   },
+   {
+    "driver": "US industrial production",
+    "F": 6.52534,
+    "p": 0.08867,
+    "p_fdr": 0.31324,
+    "n": 662
+   },
+   {
+    "driver": "POS US 10-year notes",
+    "F": 6.27309,
+    "p": 0.09905,
+    "p_fdr": 0.33462,
+    "n": 485
+   },
+   {
+    "driver": "Sticky CPI",
+    "F": 6.05393,
+    "p": 0.10902,
+    "p_fdr": 0.35454,
+    "n": 663
+   },
+   {
+    "driver": "Initial jobless claims",
+    "F": 6.04174,
+    "p": 0.1096,
+    "p_fdr": 0.35525,
+    "n": 664
+   },
+   {
+    "driver": "10y inflation breakeven",
+    "F": 5.95505,
+    "p": 0.11382,
+    "p_fdr": 0.36347,
+    "n": 281
+   },
+   {
+    "driver": "US 2-year yield",
+    "F": 5.75634,
+    "p": 0.12409,
+    "p_fdr": 0.38545,
+    "n": 600
+   }
+  ],
+  "out_of_equity_sig": 7,
+  "out_of_equity_top": [
+   {
+    "target": "S&P PE10",
+    "F": 68.45642,
+    "p": 0.0,
+    "p_fdr": 0.0,
+    "n": 663
+   },
+   {
+    "target": "Consumer sentiment",
+    "F": 54.7409,
+    "p": 0.0,
+    "p_fdr": 0.0,
+    "n": 579
+   },
+   {
+    "target": "Initial jobless claims",
+    "F": 31.32912,
+    "p": 0.0,
+    "p_fdr": 3e-05,
+    "n": 664
+   },
+   {
+    "target": "US industrial production",
+    "F": 22.6419,
+    "p": 5e-05,
+    "p_fdr": 0.00114,
+    "n": 662
+   },
+   {
+    "target": "US housing starts",
+    "F": 19.90384,
+    "p": 0.00018,
+    "p_fdr": 0.00359,
+    "n": 663
+   },
+   {
+    "target": "US equity market uncertainty",
+    "F": 14.23864,
+    "p": 0.0026,
+    "p_fdr": 0.03155,
+    "n": 497
+   },
+   {
+    "target": "US 10-year yield",
+    "F": 13.91962,
+    "p": 0.00302,
+    "p_fdr": 0.03424,
+    "n": 664
+   },
+   {
+    "target": "US 2-year yield",
+    "F": 12.72704,
+    "p": 0.00527,
+    "p_fdr": 0.05116,
+    "n": 600
+   },
+   {
+    "target": "US CPI",
+    "F": 11.75715,
+    "p": 0.00826,
+    "p_fdr": 0.07146,
+    "n": 661
+   },
+   {
+    "target": "Recession probability",
+    "F": 11.05299,
+    "p": 0.01144,
+    "p_fdr": 0.08963,
+    "n": 662
+   },
+   {
+    "target": "Henry Hub natural gas",
+    "F": 9.72283,
+    "p": 0.02108,
+    "p_fdr": 0.13169,
+    "n": 351
+   },
+   {
+    "target": "US unemployment rate",
+    "F": 9.00599,
+    "p": 0.02921,
+    "p_fdr": 0.15989,
+    "n": 661
+   }
+  ]
+ },
+ "cointegration": [
+  {
+   "x": "US 10-year yield",
+   "y": "US 2-year yield",
+   "n": 604,
+   "eg_t": -3.4644,
+   "eg_p": 0.0357,
+   "hedge_beta": 0.8642,
+   "cointegrated_5pct": true
+  },
+  {
+   "x": "Brent (long)",
+   "y": "WTI (long)",
+   "n": 473,
+   "eg_t": -3.2318,
+   "eg_p": 0.0648,
+   "hedge_beta": 1.1125,
+   "cointegrated_5pct": false
+  },
+  {
+   "x": "US CPI",
+   "y": "US core CPI",
+   "n": 835,
+   "eg_t": -2.3259,
+   "eg_p": 0.3607,
+   "hedge_beta": 0.9799,
+   "cointegrated_5pct": false
+  },
+  {
+   "x": "Gold",
+   "y": "US CPI",
+   "n": 955,
+   "eg_t": -0.4852,
+   "eg_p": 0.9654,
+   "hedge_beta": 6.9293,
+   "cointegrated_5pct": false
+  },
+  {
+   "x": "Nasdaq Composite",
+   "y": "US CPI",
+   "n": 666,
+   "eg_t": 1.0488,
+   "eg_p": 1.0,
+   "hedge_beta": 52.5017,
+   "cointegrated_5pct": false
+  },
+  {
+   "x": "Nasdaq Composite",
+   "y": "US M2 money supply",
+   "n": 666,
+   "eg_t": -0.3475,
+   "eg_p": 0.9736,
+   "hedge_beta": 0.7437,
+   "cointegrated_5pct": false
+  },
+  {
+   "x": "Gold",
+   "y": "USD broad index",
+   "n": 248,
+   "eg_t": -0.8242,
+   "eg_p": 0.9314,
+   "hedge_beta": 36.3166,
+   "cointegrated_5pct": false
+  },
+  {
+   "x": "US 30-year mortgage rate",
+   "y": "US 10-year yield",
+   "n": 666,
+   "eg_t": -4.233,
+   "eg_p": 0.0032,
+   "hedge_beta": 1.0007,
+   "cointegrated_5pct": true
+  },
+  {
+   "x": "Bitcoin",
+   "y": "Nasdaq Composite",
+   "n": 177,
+   "eg_t": -3.9021,
+   "eg_p": 0.0099,
+   "hedge_beta": 4.6199,
+   "cointegrated_5pct": true
+  },
+  {
+   "x": "Gold",
+   "y": "Bitcoin",
+   "n": 176,
+   "eg_t": -3.7753,
+   "eg_p": 0.0146,
+   "hedge_beta": 0.0226,
+   "cointegrated_5pct": true
+  },
+  {
+   "x": "S&P PE10",
+   "y": "US 10-year yield",
+   "n": 776,
+   "eg_t": -2.1081,
+   "eg_p": 0.4721,
+   "hedge_beta": -1.7161,
+   "cointegrated_5pct": false
+  }
+ ],
+ "regimes": [
+  {
+   "pair": "equities vs 10y yield change",
+   "decade": "1970s",
+   "n": 106,
+   "r": -0.246
+  },
+  {
+   "pair": "equities vs 10y yield change",
+   "decade": "1980s",
+   "n": 120,
+   "r": -0.201
+  },
+  {
+   "pair": "equities vs 10y yield change",
+   "decade": "1990s",
+   "n": 120,
+   "r": -0.191
+  },
+  {
+   "pair": "equities vs 10y yield change",
+   "decade": "2000s",
+   "n": 120,
+   "r": 0.275
+  },
+  {
+   "pair": "equities vs 10y yield change",
+   "decade": "2010s",
+   "n": 120,
+   "r": 0.436
+  },
+  {
+   "pair": "equities vs 10y yield change",
+   "decade": "2020s",
+   "n": 81,
+   "r": -0.341
+  },
+  {
+   "pair": "equities vs VIX",
+   "decade": "1990s",
+   "n": 119,
+   "r": -0.474
+  },
+  {
+   "pair": "equities vs VIX",
+   "decade": "2000s",
+   "n": 120,
+   "r": -0.641
+  },
+  {
+   "pair": "equities vs VIX",
+   "decade": "2010s",
+   "n": 120,
+   "r": -0.708
+  },
+  {
+   "pair": "equities vs VIX",
+   "decade": "2020s",
+   "n": 81,
+   "r": -0.644
+  },
+  {
+   "pair": "bitcoin vs equities",
+   "decade": "2010s",
+   "n": 95,
+   "r": 0.131
+  },
+  {
+   "pair": "bitcoin vs equities",
+   "decade": "2020s",
+   "n": 81,
+   "r": 0.551
+  },
+  {
+   "pair": "gold vs real yield",
+   "decade": "2000s",
+   "n": 83,
+   "r": -0.292
+  },
+  {
+   "pair": "gold vs real yield",
+   "decade": "2010s",
+   "n": 120,
+   "r": -0.331
+  },
+  {
+   "pair": "gold vs real yield",
+   "decade": "2020s",
+   "n": 80,
+   "r": -0.285
+  },
+  {
+   "pair": "equities vs dollar",
+   "decade": "2000s",
+   "n": 47,
+   "r": -0.593
+  },
+  {
+   "pair": "equities vs dollar",
+   "decade": "2010s",
+   "n": 120,
+   "r": -0.546
+  },
+  {
+   "pair": "equities vs dollar",
+   "decade": "2020s",
+   "n": 81,
+   "r": -0.503
+  },
+  {
+   "pair": "gold vs equities",
+   "decade": "1970s",
+   "n": 106,
+   "r": -0.099
+  },
+  {
+   "pair": "gold vs equities",
+   "decade": "1980s",
+   "n": 120,
+   "r": 0.148
+  },
+  {
+   "pair": "gold vs equities",
+   "decade": "1990s",
+   "n": 120,
+   "r": -0.07
+  },
+  {
+   "pair": "gold vs equities",
+   "decade": "2000s",
+   "n": 120,
+   "r": -0.034
+  },
+  {
+   "pair": "gold vs equities",
+   "decade": "2010s",
+   "n": 120,
+   "r": -0.081
+  },
+  {
+   "pair": "gold vs equities",
+   "decade": "2020s",
+   "n": 80,
+   "r": 0.103
+  }
+ ],
+ "regime_sign_flips": {
+  "bitcoin vs equities": false,
+  "equities vs 10y yield change": true,
+  "equities vs VIX": false,
+  "equities vs dollar": false,
+  "gold vs equities": false,
+  "gold vs real yield": false
+ },
+ "events": [
+  {
+   "shock": "VIX",
+   "horizon": "m0",
+   "n_spikes": 47,
+   "n_all": 394,
+   "mean_after_spike": -0.0275,
+   "ci_lo": -0.0511,
+   "ci_hi": -0.0032,
+   "baseline": 0.009,
+   "excess": -0.0365,
+   "boot_p": 0.0012,
+   "p_fdr": 0.0264,
+   "sig_fdr": true
+  },
+  {
+   "shock": "VIX",
+   "horizon": "m1",
+   "n_spikes": 47,
+   "n_all": 394,
+   "mean_after_spike": 0.0197,
+   "ci_lo": -0.005,
+   "ci_hi": 0.0401,
+   "baseline": 0.009,
+   "excess": 0.0106,
+   "boot_p": 0.247,
+   "p_fdr": 0.7704,
+   "sig_fdr": false
+  },
+  {
+   "shock": "VIX",
+   "horizon": "m1_3",
+   "n_spikes": 47,
+   "n_all": 394,
+   "mean_after_spike": 0.0685,
+   "ci_lo": 0.0025,
+   "ci_hi": 0.1189,
+   "baseline": 0.0269,
+   "excess": 0.0416,
+   "boot_p": 0.1034,
+   "p_fdr": 0.4946,
+   "sig_fdr": false
+  },
+  {
+   "shock": "VIX",
+   "horizon": "m1_12",
+   "n_spikes": 47,
+   "n_all": 394,
+   "mean_after_spike": 0.189,
+   "ci_lo": 0.0586,
+   "ci_hi": 0.2905,
+   "baseline": 0.1078,
+   "excess": 0.0812,
+   "boot_p": 0.2878,
+   "p_fdr": 0.7704,
+   "sig_fdr": false
+  },
+  {
+   "shock": "Geopolitical risk",
+   "horizon": "m0",
+   "n_spikes": 29,
+   "n_all": 454,
+   "mean_after_spike": -0.0002,
+   "ci_lo": -0.0278,
+   "ci_hi": 0.025,
+   "baseline": 0.0095,
+   "excess": -0.0097,
+   "boot_p": 0.3986,
+   "p_fdr": 0.7704,
+   "sig_fdr": false
+  },
+  {
+   "shock": "Geopolitical risk",
+   "horizon": "m1",
+   "n_spikes": 29,
+   "n_all": 454,
+   "mean_after_spike": 0.0165,
+   "ci_lo": -0.0138,
+   "ci_hi": 0.0508,
+   "baseline": 0.0094,
+   "excess": 0.0071,
+   "boot_p": 0.518,
+   "p_fdr": 0.8099,
+   "sig_fdr": false
+  },
+  {
+   "shock": "Geopolitical risk",
+   "horizon": "m1_3",
+   "n_spikes": 29,
+   "n_all": 454,
+   "mean_after_spike": 0.0463,
+   "ci_lo": -0.0203,
+   "ci_hi": 0.1171,
+   "baseline": 0.0278,
+   "excess": 0.0184,
+   "boot_p": 0.5522,
+   "p_fdr": 0.8099,
+   "sig_fdr": false
+  },
+  {
+   "shock": "Geopolitical risk",
+   "horizon": "m1_12",
+   "n_spikes": 29,
+   "n_all": 454,
+   "mean_after_spike": 0.1181,
+   "ci_lo": 0.004,
+   "ci_hi": 0.259,
+   "baseline": 0.1107,
+   "excess": 0.0074,
+   "boot_p": 0.9464,
+   "p_fdr": 0.9906,
+   "sig_fdr": false
+  },
+  {
+   "shock": "Geopolitical threats",
+   "horizon": "m0",
+   "n_spikes": 39,
+   "n_all": 454,
+   "mean_after_spike": 0.0015,
+   "ci_lo": -0.0189,
+   "ci_hi": 0.0204,
+   "baseline": 0.0095,
+   "excess": -0.008,
+   "boot_p": 0.4202,
+   "p_fdr": 0.7704,
+   "sig_fdr": false
+  },
+  {
+   "shock": "Geopolitical threats",
+   "horizon": "m1",
+   "n_spikes": 39,
+   "n_all": 454,
+   "mean_after_spike": 0.0183,
+   "ci_lo": -0.0102,
+   "ci_hi": 0.0488,
+   "baseline": 0.0094,
+   "excess": 0.0089,
+   "boot_p": 0.3758,
+   "p_fdr": 0.7704,
+   "sig_fdr": false
+  },
+  {
+   "shock": "Geopolitical threats",
+   "horizon": "m1_3",
+   "n_spikes": 39,
+   "n_all": 454,
+   "mean_after_spike": 0.0522,
+   "ci_lo": -0.0085,
+   "ci_hi": 0.1093,
+   "baseline": 0.0278,
+   "excess": 0.0243,
+   "boot_p": 0.383,
+   "p_fdr": 0.7704,
+   "sig_fdr": false
+  },
+  {
+   "shock": "Geopolitical threats",
+   "horizon": "m1_12",
+   "n_spikes": 39,
+   "n_all": 454,
+   "mean_after_spike": 0.1642,
+   "ci_lo": 0.051,
+   "ci_hi": 0.2738,
+   "baseline": 0.1107,
+   "excess": 0.0535,
+   "boot_p": 0.5242,
+   "p_fdr": 0.8099,
+   "sig_fdr": false
+  },
+  {
+   "shock": "Geopolitical acts",
+   "horizon": "m0",
+   "n_spikes": 30,
+   "n_all": 454,
+   "mean_after_spike": 0.0075,
+   "ci_lo": -0.0124,
+   "ci_hi": 0.0288,
+   "baseline": 0.0095,
+   "excess": -0.002,
+   "boot_p": 0.8596,
+   "p_fdr": 0.9456,
+   "sig_fdr": false
+  },
+  {
+   "shock": "Geopolitical acts",
+   "horizon": "m1",
+   "n_spikes": 30,
+   "n_all": 454,
+   "mean_after_spike": 0.0302,
+   "ci_lo": 0.0014,
+   "ci_hi": 0.0557,
+   "baseline": 0.0094,
+   "excess": 0.0208,
+   "boot_p": 0.0756,
+   "p_fdr": 0.4946,
+   "sig_fdr": false
+  },
+  {
+   "shock": "Geopolitical acts",
+   "horizon": "m1_3",
+   "n_spikes": 30,
+   "n_all": 454,
+   "mean_after_spike": 0.042,
+   "ci_lo": -0.0076,
+   "ci_hi": 0.0847,
+   "baseline": 0.0278,
+   "excess": 0.0142,
+   "boot_p": 0.6456,
+   "p_fdr": 0.8634,
+   "sig_fdr": false
+  },
+  {
+   "shock": "Geopolitical acts",
+   "horizon": "m1_12",
+   "n_spikes": 30,
+   "n_all": 454,
+   "mean_after_spike": 0.1151,
+   "ci_lo": 0.0237,
+   "ci_hi": 0.211,
+   "baseline": 0.1107,
+   "excess": 0.0044,
+   "boot_p": 0.9696,
+   "p_fdr": 0.9906,
+   "sig_fdr": false
+  },
+  {
+   "shock": "US economic policy uncertainty",
+   "horizon": "m0",
+   "n_spikes": 40,
+   "n_all": 454,
+   "mean_after_spike": -0.0176,
+   "ci_lo": -0.0594,
+   "ci_hi": 0.0182,
+   "baseline": 0.0095,
+   "excess": -0.0271,
+   "boot_p": 0.0108,
+   "p_fdr": 0.095,
+   "sig_fdr": false
+  },
+  {
+   "shock": "US economic policy uncertainty",
+   "horizon": "m1",
+   "n_spikes": 40,
+   "n_all": 454,
+   "mean_after_spike": 0.0135,
+   "ci_lo": -0.0131,
+   "ci_hi": 0.0361,
+   "baseline": 0.0094,
+   "excess": 0.0041,
+   "boot_p": 0.6844,
+   "p_fdr": 0.8634,
+   "sig_fdr": false
+  },
+  {
+   "shock": "US economic policy uncertainty",
+   "horizon": "m1_3",
+   "n_spikes": 40,
+   "n_all": 454,
+   "mean_after_spike": 0.0386,
+   "ci_lo": -0.015,
+   "ci_hi": 0.0884,
+   "baseline": 0.0278,
+   "excess": 0.0108,
+   "boot_p": 0.6868,
+   "p_fdr": 0.8634,
+   "sig_fdr": false
+  },
+  {
+   "shock": "US economic policy uncertainty",
+   "horizon": "m1_12",
+   "n_spikes": 40,
+   "n_all": 454,
+   "mean_after_spike": 0.1457,
+   "ci_lo": 0.0034,
+   "ci_hi": 0.26,
+   "baseline": 0.1107,
+   "excess": 0.035,
+   "boot_p": 0.6858,
+   "p_fdr": 0.8634,
+   "sig_fdr": false
+  },
+  {
+   "shock": "US equity market uncertainty",
+   "horizon": "m0",
+   "n_spikes": 30,
+   "n_all": 454,
+   "mean_after_spike": -0.0281,
+   "ci_lo": -0.0459,
+   "ci_hi": -0.0101,
+   "baseline": 0.0095,
+   "excess": -0.0375,
+   "boot_p": 0.0038,
+   "p_fdr": 0.044,
+   "sig_fdr": true
+  },
+  {
+   "shock": "US equity market uncertainty",
+   "horizon": "m1",
+   "n_spikes": 30,
+   "n_all": 454,
+   "mean_after_spike": 0.0217,
+   "ci_lo": -0.0057,
+   "ci_hi": 0.045,
+   "baseline": 0.0094,
+   "excess": 0.0123,
+   "boot_p": 0.2784,
+   "p_fdr": 0.7704,
+   "sig_fdr": false
+  },
+  {
+   "shock": "US equity market uncertainty",
+   "horizon": "m1_3",
+   "n_spikes": 30,
+   "n_all": 454,
+   "mean_after_spike": 0.0789,
+   "ci_lo": 0.0086,
+   "ci_hi": 0.1336,
+   "baseline": 0.0278,
+   "excess": 0.0511,
+   "boot_p": 0.1124,
+   "p_fdr": 0.4946,
+   "sig_fdr": false
+  },
+  {
+   "shock": "US equity market uncertainty",
+   "horizon": "m1_12",
+   "n_spikes": 30,
+   "n_all": 454,
+   "mean_after_spike": 0.261,
+   "ci_lo": 0.174,
+   "ci_hi": 0.3482,
+   "baseline": 0.1107,
+   "excess": 0.1503,
+   "boot_p": 0.1082,
+   "p_fdr": 0.4946,
+   "sig_fdr": false
+  },
+  {
+   "shock": "St. Louis financial stress",
+   "horizon": "m0",
+   "n_spikes": 42,
+   "n_all": 347,
+   "mean_after_spike": -0.0435,
+   "ci_lo": -0.0687,
+   "ci_hi": -0.0184,
+   "baseline": 0.0084,
+   "excess": -0.0519,
+   "boot_p": 0.0,
+   "p_fdr": 0.0,
+   "sig_fdr": true
+  },
+  {
+   "shock": "St. Louis financial stress",
+   "horizon": "m1",
+   "n_spikes": 42,
+   "n_all": 347,
+   "mean_after_spike": 0.0103,
+   "ci_lo": -0.024,
+   "ci_hi": 0.0415,
+   "baseline": 0.0084,
+   "excess": 0.0019,
+   "boot_p": 0.8492,
+   "p_fdr": 0.9456,
+   "sig_fdr": false
+  },
+  {
+   "shock": "St. Louis financial stress",
+   "horizon": "m1_3",
+   "n_spikes": 42,
+   "n_all": 347,
+   "mean_after_spike": 0.0182,
+   "ci_lo": -0.0752,
+   "ci_hi": 0.1093,
+   "baseline": 0.0249,
+   "excess": -0.0067,
+   "boot_p": 0.8188,
+   "p_fdr": 0.9456,
+   "sig_fdr": false
+  },
+  {
+   "shock": "St. Louis financial stress",
+   "horizon": "m1_12",
+   "n_spikes": 42,
+   "n_all": 347,
+   "mean_after_spike": 0.0188,
+   "ci_lo": -0.198,
+   "ci_hi": 0.223,
+   "baseline": 0.0986,
+   "excess": -0.0798,
+   "boot_p": 0.3586,
+   "p_fdr": 0.7704,
+   "sig_fdr": false
+  },
+  {
+   "shock": "Chicago financial conditions",
+   "horizon": "m0",
+   "n_spikes": 72,
+   "n_all": 622,
+   "mean_after_spike": -0.0138,
+   "ci_lo": -0.0378,
+   "ci_hi": 0.0103,
+   "baseline": 0.0088,
+   "excess": -0.0227,
+   "boot_p": 0.004,
+   "p_fdr": 0.044,
+   "sig_fdr": true
+  },
+  {
+   "shock": "Chicago financial conditions",
+   "horizon": "m1",
+   "n_spikes": 72,
+   "n_all": 622,
+   "mean_after_spike": -0.002,
+   "ci_lo": -0.0233,
+   "ci_hi": 0.0199,
+   "baseline": 0.0089,
+   "excess": -0.0109,
+   "boot_p": 0.1458,
+   "p_fdr": 0.5832,
+   "sig_fdr": false
+  },
+  {
+   "shock": "Chicago financial conditions",
+   "horizon": "m1_3",
+   "n_spikes": 72,
+   "n_all": 622,
+   "mean_after_spike": 0.0292,
+   "ci_lo": -0.035,
+   "ci_hi": 0.0941,
+   "baseline": 0.0266,
+   "excess": 0.0026,
+   "boot_p": 0.8988,
+   "p_fdr": 0.9646,
+   "sig_fdr": false
+  },
+  {
+   "shock": "Chicago financial conditions",
+   "horizon": "m1_12",
+   "n_spikes": 72,
+   "n_all": 622,
+   "mean_after_spike": 0.0726,
+   "ci_lo": -0.1078,
+   "ci_hi": 0.2416,
+   "baseline": 0.1113,
+   "excess": -0.0387,
+   "boot_p": 0.5006,
+   "p_fdr": 0.8099,
+   "sig_fdr": false
+  },
+  {
+   "shock": "Supply chain pressure",
+   "horizon": "m0",
+   "n_spikes": 47,
+   "n_all": 298,
+   "mean_after_spike": 0.0148,
+   "ci_lo": -0.0022,
+   "ci_hi": 0.0291,
+   "baseline": 0.0073,
+   "excess": 0.0075,
+   "boot_p": 0.3818,
+   "p_fdr": 0.7704,
+   "sig_fdr": false
+  },
+  {
+   "shock": "Supply chain pressure",
+   "horizon": "m1",
+   "n_spikes": 47,
+   "n_all": 298,
+   "mean_after_spike": 0.016,
+   "ci_lo": 0.0029,
+   "ci_hi": 0.0299,
+   "baseline": 0.0076,
+   "excess": 0.0084,
+   "boot_p": 0.3218,
+   "p_fdr": 0.7704,
+   "sig_fdr": false
+  },
+  {
+   "shock": "Supply chain pressure",
+   "horizon": "m1_3",
+   "n_spikes": 47,
+   "n_all": 298,
+   "mean_after_spike": 0.029,
+   "ci_lo": -0.0105,
+   "ci_hi": 0.0684,
+   "baseline": 0.0227,
+   "excess": 0.0063,
+   "boot_p": 0.7912,
+   "p_fdr": 0.9456,
+   "sig_fdr": false
+  },
+  {
+   "shock": "Supply chain pressure",
+   "horizon": "m1_12",
+   "n_spikes": 47,
+   "n_all": 298,
+   "mean_after_spike": 0.0474,
+   "ci_lo": -0.082,
+   "ci_hi": 0.1713,
+   "baseline": 0.1004,
+   "excess": -0.053,
+   "boot_p": 0.4142,
+   "p_fdr": 0.7704,
+   "sig_fdr": false
+  },
+  {
+   "shock": "US unemployment rate",
+   "horizon": "m0",
+   "n_spikes": 112,
+   "n_all": 655,
+   "mean_after_spike": 0.0144,
+   "ci_lo": -0.0012,
+   "ci_hi": 0.0289,
+   "baseline": 0.0083,
+   "excess": 0.0062,
+   "boot_p": 0.3154,
+   "p_fdr": 0.7704,
+   "sig_fdr": false
+  },
+  {
+   "shock": "US unemployment rate",
+   "horizon": "m1",
+   "n_spikes": 112,
+   "n_all": 655,
+   "mean_after_spike": 0.0116,
+   "ci_lo": -0.0035,
+   "ci_hi": 0.0257,
+   "baseline": 0.0083,
+   "excess": 0.0034,
+   "boot_p": 0.5864,
+   "p_fdr": 0.8323,
+   "sig_fdr": false
+  },
+  {
+   "shock": "US unemployment rate",
+   "horizon": "m1_3",
+   "n_spikes": 112,
+   "n_all": 655,
+   "mean_after_spike": 0.0356,
+   "ci_lo": -0.0049,
+   "ci_hi": 0.0742,
+   "baseline": 0.0246,
+   "excess": 0.011,
+   "boot_p": 0.5166,
+   "p_fdr": 0.8099,
+   "sig_fdr": false
+  },
+  {
+   "shock": "US unemployment rate",
+   "horizon": "m1_12",
+   "n_spikes": 112,
+   "n_all": 655,
+   "mean_after_spike": 0.1798,
+   "ci_lo": 0.1051,
+   "ci_hi": 0.2491,
+   "baseline": 0.099,
+   "excess": 0.0808,
+   "boot_p": 0.0958,
+   "p_fdr": 0.4946,
+   "sig_fdr": false
+  },
+  {
+   "shock": "Initial jobless claims",
+   "horizon": "m0",
+   "n_spikes": 76,
+   "n_all": 655,
+   "mean_after_spike": 0.0066,
+   "ci_lo": -0.0136,
+   "ci_hi": 0.0253,
+   "baseline": 0.0083,
+   "excess": -0.0017,
+   "boot_p": 0.8222,
+   "p_fdr": 0.9456,
+   "sig_fdr": false
+  },
+  {
+   "shock": "Initial jobless claims",
+   "horizon": "m1",
+   "n_spikes": 76,
+   "n_all": 655,
+   "mean_after_spike": 0.0081,
+   "ci_lo": -0.0148,
+   "ci_hi": 0.0299,
+   "baseline": 0.0083,
+   "excess": -0.0001,
+   "boot_p": 0.9906,
+   "p_fdr": 0.9906,
+   "sig_fdr": false
+  },
+  {
+   "shock": "Initial jobless claims",
+   "horizon": "m1_3",
+   "n_spikes": 76,
+   "n_all": 655,
+   "mean_after_spike": 0.0372,
+   "ci_lo": -0.0263,
+   "ci_hi": 0.0951,
+   "baseline": 0.0246,
+   "excess": 0.0126,
+   "boot_p": 0.5362,
+   "p_fdr": 0.8099,
+   "sig_fdr": false
+  },
+  {
+   "shock": "Initial jobless claims",
+   "horizon": "m1_12",
+   "n_spikes": 76,
+   "n_all": 655,
+   "mean_after_spike": 0.1652,
+   "ci_lo": 0.0291,
+   "ci_hi": 0.2888,
+   "baseline": 0.099,
+   "excess": 0.0662,
+   "boot_p": 0.2602,
+   "p_fdr": 0.7704,
+   "sig_fdr": false
+  }
+ ],
+ "oos": {
+  "tested": 45,
+  "positive_r2": 6,
+  "best": [
+   {
+    "predictor": "Chicago financial conditions",
+    "n_oos": 487,
+    "r2_oos": 0.0222,
+    "sign_accuracy": 0.616,
+    "in_sample_r": -0.1916
+   },
+   {
+    "predictor": "Geopolitical acts",
+    "n_oos": 319,
+    "r2_oos": 0.0054,
+    "sign_accuracy": 0.5768,
+    "in_sample_r": 0.0964
+   },
+   {
+    "predictor": "US core CPI",
+    "n_oos": 485,
+    "r2_oos": 0.0026,
+    "sign_accuracy": 0.6124,
+    "in_sample_r": -0.0884
+   },
+   {
+    "predictor": "Sticky CPI",
+    "n_oos": 487,
+    "r2_oos": 0.0018,
+    "sign_accuracy": 0.614,
+    "in_sample_r": -0.1025
+   },
+   {
+    "predictor": "Geopolitical risk",
+    "n_oos": 319,
+    "r2_oos": 0.0018,
+    "sign_accuracy": 0.5831,
+    "in_sample_r": 0.0714
+   },
+   {
+    "predictor": "US housing starts",
+    "n_oos": 487,
+    "r2_oos": 0.0001,
+    "sign_accuracy": 0.5996,
+    "in_sample_r": 0.0695
+   },
+   {
+    "predictor": "POS Crude oil",
+    "n_oos": 307,
+    "r2_oos": -0.0005,
+    "sign_accuracy": 0.6026,
+    "in_sample_r": -0.0484
+   },
+   {
+    "predictor": "US CPI",
+    "n_oos": 485,
+    "r2_oos": -0.0006,
+    "sign_accuracy": 0.6186,
+    "in_sample_r": -0.063
+   },
+   {
+    "predictor": "Gold",
+    "n_oos": 487,
+    "r2_oos": -0.0011,
+    "sign_accuracy": 0.614,
+    "in_sample_r": 0.0057
+   },
+   {
+    "predictor": "Supply chain pressure",
+    "n_oos": 163,
+    "r2_oos": -0.0011,
+    "sign_accuracy": 0.6564,
+    "in_sample_r": 0.0446
+   }
+  ],
+  "worst": [
+   {
+    "predictor": "Henry Hub natural gas",
+    "n_oos": 173,
+    "r2_oos": -0.0357,
+    "sign_accuracy": 0.6358,
+    "in_sample_r": -0.004
+   },
+   {
+    "predictor": "St. Louis financial stress",
+    "n_oos": 212,
+    "r2_oos": -0.0375,
+    "sign_accuracy": 0.6368,
+    "in_sample_r": -0.037
+   },
+   {
+    "predictor": "US unemployment rate",
+    "n_oos": 485,
+    "r2_oos": -0.039,
+    "sign_accuracy": 0.6,
+    "in_sample_r": 0.0464
+   },
+   {
+    "predictor": "Brent (long)",
+    "n_oos": 291,
+    "r2_oos": -0.0591,
+    "sign_accuracy": 0.5773,
+    "in_sample_r": -0.0622
+   },
+   {
+    "predictor": "Fed total assets",
+    "n_oos": 104,
+    "r2_oos": -0.0699,
+    "sign_accuracy": 0.6346,
+    "in_sample_r": -0.0706
+   }
+  ],
+  "median_r2": -0.0051,
+  "median_sign_acc": 0.6078,
+  "base_rate_up_months": 0.5997
+ },
+ "volatility": [
+  {
+   "series": "return",
+   "lag": 1,
+   "ljung_box_Q": 6.93925,
+   "p": 0.00843,
+   "autocorr": 0.1018
+  },
+  {
+   "series": "return",
+   "lag": 3,
+   "ljung_box_Q": 7.92072,
+   "p": 0.04768,
+   "autocorr": 0.00954
+  },
+  {
+   "series": "return",
+   "lag": 6,
+   "ljung_box_Q": 8.30893,
+   "p": 0.21633,
+   "autocorr": 0.01899
+  },
+  {
+   "series": "return",
+   "lag": 12,
+   "ljung_box_Q": 13.5585,
+   "p": 0.32979,
+   "autocorr": -0.00569
+  },
+  {
+   "series": "abs return (volatility)",
+   "lag": 1,
+   "ljung_box_Q": 30.58986,
+   "p": 0.0,
+   "autocorr": 0.21387
+  },
+  {
+   "series": "abs return (volatility)",
+   "lag": 3,
+   "ljung_box_Q": 87.20432,
+   "p": 0.0,
+   "autocorr": 0.17835
+  },
+  {
+   "series": "abs return (volatility)",
+   "lag": 6,
+   "ljung_box_Q": 165.76004,
+   "p": 0.0,
+   "autocorr": 0.18787
+  },
+  {
+   "series": "abs return (volatility)",
+   "lag": 12,
+   "ljung_box_Q": 233.6483,
+   "p": 0.0,
+   "autocorr": 0.16162
+  },
+  {
+   "series": "squared return",
+   "lag": 1,
+   "ljung_box_Q": 18.65478,
+   "p": 2e-05,
+   "autocorr": 0.1669
+  },
+  {
+   "series": "squared return",
+   "lag": 3,
+   "ljung_box_Q": 60.84153,
+   "p": 0.0,
+   "autocorr": 0.17237
+  },
+  {
+   "series": "squared return",
+   "lag": 6,
+   "ljung_box_Q": 108.34457,
+   "p": 0.0,
+   "autocorr": 0.13882
+  },
+  {
+   "series": "squared return",
+   "lag": 12,
+   "ljung_box_Q": 175.97335,
+   "p": 0.0,
+   "autocorr": 0.1395
+  }
+ ],
+ "tails": {
+  "n": 667,
+  "skew": -0.805,
+  "excess_kurtosis": 2.711,
+  "jarque_bera_p": 1.0553323322269242e-60,
+  "worst_month": -0.3179,
+  "best_month": 0.1987,
+  "sd": 0.0603,
+  "n_beyond_3sd": 8,
+  "n_expected_3sd_normal": 1.8
+ },
+ "network": {
+  "nodes": 32,
+  "edges": 66,
+  "most_connected": [
+   {
+    "series": "St. Louis financial stress",
+    "links": 12
+   },
+   {
+    "series": "10y inflation breakeven",
+    "links": 11
+   },
+   {
+    "series": "USD broad index",
+    "links": 10
+   },
+   {
+    "series": "CAD per USD",
+    "links": 7
+   },
+   {
+    "series": "Fed total assets",
+    "links": 6
+   },
+   {
+    "series": "Brent (long)",
+    "links": 5
+   },
+   {
+    "series": "WTI (long)",
+    "links": 5
+   },
+   {
+    "series": "US 10-year yield",
+    "links": 5
+   },
+   {
+    "series": "US 2-year yield",
+    "links": 5
+   },
+   {
+    "series": "10y real yield (TIPS)",
+    "links": 5
+   }
+  ]
+ }
+}

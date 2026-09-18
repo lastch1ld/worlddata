@@ -1,0 +1,48 @@
+series,cluster
+VIX,1
+MXN per USD,1
+CAD per USD,1
+USD broad index,1
+Initial jobless claims,1
+US M2 money supply,1
+Fed total assets,1
+US unemployment rate,1
+US economic policy uncertainty,1
+POS S&P 500,1
+Supply chain pressure,1
+US equity market uncertainty,1
+Chicago financial conditions,1
+St. Louis financial stress,1
+Recession probability,1
+POS US 10-year notes,2
+USD per EUR,3
+Gold,3
+POS Gold,3
+10y real yield (TIPS),4
+US 3-month yield,4
+Sticky CPI,4
+US CPI,4
+JPY per USD,4
+WTI (long),4
+Brent (long),4
+10y minus 2y spread,4
+10y minus 3m spread,4
+10y inflation breakeven,4
+Nasdaq Composite,4
+US 10-year yield,4
+US 2-year yield,4
+Henry Hub natural gas,4
+Fed funds effective,4
+US housing starts,4
+Consumer sentiment,4
+US industrial production,4
+US core CPI,4
+US nonfarm payrolls,4
+US house prices (Case-Shiller),4
+S&P PE10,4
+POS Crude oil,4
+Geopolitical acts,5
+Geopolitical risk,5
+Geopolitical threats,5
+Bitcoin,6
+POS USD index,6

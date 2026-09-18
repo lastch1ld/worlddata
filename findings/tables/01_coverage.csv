@@ -1,0 +1,134 @@
+series,unit,n_months,start,end,transform
+Ethereum,USD,110,2017-08-31,2026-09-30,log-diff
+Dow Jones Industrial,index,121,2016-09-30,2026-09-30,log-diff
+S&P 500 index,index,121,2016-09-30,2026-09-30,log-diff
+EPU India,index,135,2003-01-31,2014-03-31,log-diff
+TPU TPUD_ARTICLES,count,141,2015-01-31,2026-09-30,log-diff
+TPU TPUD_index,count,141,2015-01-31,2026-09-30,log-diff
+TPU NUMBER_ARTICLES,count,141,2015-01-31,2026-09-30,log-diff
+TPU TPUD_index_MA7,count,141,2015-01-31,2026-09-30,log-diff
+TPU TPUD_index_MA30,count,141,2015-01-31,2026-09-30,log-diff
+Bitcoin,USD,177,2012-01-31,2026-09-30,log-diff
+Overnight reverse repo,USD billions,182,2003-02-28,2026-09-30,log-diff
+POS Russell,percent,191,1993-02-28,2008-12-31,diff
+EPU Netherlands,index,214,2003-03-31,2020-12-31,log-diff
+US federal debt to GDP,percent of GDP,241,1966-01-31,2026-01-31,diff
+POS Gasoline,percent,248,2006-02-28,2026-09-30,diff
+USD broad index,index,249,2006-01-31,2026-09-30,log-diff
+EPU Colombia,index,276,1994-01-31,2016-12-31,log-diff
+EPU Singapore,index,283,2003-01-31,2026-07-31,log-diff
+5y inflation breakeven,percent,285,2003-01-31,2026-09-30,diff
+10y inflation breakeven,percent,285,2003-01-31,2026-09-30,diff
+10y real yield (TIPS),percent,285,2003-01-31,2026-09-30,diff
+Fed total assets,USD millions,286,2002-12-31,2026-09-30,log-diff
+Treasury General Account,USD millions,286,2002-12-31,2026-09-30,log-diff
+EPU Canada,index,291,1990-01-31,2014-03-31,log-diff
+EPU China,index,292,1995-01-31,2019-04-30,log-diff
+POS Dow Jones,percent,293,2002-05-31,2026-09-30,diff
+EPU Spain,index,301,1997-01-31,2022-01-31,log-diff
+US real GDP,USD billions,318,1947-01-31,2026-04-30,log-diff
+Euro area unemployment rate,percent,319,2000-01-31,2026-07-31,diff
+POS Nasdaq,percent,320,2000-02-29,2026-09-30,diff
+EPU Chile,index,326,1993-01-31,2020-02-29,log-diff
+USD per EUR,USD per EUR,333,1999-01-31,2026-09-30,log-diff
+EPU Australia,index,344,1998-01-31,2026-08-31,log-diff
+Supply chain pressure,standard deviations from average,344,1998-01-31,2026-08-31,diff
+EPU UK,index,344,1998-01-31,2026-08-31,log-diff
+POS Wheat,percent,345,1998-01-31,2026-09-30,diff
+EPU global,index,355,1997-01-31,2026-07-31,log-diff
+Henry Hub natural gas,USD per mmbtu,356,1997-01-31,2026-09-30,log-diff
+POS Lean hogs,percent,366,1996-04-30,2026-09-30,diff
+EPU Mexico,index,368,1996-01-31,2026-08-31,log-diff
+BRL per USD,BRL per USD,381,1995-01-31,2026-09-30,log-diff
+EPU Russia,index,392,1994-01-31,2026-08-31,log-diff
+St. Louis financial stress,index,394,1993-12-31,2026-09-30,diff
+MXN per USD,MXN per USD,395,1993-11-30,2026-09-30,log-diff
+POS USD index,percent,405,1992-05-31,2026-09-30,diff
+POS Corn,percent,409,1986-01-31,2026-09-30,diff
+POS Nikkei,percent,413,1990-09-30,2026-03-31,diff
+US trade balance,USD millions,415,1992-01-31,2026-07-31,diff
+POS S&P 500,percent,425,1986-01-31,2021-09-30,diff
+EPU Brazil,index,428,1991-01-31,2026-08-31,log-diff
+POS Natural gas,percent,438,1990-04-30,2026-09-30,diff
+VIX,index,441,1990-01-31,2026-09-30,log-diff
+EPU Ireland,index,446,1985-01-31,2022-02-28,log-diff
+POS Copper,percent,447,1989-07-31,2026-09-30,diff
+POS Eurodollars,percent,450,1986-01-31,2023-06-30,diff
+POS GBP,percent,462,1988-04-30,2026-09-30,diff
+POS Soybeans,percent,464,1986-01-31,2026-09-30,diff
+Brent crude spot,USD per barrel,473,1987-05-31,2026-09-30,log-diff
+Brent (long),USD,473,1987-05-31,2026-09-30,log-diff
+US house prices (Case-Shiller),index,474,1987-01-31,2026-06-30,log-diff
+EPU Japan,index,476,1987-01-31,2026-08-31,log-diff
+EPU europe,index,476,1987-01-31,2026-08-31,log-diff
+WTI (long),USD,489,1986-01-31,2026-09-30,log-diff
+POS CHF,percent,489,1986-01-31,2026-09-30,diff
+POS Sugar,percent,489,1986-01-31,2026-09-30,diff
+POS Platinum,percent,489,1986-01-31,2026-09-30,diff
+POS Gold,percent,489,1986-01-31,2026-09-30,diff
+POS Heating oil,percent,489,1986-01-31,2026-09-30,diff
+POS Silver,percent,489,1986-01-31,2026-09-30,diff
+POS CAD,percent,489,1986-01-31,2026-09-30,diff
+POS Coffee,percent,489,1986-01-31,2026-09-30,diff
+POS Crude oil,percent,489,1986-01-31,2026-09-30,diff
+POS Live cattle,percent,489,1986-01-31,2026-09-30,diff
+POS Cocoa,percent,489,1986-01-31,2026-09-30,diff
+POS JPY,percent,489,1986-01-31,2026-09-30,diff
+POS US 10-year notes,percent,489,1986-01-31,2026-09-30,diff
+POS US T-bonds,percent,489,1986-01-31,2026-09-30,diff
+POS Cotton,percent,489,1986-01-31,2026-09-30,diff
+WTI crude spot,USD per barrel,489,1986-01-31,2026-09-30,log-diff
+EPU US categorical,index,500,1985-01-31,2026-08-31,log-diff
+EPU US,index,500,1985-01-31,2026-08-31,log-diff
+Geopolitical threats,index,501,1985-01-31,2026-09-30,log-diff
+Geopolitical risk,index,501,1985-01-31,2026-09-30,log-diff
+US economic policy uncertainty,index,501,1985-01-31,2026-09-30,log-diff
+US equity market uncertainty,index,501,1985-01-31,2026-09-30,log-diff
+Geopolitical acts,index,501,1985-01-31,2026-09-30,log-diff
+10y minus 3m spread,percentage points,537,1982-01-31,2026-09-30,diff
+US 3-month yield,percent,541,1981-09-30,2026-09-30,diff
+KRW per USD,KRW per USD,546,1981-04-30,2026-09-30,log-diff
+CNY per USD,CNY per USD,549,1981-01-31,2026-09-30,log-diff
+EPU Sweden,index,592,1976-01-31,2025-04-30,log-diff
+US 30-year yield,percent,596,1977-02-28,2026-09-30,diff
+US 2-year yield,percent,604,1976-06-30,2026-09-30,diff
+10y minus 2y spread,percentage points,604,1976-06-30,2026-09-30,diff
+INR per USD,INR per USD,645,1973-01-31,2026-09-30,log-diff
+US 30-year mortgage rate,percent,666,1971-04-30,2026-09-30,diff
+Nasdaq Composite,index,668,1971-02-28,2026-09-30,log-diff
+Chicago financial conditions,index,669,1971-01-31,2026-09-30,diff
+CAD per USD,CAD per USD,669,1971-01-31,2026-09-30,log-diff
+JPY per USD,JPY per USD,669,1971-01-31,2026-09-30,log-diff
+USD per GBP,USD per GBP,669,1971-01-31,2026-09-30,log-diff
+USD per AUD,USD per AUD,669,1971-01-31,2026-09-30,log-diff
+CHF per USD,CHF per USD,669,1971-01-31,2026-09-30,log-diff
+Consumer sentiment,index,675,1952-11-30,2026-07-31,log-diff
+Sticky CPI,percent per year,704,1968-01-31,2026-08-31,diff
+Recession probability,percent,710,1967-06-30,2026-07-31,diff
+Initial jobless claims,persons,717,1967-01-31,2026-09-30,log-diff
+US 10-year yield,percent,777,1962-01-31,2026-09-30,diff
+US 5-year yield,percent,777,1962-01-31,2026-09-30,diff
+TPU N7,count,800,1960-01-31,2026-08-31,log-diff
+TPU TPU_SHARE,count,800,1960-01-31,2026-08-31,log-diff
+TPU TPU,count,800,1960-01-31,2026-08-31,log-diff
+TPU TPU_RAW,count,800,1960-01-31,2026-08-31,log-diff
+US M2 money supply,USD billions,811,1959-01-31,2026-07-31,log-diff
+US monetary base,USD millions,811,1959-01-31,2026-07-31,log-diff
+US housing starts,thousands of units,812,1959-01-31,2026-08-31,log-diff
+US core CPI,index,835,1957-01-31,2026-08-31,log-diff
+WUI CHN,index,864,1953-01-31,2024-12-31,log-diff
+WUI RUS,index,864,1953-01-31,2024-12-31,log-diff
+WUI GBR,index,864,1953-01-31,2024-12-31,log-diff
+Fed funds effective,percent,867,1954-07-31,2026-09-30,diff
+WUI JPN,index,870,1952-07-31,2024-12-31,log-diff
+WUI DEU,index,873,1952-04-30,2024-12-31,log-diff
+WUI USA,index,876,1952-01-31,2024-12-31,log-diff
+US unemployment rate,percent,943,1948-01-31,2026-08-31,diff
+US CPI,index,955,1947-01-31,2026-08-31,log-diff
+US nonfarm payrolls,thousands of persons,1052,1939-01-31,2026-08-31,log-diff
+US industrial production,index,1291,1919-01-31,2026-07-31,log-diff
+S&P real earnings,index,1292,1919-01-31,2026-08-31,log-diff
+S&P real dividend,index,1292,1919-01-31,2026-08-31,log-diff
+S&P (Shiller avg),index,1292,1919-01-31,2026-08-31,log-diff
+S&P PE10,ratio,1292,1919-01-31,2026-08-31,diff
+Gold,USD,1292,1919-01-31,2026-08-31,log-diff
