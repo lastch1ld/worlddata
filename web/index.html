@@ -38,7 +38,7 @@ a{color:inherit}
 <body>
 <div class="wrap">
 <h1>worlddata</h1>
-<p class="sub">Free, importable datasets — 625,092 rows: macro and market drivers, geopolitical risk, central bank rates and policy changes, commodity prices, largest companies, political events. Everything below reads the same JSON you can download; the CSV is the complete version.</p>
+<p class="sub">Free, importable datasets — 1,113,239 rows: US and euro area market drivers, speculative positioning, geopolitical and policy uncertainty, central bank rates, commodities, crypto, elections and political events. Everything below reads the same JSON you can download; the CSV is the complete version.</p>
 
 <div class="card">
   <div class="ctl">
@@ -124,7 +124,18 @@ const DEFAULTS = {
   // so the long span is visible instead of looking like the data begins in 1985.
   geopolitical_risk:    ['Geopolitical risk (historical)','Geopolitical risk (global)','Geopolitical threats','Geopolitical acts'],
   geopolitical_risk_daily: ['Geopolitical risk, 30-day average'],
-  georisk_events:       ['geopolitical spike']
+  georisk_events:       ['geopolitical spike'],
+  euro_area_drivers:    ['ECB deposit facility rate','Euro area AAA 10-year yield','USD per EUR','CHF per EUR'],
+  uncertainty_epu:      ['Global EPU: GEPU current','US EPU: News Based Policy Uncert Index','Europe EPU: European News Index','China EPU: China News-Based EPU'],
+  uncertainty_world:    ['WUI Global (simple average)','WUI Advanced economies','WUI Emerging economies'],
+  trade_policy_uncertainty: ['TPU (monthly)'],
+  // %OI is bounded and comparable across contracts; open interest is not, so the default
+  // shows positioning only and leaves the raw contract counts to be opted into.
+  cftc_positioning:     ['Gold: net speculative %OI','Crude oil: net speculative %OI','CHF: net speculative %OI','S&P 500: net speculative %OI'],
+  supply_chain_pressure: ['Global supply chain pressure'],
+  crypto_daily:         ['Bitcoin (BTC/USD)','Ethereum (ETH/USD)'],
+  elections:            ['election'],
+  fed_communications:   ['Fed press release']
 };
 const S = {ds:null, rows:[], meta:null, events:[], chart:null, log:false, showEvt:true};
 const $ = id => document.getElementById(id);

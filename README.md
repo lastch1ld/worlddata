@@ -4,22 +4,38 @@ Free, importable datasets about the world economy and the events around it, with
 UI to explore them. Every dataset is built by a script in `collectors/`, written to `data/`
 as **CSV + JSON + metadata**, and validated before it lands.
 
-**625,092 rows across 18 datasets, plus a 17-entry registry of external sources.**
+**1,113,239 rows across 27 datasets, plus a 17-entry registry of external sources.**
 No API key needed for any of it.
 
 The organising question is: *what happened in the world, and did money notice?* So the
-datasets come in two halves meant to be plotted against each other — things that happened
-(events, geopolitical risk, policy changes) and prices that could have responded (rates, FX,
-credit, equities, commodities).
+datasets come in three kinds, meant to be plotted against each other:
+
+- **Things that happened** — political events, elections, central bank press releases,
+  geopolitical risk, policy changes.
+- **How uncertain everyone was about what would happen next** — economic policy uncertainty
+  by country and category, trade policy uncertainty, the IMF world index, supply chain
+  pressure.
+- **What money did about it** — rates, FX, credit spreads, equities, commodities, crypto,
+  and speculative positioning.
+
+The third kind is mostly prices. `cftc_positioning` is the exception and the most useful
+single addition: it is the only free source here for what traders were actually holding,
+rather than the level at which the market cleared.
 
 ## Datasets in this repo
 
 | dataset | rows | span | what it is |
 |---|---|---|---|
 | `market_drivers` | 382,941 | 1919–2026 | 56 macro/market series from FRED, grouped by transmission channel |
+| `euro_area_drivers` | 274,912 | 1981–2026 | ECB policy rates, AAA curve, HICP, M3 and daily EUR FX for 31 currencies |
+| `cftc_positioning` | 105,054 | 1986–2026 | Weekly speculative positioning in 30 futures contracts |
 | `geopolitical_risk_daily` | 76,160 | 1985–2026 | Daily geopolitical risk index, threat/act split, moving averages |
+| `uncertainty_world` | 36,603 | 1952–2024 | IMF World Uncertainty Index, quarterly, 143 countries |
 | `geopolitical_risk` | 28,060 | 1900–2026 | Monthly geopolitical risk, global + 44 country indices |
 | `central_bank_rates` | 25,043 | 1945–2026 | Official policy rate, monthly, 49 central banks |
+| `trade_policy_uncertainty` | 24,540 | 1960–2026 | Trade policy uncertainty, monthly and daily |
+| `uncertainty_epu` | 22,184 | 1976–2026 | Economic policy uncertainty: 21 countries + US by category |
+| `crypto_daily` | 18,853 | 2012–2026 | Daily close and volume for five crypto pairs |
 | `population_by_country` | 17,195 | 1960–2024 | Total population, 265 countries and regions |
 | `sp500_monthly` | 16,812 | 1871–2026 | Shiller S&P 500 incl. CAPE, earnings, dividends |
 | `gdp_by_country` | 13,979 | 1960–2023 | GDP in current USD, 262 countries and regions |
@@ -29,10 +45,13 @@ credit, equities, commodities).
 | `vix_daily` | 9,274 | 1990–2026 | CBOE Volatility Index, daily close |
 | `oil_brent_daily` | 9,087 | 1987–2026 | Brent crude spot, daily (US EIA) |
 | `policy_changes` | 6,741 | 1946–2026 | Every hike and cut, with size and direction |
+| `fed_communications` | 4,630 | 2006–2026 | Every Fed Board press release, typed by the Fed |
 | `gold_monthly` | 2,324 | 1833–2026 | Gold price, monthly |
+| `elections` | 1,027 | 1900–2023 | National elections in 37 democracies, with turnout |
 | `us_10y_yield_monthly` | 880 | 1953–2026 | US 10-year Treasury yield, monthly |
 | `commodities_annual` | 670 | 1960–2025 | Gold, oil, gas, metals (World Bank Pink Sheet) |
 | `companies_top` | 369 | 2017–2023 | Largest companies by market cap, revenue, profit, assets |
+| `supply_chain_pressure` | 344 | 1998–2026 | NY Fed Global Supply Chain Pressure Index |
 | `georisk_events` | 11 | 1986–2022 | Geopolitical spikes labelled by the GPR authors |
 
 ### `market_drivers`: organised by how a shock reaches a price
@@ -62,17 +81,44 @@ after they stopped publishing — TEDRATE ends in 2022 and would look like a fla
 2026. Anything whose last observation is older than `STALE_DAYS` (400) is dropped with a
 printed note. One id (`WILL5000IND`) 404s and is skipped; 56 of 57 land.
 
-### The two event sources are not the same quality
+### `euro_area_drivers` concatenates with `market_drivers`
 
-`georisk_events` is 11 dates the GPR authors annotated as notable spikes — researcher-curated,
-with the index level on the day. `political_events` is 22 hand-verified rows plus ~12,200
-parsed from Wikipedia year pages. The `origin` column says which is which. They are kept as
-separate datasets rather than merged, because folding a curated register into a scraped one
-loses the only thing that made it worth having.
+It uses the same `channel` column on purpose, because FRED's free non-US coverage is thin and
+`market_drivers` alone makes every cross-asset question implicitly a question about America:
+
+```python
+both = pd.concat([
+    pd.read_csv("data/market_drivers.csv"),
+    pd.read_csv("data/euro_area_drivers.csv"),
+])
+rates = both[both.channel == "rates"]
+```
+
+ECB FX is EUR-based and fixed once daily — reference rates, not tradeable quotes. RUB ends in
+March 2022 where the ECB suspended publication, and is left ending there rather than filled.
+
+### The event sources are not the same quality, so they stay apart
+
+Four of them, in descending order of how much you should trust a single row:
+
+| dataset | rows | what it is |
+|---|---|---|
+| `fed_communications` | 4,630 | The Fed's own press releases, typed by the Fed |
+| `elections` | 1,027 | ParlGov: dated national elections with turnout |
+| `georisk_events` | 11 | Dates the GPR authors annotated as notable spikes |
+| `political_events` | 12,266 | 22 hand-verified rows + ~12,200 parsed from Wikipedia |
+
+They are kept separate rather than merged, because folding a curated register into a scraped
+one loses the only thing that made it worth having. The `origin` column says which is which.
 
 Conflict databases were checked first and all now require registration — UCDP returns 401,
 EM-DAT 404 without an account, ACLED needs a key. GPR is the free substitute and, for the
 question "did markets notice", arguably the better one: it measures attention, not casualties.
+
+**OFAC sanctions were tried and dropped.** The SDN list is a snapshot of who is *currently*
+designated; the only dates in it are entity attributes — dates of birth, passport validity —
+not the date an action was taken. Both `SDN.CSV` and `SDN_ENHANCED.XML` were checked. There is
+no timeline in there to extract, so none was invented.
 
 ## Use it
 
@@ -108,9 +154,9 @@ before it draws anything; thinned it is 30,593 rows and loads in about 2.5 s.
 
 That is enough to chart and useless for analysis, so it is recorded rather than hidden: every
 `meta.json` carries `json_rows`, `json_thinned`, and a `json_note` when true, and
-`build.py --check` asserts they match the files. Two of 18 datasets are thinned
-(`market_drivers`, `geopolitical_risk_daily`). **Use the CSV for anything real** — it is
-always complete.
+`build.py --check` asserts they match the files. Four of 27 datasets are thinned
+(`market_drivers`, `euro_area_drivers`, `cftc_positioning`, `geopolitical_risk_daily`).
+**Use the CSV for anything real** — it is always complete.
 
 ## Explore it
 
@@ -173,8 +219,10 @@ python build.py
 
 `--check` validates what is committed without touching the network; `--verify-links` checks
 every registry URL still resolves. `--check` verifies row counts match the metadata, columns
-haven't drifted, dates parse, JSON row counts and thinning flags are accurate, and every
-dataset records a source and a licence. That is the failure mode worth catching: a dataset
+haven't drifted, dates parse, JSON row counts and thinning flags are accurate, every dataset
+records a source and a licence, and every series the UI names as a default actually exists
+(the UI falls back silently otherwise, so a renamed series would degrade the opening view
+without any error). That is the failure mode worth catching: a dataset
 that quietly truncates or changes shape breaks everyone importing it.
 
 ## Sources and licences
@@ -182,6 +230,13 @@ that quietly truncates or changes shape breaks everyone importing it.
 | dataset | source | licence |
 |---|---|---|
 | market drivers | [FRED](https://fred.stlouisfed.org) (see `fred_id` per row) | Mostly US federal works (public domain); ICE BofA OAS indices carry ICE terms |
+| euro area drivers | [ECB Data Portal](https://data.ecb.europa.eu/) (see `ecb_key` per row) | Free use with attribution to the ECB |
+| CFTC positioning | [CFTC public reporting](https://publicreporting.cftc.gov/) | US federal work, public domain |
+| uncertainty (EPU, TPU, WUI) | [policyuncertainty.com](https://www.policyuncertainty.com/), [worlduncertaintyindex.com](https://worlduncertaintyindex.com/) | Free for research with attribution (Baker/Bloom/Davis; Caldara et al.; Ahir/Bloom/Furceri) |
+| supply chain pressure | [NY Fed GSCPI](https://www.newyorkfed.org/research/policy/gscpi) | Free use with attribution to the FRBNY |
+| crypto | [Bitstamp public API](https://www.bitstamp.net/api/) | Free to use, attribute Bitstamp |
+| elections | [ParlGov](https://www.parlgov.org/) | Free for research with attribution (Döring & Manow) |
+| Fed communications | [federalreserve.gov](https://www.federalreserve.gov/json/ne-press.json) | US federal work, public domain |
 | geopolitical risk, georisk events | [Caldara & Iacoviello GPR](https://www.matteoiacoviello.com/gpr.htm) | Free for research with attribution (Caldara & Iacoviello 2022, AER) |
 | central bank rates, policy changes | [BIS policy rates](https://data.bis.org/topics/CBPOL) | Free use with attribution |
 | commodities (annual) | [World Bank "Pink Sheet"](https://www.worldbank.org/en/research/commodity-markets) | CC BY 4.0 |
@@ -227,6 +282,35 @@ default so the span is visible rather than looking like the data begins in 1985.
 **`market_drivers` is US-centric.** FRED's free coverage of non-US macro is thin, so the
 rates, credit, housing and activity channels are US. The `fx` channel is global by
 construction, and `central_bank_rates` covers 49 countries.
+
+**Positioning is as of Tuesday but published Friday.** `cftc_positioning` carries the
+Tuesday date, because that is what the CFTC reports. Any analysis that joins it to a Tuesday
+price is using information nobody had until Friday — shift it forward three days first. This
+is the single easiest way to manufacture a fake edge out of this dataset.
+
+**One contract per commodity in `cftc_positioning`.** A commodity spans full-size, mini and
+multiple-exchange contracts with different multipliers; summing them is meaningless, so the
+most-reported contract is kept and named in the `contract` column. Net positioning is
+expressed as a share of open interest rather than raw contracts, because raw counts grow with
+the market and a 1995 net long is not comparable to a 2025 one.
+
+**The WUI is republished at a dated URL each year, and the widely-linked mirror is stale.**
+The copy on policyuncertainty.com ends in 2019Q3 while the live file runs to 2024Q4, and
+nothing in the stale file says so. `uncertainty.py` fetches every candidate and keeps whichever
+reaches furthest, then asserts the result extends past 2023 so a silent fallback fails the
+build.
+
+**`uncertainty_epu` country files each have their own layout.** The publisher ships one
+workbook per country with no common schema — some use Year/Month columns, some a `Date`
+column, some leave it unnamed, Chile uses `1993m1` strings, and Spain and Chile put a citation
+sentence where the header should be. The parser tries every sheet and header row and ranks the
+results by quality rather than row count, because pushing the header down yields *more* rows
+by melting the month column in as data. Getting this wrong is silent: an integer date column
+parses "successfully" as nanoseconds since epoch and lands every row on 1970-01-01.
+
+**`crypto_daily` is one exchange's tape,** not a volume-weighted composite, and 2012–2013
+prints are thin and noisy. Coinbase was tried first and its public candle endpoint ignores the
+start/end parameters, returning only the last 300 days.
 
 **Policy-change severity is a rule, not a judgement:** ≥75bp major, ≥25bp standard, <25bp
 minor. Stated so you can disagree with it.

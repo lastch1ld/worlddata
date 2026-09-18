@@ -12,8 +12,9 @@ DATA = ROOT / "data"
 
 
 def build():
-    from collectors import (commodities, companies, datahub, events, fred, georisk,
-                            rates, registry)
+    from collectors import (actions, commodities, companies, cot, crypto, datahub, ecb,
+                            events, fred, georisk, rates, registry, supplychain,
+                            uncertainty)
     print("building datasets\n")
     rates.collect()
     commodities.collect()
@@ -21,7 +22,13 @@ def build():
     events.collect()          # policy changes derive from rates, so this runs last
     datahub.collect()
     fred.collect()
+    ecb.collect()
     georisk.collect()
+    uncertainty.collect()
+    cot.collect()
+    supplychain.collect()
+    crypto.collect()
+    actions.collect()
     registry.collect()
     manifest()
 
@@ -69,7 +76,34 @@ def check():
         assert meta.get("licence"), f"{name}: no licence recorded"
         assert meta.get("source"), f"{name}: no source recorded"
         print(f"  ok  {name:<22}{len(df):>8,} rows")
+    check_ui_defaults()
     print(f"\n{len(metas)} datasets validated")
+
+
+def check_ui_defaults():
+    """Every series named in the UI's DEFAULTS must actually exist.
+
+    The UI silently falls back to the first five series alphabetically when a default does
+    not resolve, so a renamed series degrades the opening view without any error - which is
+    exactly how `China EPU: China News Based EPU` sat there wrong (the real name has a
+    hyphen). Cheap to check, invisible to miss.
+    """
+    import re
+    html = (ROOT / "web" / "index.html").read_text(encoding="utf-8")
+    block = re.search(r"const DEFAULTS = \{(.*?)\n\};", html, re.S)
+    if not block:
+        return
+    known = {d["name"]: set(d.get("series", []))
+             for d in json.loads((DATA / "manifest.json").read_text(encoding="utf-8"))["datasets"]}
+    bad = []
+    for m in re.finditer(r"^\s*(\w+):\s*\[(.*?)\],?\s*$", block.group(1), re.M):
+        ds, items = m.group(1), re.findall(r"'([^']*)'", m.group(2))
+        if ds not in known:
+            bad.append(f"{ds}: no such dataset")
+            continue
+        bad += [f"{ds}: no series {it!r}" for it in items if it not in known[ds]]
+    assert not bad, "UI defaults do not resolve:\n  " + "\n  ".join(bad)
+    print("  ok  web/index.html DEFAULTS resolve")
 
 
 if __name__ == "__main__":
