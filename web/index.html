@@ -86,8 +86,16 @@ a{color:inherit}
 </div>
 
 <div class="card">
-  <h2 style="font-size:16px;font-weight:500;margin:0 0 .5rem">Datasets</h2>
+  <h2 style="font-size:16px;font-weight:500;margin:0 0 .5rem">Datasets in this repo</h2>
   <div id="cat"></div>
+</div>
+
+<div class="card">
+  <h2 style="font-size:16px;font-weight:500;margin:0 0 .3rem">Registry</h2>
+  <p class="muted" style="margin:0 0 .6rem">Open datasets we index but deliberately do not
+  copy — share-alike terms, size, or how fast they change. Fetched live from source, so they
+  stay correct. <code>collectors.registry.load("key")</code> returns a DataFrame.</p>
+  <div id="reg"></div>
 </div>
 </div>
 
@@ -101,7 +109,16 @@ const DEFAULTS = {
   central_bank_rates: ['United States','Euro area','United Kingdom','Switzerland','Japan'],
   policy_changes:     ['United States','Euro area','United Kingdom','Switzerland'],
   commodities_annual: ['gold','oil_brent','gas_us','gas_europe'],
-  companies_top:      ['market_cap_top10','revenue_top10','profit_top10']
+  companies_top:      ['market_cap_top10','revenue_top10','profit_top10'],
+  gdp_by_country:       ['United States','China','Germany','Japan','Switzerland'],
+  population_by_country:['United States','China','India','Germany','Switzerland'],
+  inflation_by_country: ['United States','Germany','Switzerland','Japan'],
+  sp500_monthly:        ['SP500','Earnings','Dividend'],
+  oil_brent_daily:      ['brent'],
+  oil_wti_daily:        ['wti'],
+  gold_monthly:         ['gold'],
+  vix_daily:            ['vix_close'],
+  us_10y_yield_monthly: ['us_10y']
 };
 const S = {ds:null, rows:[], meta:null, events:[], chart:null, log:false, showEvt:true};
 const $ = id => document.getElementById(id);
@@ -124,6 +141,15 @@ async function boot(){
     + man.datasets.map(d=>`<tr><td><a href="${BASE}${d.name}.csv">${d.name}.csv</a> · <a href="${BASE}${d.name}.json">json</a></td>`
       + `<td class="n">${d.rows.toLocaleString()}</td><td class="muted">${(d.span||['','']).join(' → ')}</td>`
       + `<td class="muted">${d.licence||''}</td></tr>`).join('') + '</tbody></table>';
+  try {
+    const reg = await j('registry.json');
+    $('reg').innerHTML = '<table><thead><tr><th>key</th><th>what</th><th>publisher</th>'
+      + '<th>licence</th><th>where</th></tr></thead><tbody>'
+      + reg.map(e=>`<tr><td><code>${e.key}</code>${e.vendored?' <span class="muted">(also vendored)</span>':''}</td>`
+        + `<td>${e.title}</td><td class="muted">${e.publisher}</td><td class="muted">${e.licence}</td>`
+        + `<td><a href="https://github.com/${e.repo}" target="_blank" rel="noopener">${e.repo}</a></td></tr>`).join('')
+      + '</tbody></table>';
+  } catch(e){ $('reg').innerHTML = '<p class="muted">registry.json not built yet — run python build.py</p>'; }
   $('ds').onchange = load; ['from','to'].forEach(k=>$(k).oninput = draw);
   $('series').onchange = draw; $('sev').onchange = draw;
   $('log').onclick = e => { if(!S.canLog) return; S.log=!S.log; e.target.setAttribute('aria-pressed',S.log); draw(); };

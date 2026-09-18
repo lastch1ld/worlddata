@@ -1,0 +1,22 @@
+{
+ "name": "oil_brent_daily",
+ "rows": 9087,
+ "columns": [
+  "date",
+  "series",
+  "value",
+  "unit",
+  "source_repo"
+ ],
+ "source": "https://github.com/datasets/oil-prices",
+ "licence": "ODC-PDDL-1.0",
+ "note": "Brent crude spot price, daily, from US EIA.",
+ "retrieved": "2026-09-18",
+ "span": [
+  "1987-05-20",
+  "2026-09-15"
+ ],
+ "series": [
+  "brent"
+ ]
+}

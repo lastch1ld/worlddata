@@ -1,0 +1,245 @@
+[
+ {
+  "key": "owid-energy",
+  "title": "Energy: production, consumption, mix, by country",
+  "publisher": "Our World in Data",
+  "licence": "CC-BY-4.0",
+  "format": "csv",
+  "url": "https://raw.githubusercontent.com/owid/energy-data/master/owid-energy-data.csv",
+  "repo": "owid/energy-data",
+  "topics": [
+   "energy",
+   "country",
+   "annual"
+  ],
+  "vendored": false
+ },
+ {
+  "key": "owid-co2",
+  "title": "CO2 and greenhouse gas emissions by country",
+  "publisher": "Our World in Data",
+  "licence": "CC-BY-4.0",
+  "format": "csv",
+  "url": "https://raw.githubusercontent.com/owid/co2-data/master/owid-co2-data.csv",
+  "repo": "owid/co2-data",
+  "topics": [
+   "climate",
+   "country",
+   "annual"
+  ],
+  "vendored": false
+ },
+ {
+  "key": "owid-covid",
+  "title": "COVID-19 cases, deaths, testing, vaccination",
+  "publisher": "Our World in Data",
+  "licence": "CC-BY-4.0",
+  "format": "csv",
+  "url": "https://raw.githubusercontent.com/owid/covid-19-data/master/public/data/owid-covid-data.csv",
+  "repo": "owid/covid-19-data",
+  "topics": [
+   "health",
+   "country",
+   "daily"
+  ],
+  "vendored": false
+ },
+ {
+  "key": "sp500-constituents",
+  "title": "S&P 500 constituents with sector and financials",
+  "publisher": "datasets (Frictionless)",
+  "licence": "ODC-PDDL-1.0",
+  "format": "csv",
+  "url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies/main/data/constituents.csv",
+  "repo": "datasets/s-and-p-500-companies",
+  "topics": [
+   "equities",
+   "reference"
+  ],
+  "vendored": false
+ },
+ {
+  "key": "country-codes",
+  "title": "ISO 3166 / currency / dialing codes crosswalk",
+  "publisher": "datasets (Frictionless)",
+  "licence": "ODC-PDDL-1.0",
+  "format": "csv",
+  "url": "https://raw.githubusercontent.com/datasets/country-codes/main/data/country-codes.csv",
+  "repo": "datasets/country-codes",
+  "topics": [
+   "reference"
+  ],
+  "vendored": false
+ },
+ {
+  "key": "currency-codes",
+  "title": "ISO 4217 currency codes",
+  "publisher": "datasets (Frictionless)",
+  "licence": "ODC-PDDL-1.0",
+  "format": "csv",
+  "url": "https://raw.githubusercontent.com/datasets/currency-codes/main/data/codes-all.csv",
+  "repo": "datasets/currency-codes",
+  "topics": [
+   "reference"
+  ],
+  "vendored": false
+ },
+ {
+  "key": "gdp",
+  "title": "GDP in current USD by country and year",
+  "publisher": "World Bank via datasets",
+  "licence": "CC-BY-4.0",
+  "format": "csv",
+  "url": "https://raw.githubusercontent.com/datasets/gdp/main/data/gdp.csv",
+  "repo": "datasets/gdp",
+  "topics": [
+   "macro",
+   "country",
+   "annual"
+  ],
+  "vendored": true
+ },
+ {
+  "key": "population",
+  "title": "Population by country and year",
+  "publisher": "World Bank via datasets",
+  "licence": "ODC-PDDL-1.0",
+  "format": "csv",
+  "url": "https://raw.githubusercontent.com/datasets/population/main/data/population.csv",
+  "repo": "datasets/population",
+  "topics": [
+   "macro",
+   "country",
+   "annual"
+  ],
+  "vendored": true
+ },
+ {
+  "key": "inflation",
+  "title": "Consumer price inflation by country and year",
+  "publisher": "World Bank via datasets",
+  "licence": "ODC-PDDL-1.0",
+  "format": "csv",
+  "url": "https://raw.githubusercontent.com/datasets/inflation/main/data/inflation-consumer.csv",
+  "repo": "datasets/inflation",
+  "topics": [
+   "macro",
+   "country",
+   "annual"
+  ],
+  "vendored": true
+ },
+ {
+  "key": "oil-prices",
+  "title": "Brent and WTI crude prices",
+  "publisher": "US EIA via datasets",
+  "licence": "ODC-PDDL-1.0",
+  "format": "csv",
+  "url": "https://raw.githubusercontent.com/datasets/oil-prices/main/data/brent-daily.csv",
+  "repo": "datasets/oil-prices",
+  "topics": [
+   "commodities",
+   "daily"
+  ],
+  "vendored": true
+ },
+ {
+  "key": "vix",
+  "title": "CBOE Volatility Index, daily OHLC",
+  "publisher": "CBOE via datasets",
+  "licence": "ODC-PDDL-1.0",
+  "format": "csv",
+  "url": "https://raw.githubusercontent.com/datasets/finance-vix/main/data/vix-daily.csv",
+  "repo": "datasets/finance-vix",
+  "topics": [
+   "volatility",
+   "daily"
+  ],
+  "vendored": true
+ },
+ {
+  "key": "sp500-shiller",
+  "title": "Shiller S&P 500 monthly with CAPE back to 1871",
+  "publisher": "Robert Shiller via datasets",
+  "licence": "ODC-PDDL-1.0",
+  "format": "csv",
+  "url": "https://raw.githubusercontent.com/datasets/s-and-p-500/main/data/data.csv",
+  "repo": "datasets/s-and-p-500",
+  "topics": [
+   "equities",
+   "monthly"
+  ],
+  "vendored": true
+ },
+ {
+  "key": "gold-prices",
+  "title": "Gold price, monthly and annual",
+  "publisher": "datasets (Frictionless)",
+  "licence": "ODC-PDDL-1.0",
+  "format": "csv",
+  "url": "https://raw.githubusercontent.com/datasets/gold-prices/main/data/monthly.csv",
+  "repo": "datasets/gold-prices",
+  "topics": [
+   "commodities",
+   "monthly"
+  ],
+  "vendored": true
+ },
+ {
+  "key": "us-10y",
+  "title": "US 10-year Treasury yield, monthly",
+  "publisher": "datasets (Frictionless)",
+  "licence": "odc-pddl",
+  "format": "csv",
+  "url": "https://raw.githubusercontent.com/datasets/bond-yields-us-10y/main/data/monthly.csv",
+  "repo": "datasets/bond-yields-us-10y",
+  "topics": [
+   "rates",
+   "monthly"
+  ],
+  "vendored": true
+ },
+ {
+  "key": "geo-countries",
+  "title": "Country polygons as GeoJSON",
+  "publisher": "datasets (Frictionless)",
+  "licence": "ODC-PDDL-1.0",
+  "format": "geojson",
+  "url": "https://raw.githubusercontent.com/datasets/geo-countries/main/data/countries.geojson",
+  "repo": "datasets/geo-countries",
+  "topics": [
+   "geo",
+   "reference"
+  ],
+  "vendored": false
+ },
+ {
+  "key": "world-cities",
+  "title": "Major world cities with coordinates",
+  "publisher": "datasets (Frictionless)",
+  "licence": "ODC-PDDL-1.0",
+  "format": "csv",
+  "url": "https://raw.githubusercontent.com/datasets/world-cities/main/data/world-cities.csv",
+  "repo": "datasets/world-cities",
+  "topics": [
+   "geo",
+   "reference"
+  ],
+  "vendored": false
+ },
+ {
+  "key": "airport-codes",
+  "title": "Airports with IATA/ICAO codes and coordinates",
+  "publisher": "datasets (Frictionless)",
+  "licence": "ODC-PDDL-1.0",
+  "format": "csv",
+  "url": "https://raw.githubusercontent.com/datasets/airport-codes/main/data/airport-codes.csv",
+  "repo": "datasets/airport-codes",
+  "topics": [
+   "geo",
+   "transport",
+   "reference"
+  ],
+  "vendored": false
+ }
+]

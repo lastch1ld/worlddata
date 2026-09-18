@@ -1,0 +1,22 @@
+{
+ "name": "gold_monthly",
+ "rows": 2324,
+ "columns": [
+  "date",
+  "series",
+  "value",
+  "unit",
+  "source_repo"
+ ],
+ "source": "https://github.com/datasets/gold-prices",
+ "licence": "ODC-PDDL-1.0",
+ "note": "Gold price, monthly.",
+ "retrieved": "2026-09-18",
+ "span": [
+  "1833-01-01",
+  "2026-08-01"
+ ],
+ "series": [
+  "gold"
+ ]
+}

@@ -1,0 +1,30 @@
+{
+ "name": "sp500_monthly",
+ "rows": 16812,
+ "columns": [
+  "date",
+  "series",
+  "value",
+  "unit",
+  "source_repo"
+ ],
+ "source": "https://github.com/datasets/s-and-p-500",
+ "licence": "ODC-PDDL-1.0",
+ "note": "Shiller S&P 500 monthly series including CAPE (PE10). Units differ per series.",
+ "retrieved": "2026-09-18",
+ "span": [
+  "1871-01-01",
+  "2026-08-01"
+ ],
+ "series": [
+  "Consumer Price Index",
+  "Dividend",
+  "Earnings",
+  "Long Interest Rate",
+  "PE10",
+  "Real Dividend",
+  "Real Earnings",
+  "Real Price",
+  "SP500"
+ ]
+}

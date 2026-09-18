@@ -12,12 +12,14 @@ DATA = ROOT / "data"
 
 
 def build():
-    from collectors import commodities, companies, events, rates
+    from collectors import commodities, companies, datahub, events, rates, registry
     print("building datasets\n")
     rates.collect()
     commodities.collect()
     companies.collect()
     events.collect()          # policy changes derive from rates, so this runs last
+    datahub.collect()
+    registry.collect()
     manifest()
 
 
@@ -65,5 +67,13 @@ def check():
 if __name__ == "__main__":
     p = argparse.ArgumentParser()
     p.add_argument("--check", action="store_true")
+    p.add_argument("--verify-links", action="store_true",
+                   help="GET every registry URL; a dead link fails here, not for a user")
     a = p.parse_args()
-    check() if a.check else build()
+    if a.verify_links:
+        from collectors import registry
+        registry.verify()
+    elif a.check:
+        check()
+    else:
+        build()
