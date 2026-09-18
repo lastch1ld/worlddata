@@ -1,0 +1,10 @@
+# Extra dependencies for findings/run_analysis.py only.
+# The collectors in ../collectors do not need these; keep them out of
+# ../requirements.txt so a data refresh stays a light install.
+pandas>=2.0
+numpy>=1.26
+scipy>=1.11
+statsmodels>=0.14
+matplotlib>=3.8
+scikit-learn>=1.4
+networkx>=3.2
