@@ -13,11 +13,15 @@ Severity is assigned by size of move, which is a rule anyone can check:
     >= 25bp  standard
     <  25bp  minor
 
-POLITICAL EVENTS are CURATED in events_seed.csv, because "major" and "minor" are editorial
-judgements that no API will make for you, and an automated feed (GDELT and similar) produces
-enormous volume with no usable severity ranking. Every row carries a source URL so a reader
-can check it. The seed is deliberately small and obvious - it is a starting point to extend,
-not a claim to be comprehensive.
+POLITICAL EVENTS come from two places, merged:
+
+  events_seed.csv         hand-curated, verified, severity set by a human. Wins on conflict.
+  Wikipedia year pages    ~12,000 dated events, 1946 onwards, parsed by events_wiki.py
+
+The scraped rows carry a severity assigned by the stated HIGH_IMPACT rule in events_wiki.py,
+not by a person - about 11% come out "major". That is a mechanical filter, not a judgement,
+and it is in the source so you can change it. GDELT and similar feeds were rejected for the
+opposite reason: enormous volume with no usable severity ranking at all.
 
 Licence: derived policy changes inherit the BIS terms. Curated rows are CC0 - they are dates
 and plain facts - but each cites a source for verification.
@@ -57,8 +61,45 @@ def collect_policy_changes(min_bp=1.0):
     return out.sort_values("date")
 
 
-def collect_political():
-    """Curated political events. Small on purpose; extend events_seed.csv to grow it."""
+def collect_political(scrape=True, start=1946, polite=0.4):
+    """Curated events, plus the much larger set parsed from Wikipedia year pages.
+
+    The curated rows are hand-verified and win on conflict: if the same event appears in
+    both, the curated severity, region and source survive. Scraped rows fill in everything
+    the seed does not cover, which is almost all of it.
+    """
+    curated = _read_seed()
+    curated["origin"] = "curated"
+    if not scrape:
+        return curated
+
+    from . import events_wiki
+    wiki = events_wiki.collect(start=start, polite=polite)
+    wiki["origin"] = "wikipedia-year-page"
+    wiki["series"] = wiki["category"]
+    wiki["value"] = 1.0
+    wiki["unit"] = "event"
+
+    # Drop scraped rows that duplicate a curated one. Same day plus a shared distinctive
+    # word is enough: the two sources word things differently, so exact-title matching
+    # would let near-duplicates through.
+    key = set()
+    for _, r in curated.iterrows():
+        words = {w.lower() for w in str(r["title"]).split() if len(w) > 6}
+        key.add((str(r["date"])[:10], frozenset(words)))
+    def dup(row):
+        w = {x.lower() for x in str(row["title"]).split() if len(x) > 6}
+        for d, kw in key:
+            if d == str(row["date"])[:10] and (w & kw):
+                return True
+        return False
+    wiki = wiki[~wiki.apply(dup, axis=1)]
+
+    both = pd.concat([curated, wiki], ignore_index=True)
+    return both.sort_values("date").reset_index(drop=True)
+
+
+def _read_seed():
     assert SEED.exists(), f"missing {SEED}"
     e = pd.read_csv(SEED)
     need = {"date", "title", "category", "severity", "region", "source_url"}
@@ -83,10 +124,14 @@ def collect():
           note=("Every policy-rate change. severity by move size: >=75bp major, "
                 ">=25bp standard, <25bp minor."))
     ev = collect_political()
+    n_cur = int((ev["origin"] == "curated").sum())
     write("political_events", ev,
-          source="curated; every row carries its own source_url",
-          licence="CC0 for the compilation; see source_url per row",
-          note="Hand-curated. Severity is editorial. Extend collectors/events_seed.csv.")
+          source="collectors/events_seed.csv (curated) + English Wikipedia year pages",
+          licence="CC0 for the curated compilation; Wikipedia text CC BY-SA 4.0",
+          note=(f"{n_cur} hand-curated rows (verified, win on conflict) plus "
+                f"{len(ev) - n_cur} parsed from Wikipedia year articles. Severity for "
+                "scraped rows follows the HIGH_IMPACT rule in events_wiki.py, not a "
+                "human judgement. Extend collectors/events_seed.csv to add curated rows."))
     return pol, ev
 
 

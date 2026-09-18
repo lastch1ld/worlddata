@@ -58,6 +58,14 @@ a{color:inherit}
       <label for="to">To year</label>
       <input id="to" type="number" value="2026" min="1946" max="2026" step="1">
     </div>
+    <div>
+      <label for="sev">Events shown</label>
+      <select id="sev">
+        <option value="major">major only</option>
+        <option value="all">all severities</option>
+        <option value="none">none</option>
+      </select>
+    </div>
   </div>
   <div class="row">
     <button id="log" aria-pressed="false">Log scale</button>
@@ -117,7 +125,7 @@ async function boot(){
       + `<td class="n">${d.rows.toLocaleString()}</td><td class="muted">${(d.span||['','']).join(' → ')}</td>`
       + `<td class="muted">${d.licence||''}</td></tr>`).join('') + '</tbody></table>';
   $('ds').onchange = load; ['from','to'].forEach(k=>$(k).oninput = draw);
-  $('series').onchange = draw;
+  $('series').onchange = draw; $('sev').onchange = draw;
   $('log').onclick = e => { if(!S.canLog) return; S.log=!S.log; e.target.setAttribute('aria-pressed',S.log); draw(); };
   $('evt').onclick = e => { S.showEvt=!S.showEvt; e.target.setAttribute('aria-pressed',S.showEvt); draw(); };
   $('dl').onclick = () => window.open(BASE + S.ds + '.csv','_blank');
@@ -176,8 +184,17 @@ function draw(){
             pointHoverRadius:5, tension:.1, spanGaps:true};
   });
 
-  const evts = S.showEvt ? S.events.filter(e=>{const y=+String(e.date).slice(0,4); return y>=from&&y<=to;}) : [];
-  const ann = evts.map(e=>{
+  // 12,000 events drawn as vertical lines is a black rectangle, not a chart. Filter by
+  // severity first (default: major only), then hard-cap what gets drawn and say how many
+  // were left out, so the cap is visible rather than silent.
+  const sev = $('sev').value;
+  let evts = (S.showEvt && sev!=='none')
+    ? S.events.filter(e=>{const y=+String(e.date).slice(0,4);
+        return y>=from && y<=to && (sev==='all' || e.severity==='major');}) : [];
+  const MAX_LINES = 80;
+  const hidden = Math.max(0, evts.length - MAX_LINES);
+  const drawn = evts.slice(0, MAX_LINES);
+  const ann = drawn.map(e=>{
     const idx = nearest(dates, String(e.date));
     return idx<0 ? null : {x:idx, title:e.title, date:e.date, cat:e.category, url:e.source_url};
   }).filter(Boolean);
@@ -187,7 +204,8 @@ function draw(){
     + (ann.length?`<span><span class="sw" style="background:var(--mut);height:12px;width:2px"></span>${ann.length} events</span>`:'')
     + (uSel.size>1?`<span class="muted">mixed units (${[...uSel].join(', ')}) — log scale ${S.log?'on':'off, values are not comparable'}</span>`:'')
     + (S.canLog===false?`<span class="muted">signed values — linear axis only</span>`:'')
-    + (S.aggregated?`<span class="muted">summed across all entities per year (combined top 10)</span>`:'');
+    + (S.aggregated?`<span class="muted">summed across all entities per year (combined top 10)</span>`:'')
+    + (hidden?`<span class="muted">${hidden.toLocaleString()} more events in range, not drawn</span>`:'');
 
   const mut = cssVar('--text-muted') || '#898781';
   const grid = matchMedia('(prefers-color-scheme:dark)').matches ? '#2c2c2a' : '#e1e0d9';
@@ -213,9 +231,11 @@ function draw(){
                   ticks:{color:mut,font:{size:11},maxRotation:0,autoSkip:true,maxTicksLimit:10,
                          callback:i=>String(dates[i]).slice(0,4)}}}}});
 
+  const tableRows = evts.slice(0, 200);
   $('tbl').innerHTML = evts.length
-    ? '<table><thead><tr><th>date</th><th>event</th><th>category</th><th>severity</th><th>source</th></tr></thead><tbody>'
-      + evts.sort((a,b)=>String(a.date).localeCompare(String(b.date))).map(e=>
+    ? `<p class="muted">${evts.length.toLocaleString()} events in range${evts.length>200?', showing first 200':''}</p>`
+      + '<table><thead><tr><th>date</th><th>event</th><th>category</th><th>severity</th><th>source</th></tr></thead><tbody>'
+      + tableRows.sort((a,b)=>String(a.date).localeCompare(String(b.date))).map(e=>
         `<tr><td class="muted">${e.date}</td><td>${e.title}</td><td class="muted">${e.category}</td>`
         + `<td class="muted">${e.severity}</td><td><a href="${e.source_url}" target="_blank" rel="noopener">link</a></td></tr>`).join('')
       + '</tbody></table>'

@@ -212,7 +212,7 @@
   },
   {
    "name": "political_events",
-   "rows": 22,
+   "rows": 12266,
    "columns": [
     "date",
     "title",
@@ -222,22 +222,27 @@
     "source_url",
     "series",
     "value",
-    "unit"
+    "unit",
+    "origin"
    ],
-   "source": "curated; every row carries its own source_url",
-   "licence": "CC0 for the compilation; see source_url per row",
-   "note": "Hand-curated. Severity is editorial. Extend collectors/events_seed.csv.",
+   "source": "collectors/events_seed.csv (curated) + English Wikipedia year pages",
+   "licence": "CC0 for the curated compilation; Wikipedia text CC BY-SA 4.0",
+   "note": "22 hand-curated rows (verified, win on conflict) plus 12244 parsed from Wikipedia year articles. Severity for scraped rows follows the HIGH_IMPACT rule in events_wiki.py, not a human judgement. Extend collectors/events_seed.csv to add curated rows.",
    "retrieved": "2026-09-18",
    "span": [
-    "1997-07-02",
-    "2024-11-05"
+    "1946-01-07",
+    "2026-12-22"
    ],
    "series": [
     "conflict",
+    "disaster",
     "election",
     "financial",
     "health",
-    "policy"
+    "legal",
+    "other",
+    "policy",
+    "science"
    ]
   }
  ]

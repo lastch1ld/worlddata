@@ -4,7 +4,7 @@ Free, importable datasets about the world economy, with a browser UI to explore 
 Every dataset is built by a script in `collectors/`, written to `data/` as **CSV + JSON +
 metadata**, and validated before it lands.
 
-**32,845 rows across 5 datasets.** No API key needed for any of it.
+**45,089 rows across 5 datasets.** No API key needed for any of it.
 
 ## What's in here
 
@@ -14,7 +14,7 @@ metadata**, and validated before it lands.
 | `policy_changes` | 6,741 | 1946–2026 | Every hike and cut, with size and direction |
 | `commodities_annual` | 670 | 1960–2024 | Gold, oil (Brent/WTI/Dubai), gas (US/EU/Japan LNG), metals |
 | `companies_top` | 369 | 2017–2023 | Largest companies by market cap, revenue, profit, assets |
-| `political_events` | 22 | 1997–2024 | Curated major political and financial events |
+| `political_events` | 12,266 | 1946–2026 | World events: 22 hand-curated + ~12.2k parsed from Wikipedia year pages |
 
 ## Use it
 
@@ -51,7 +51,7 @@ python -m http.server 8777
 Pick a dataset, pick series, set a year range. Political events overlay as dashed vertical
 lines on any chart, and list underneath with source links.
 
-The UI handles three things that otherwise produce quietly wrong charts:
+The UI handles four things that otherwise produce quietly wrong charts:
 
 - **Mixed units** — gold is ~$2,000/oz and US gas is ~$3/mmbtu. On one linear axis gas is
   invisible, so the chart switches to log and says why.
@@ -59,6 +59,9 @@ The UI handles three things that otherwise produce quietly wrong charts:
   values silently. Log is disabled for those datasets, not just discouraged.
 - **Many rows per date** — `companies_top` holds ten companies per year per metric. Keying
   a chart on date alone keeps only the last one; rows are summed and labelled "combined".
+- **Too many events** — 12,266 events drawn as vertical lines is a black rectangle, not a
+  chart. The overlay defaults to `major` only (1,367 rows), caps drawing at 80 lines, and
+  states how many were left out rather than silently truncating.
 
 ## Rebuild it
 
@@ -79,7 +82,7 @@ dataset that quietly truncates or changes shape breaks everyone importing it.
 | central bank rates, policy changes | [BIS policy rates](https://data.bis.org/topics/CBPOL) | Free use with attribution |
 | commodities | [World Bank "Pink Sheet"](https://www.worldbank.org/en/research/commodity-markets) | CC BY 4.0 |
 | companies | Wikipedia (Forbes Global 2000, largest by revenue) | CC BY-SA 4.0 |
-| political events | Curated; every row carries `source_url` | CC0 for the compilation |
+| political events | Curated seed + [English Wikipedia year pages](https://en.wikipedia.org/wiki/2008) | CC0 for the curated compilation; Wikipedia text CC BY-SA 4.0 |
 
 Where an official bulk file exists it is used instead of scraping. The BIS and World Bank
 files are authoritative, carry explicit units, and stay correct when revised — scraped price
@@ -94,9 +97,19 @@ the list goes, and different depths are kept in different series so they never g
 together. Getting to a genuine top 100 per year needs SEC EDGAR bulk filings (free, but you
 assemble market cap from shares × price per company per year) or a paid vendor.
 
-**Political events are editorial.** "Major" and "minor" are judgements, not data. The seed
-list is deliberately small and obvious, and every row cites a source. Extend
-`collectors/events_seed.csv` — it is a plain CSV with a validated schema.
+**Political events mix two qualities.** 22 rows are hand-curated and verified; ~12,200 are
+parsed from English Wikipedia year pages. Scraped rows get their severity from the stated
+`HIGH_IMPACT` rule in `events_wiki.py` (about 11% come out `major`) — a mechanical filter,
+not a human judgement. The `origin` column tells you which is which, and curated rows win
+on conflict. English Wikipedia also over-represents the anglophone world, and "notable
+enough for the year page" is itself a volunteer judgement. Treat it as a broad timeline to
+plot against, not a register of record. Extend `collectors/events_seed.csv` to add verified
+rows — it is a plain CSV with a validated schema.
+
+About 39% of scraped events land in category `other`. That is mostly genuinely
+miscellaneous (sport, culture, product launches); `collect()` asserts the share stays under
+55% so a Wikipedia markup change that breaks classification fails the build instead of
+quietly shipping.
 
 **Policy-change severity is a rule, not a judgement:** ≥75bp major, ≥25bp standard, <25bp
 minor. Stated so you can disagree with it.
