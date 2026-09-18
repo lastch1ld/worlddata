@@ -38,7 +38,7 @@ a{color:inherit}
 <body>
 <div class="wrap">
 <h1>worlddata</h1>
-<p class="sub">Free, importable datasets — central bank rates, policy changes, commodity prices, largest companies, political events. Everything below reads the same JSON you can download.</p>
+<p class="sub">Free, importable datasets — 625,092 rows: macro and market drivers, geopolitical risk, central bank rates and policy changes, commodity prices, largest companies, political events. Everything below reads the same JSON you can download; the CSV is the complete version.</p>
 
 <div class="card">
   <div class="ctl">
@@ -52,11 +52,11 @@ a{color:inherit}
     </div>
     <div>
       <label for="from">From year</label>
-      <input id="from" type="number" value="1990" min="1946" max="2026" step="1">
+      <input id="from" type="number" value="1990" min="1833" max="2026" step="1">
     </div>
     <div>
       <label for="to">To year</label>
-      <input id="to" type="number" value="2026" min="1946" max="2026" step="1">
+      <input id="to" type="number" value="2026" min="1833" max="2026" step="1">
     </div>
     <div>
       <label for="sev">Events shown</label>
@@ -118,7 +118,13 @@ const DEFAULTS = {
   oil_wti_daily:        ['wti'],
   gold_monthly:         ['gold'],
   vix_daily:            ['vix_close'],
-  us_10y_yield_monthly: ['us_10y']
+  us_10y_yield_monthly: ['us_10y'],
+  market_drivers:       ['USD per EUR','US 10-year yield','VIX','US high-yield OAS'],
+  // GPR (modern) starts 1985; GPRH (historical) goes back to 1900. Default shows both
+  // so the long span is visible instead of looking like the data begins in 1985.
+  geopolitical_risk:    ['Geopolitical risk (historical)','Geopolitical risk (global)','Geopolitical threats','Geopolitical acts'],
+  geopolitical_risk_daily: ['Geopolitical risk, 30-day average'],
+  georisk_events:       ['geopolitical spike']
 };
 const S = {ds:null, rows:[], meta:null, events:[], chart:null, log:false, showEvt:true};
 const $ = id => document.getElementById(id);
