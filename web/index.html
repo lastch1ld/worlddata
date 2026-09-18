@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>worlddata — explore</title>
+<style>
+:root{--bg:#fcfcfb;--card:#fff;--ink:#0b0b0b;--sub:#52514e;--mut:#898781;--line:#e1e0d9;--r:8px}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#141413;--card:#1a1a19;--ink:#f0efec;--sub:#c3c2b7;--mut:#898781;--line:#2c2c2a}}
+:root[data-theme=dark]{--bg:#141413;--card:#1a1a19;--ink:#f0efec;--sub:#c3c2b7;--mut:#898781;--line:#2c2c2a}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 15px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
+.wrap{max-width:1180px;margin:0 auto;padding:2rem 16px 4rem}
+h1{font-size:24px;font-weight:500;margin:0 0 .2rem}
+.sub{color:var(--mut);font-size:13.5px;margin:0 0 1.5rem}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:1rem 1.15rem;margin:0 0 1.25rem}
+.ctl{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px;align-items:end}
+label{display:block;font-size:12px;color:var(--mut);margin:0 0 4px}
+select,input{width:100%;padding:7px 9px;font:inherit;font-size:13.5px;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:var(--r)}
+select[multiple]{height:112px}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:10px}
+button{padding:6px 12px;font:inherit;font-size:13px;color:var(--ink);background:transparent;border:1px solid var(--line);border-radius:var(--r);cursor:pointer}
+button:hover{background:var(--bg)}
+button[aria-pressed=true]{border-color:var(--ink)}
+button:disabled{opacity:.4;cursor:not-allowed}
+.chart{position:relative;width:100%;height:440px}
+.legend{display:flex;flex-wrap:wrap;gap:12px;margin:0 0 10px;font-size:12px;color:var(--sub)}
+.legend span{display:flex;align-items:center;gap:5px}
+.sw{width:15px;height:3px;flex:none;border-radius:2px}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th,td{text-align:left;padding:6px 9px;border-bottom:1px solid var(--line);vertical-align:top}
+th{color:var(--mut);font-weight:500;font-size:12px}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
+a{color:inherit}
+.muted{color:var(--mut);font-size:12.5px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>worlddata</h1>
+<p class="sub">Free, importable datasets — central bank rates, policy changes, commodity prices, largest companies, political events. Everything below reads the same JSON you can download.</p>
+
+<div class="card">
+  <div class="ctl">
+    <div>
+      <label for="ds">Dataset</label>
+      <select id="ds"></select>
+    </div>
+    <div>
+      <label for="series">Series <span class="muted" id="sc"></span></label>
+      <select id="series" multiple></select>
+    </div>
+    <div>
+      <label for="from">From year</label>
+      <input id="from" type="number" value="1990" min="1946" max="2026" step="1">
+    </div>
+    <div>
+      <label for="to">To year</label>
+      <input id="to" type="number" value="2026" min="1946" max="2026" step="1">
+    </div>
+  </div>
+  <div class="row">
+    <button id="log" aria-pressed="false">Log scale</button>
+    <button id="evt" aria-pressed="true">Show political events</button>
+    <button id="dl">Download this dataset</button>
+    <span class="muted" id="meta"></span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="legend" id="lg"></div>
+  <div class="chart"><canvas id="c" role="img" aria-label="Time series chart of the selected dataset"></canvas></div>
+</div>
+
+<div class="card">
+  <h2 style="font-size:16px;font-weight:500;margin:0 0 .5rem">Events in view</h2>
+  <div id="tbl"></div>
+</div>
+
+<div class="card">
+  <h2 style="font-size:16px;font-weight:500;margin:0 0 .5rem">Datasets</h2>
+  <div id="cat"></div>
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script>
+const BASE = location.protocol === 'file:' ? '../data/' : '../data/';
+const PAL = ['#2a78d6','#eb6834','#1baf7a','#eda100','#d55181','#008300','#6250d6','#e34948'];
+// Sensible opening view per dataset. Alphabetical defaults picked Argentina and Brazil,
+// whose hyperinflation pins the axis and flattens every other line into the baseline.
+const DEFAULTS = {
+  central_bank_rates: ['United States','Euro area','United Kingdom','Switzerland','Japan'],
+  policy_changes:     ['United States','Euro area','United Kingdom','Switzerland'],
+  commodities_annual: ['gold','oil_brent','gas_us','gas_europe'],
+  companies_top:      ['market_cap_top10','revenue_top10','profit_top10']
+};
+const S = {ds:null, rows:[], meta:null, events:[], chart:null, log:false, showEvt:true};
+const $ = id => document.getElementById(id);
+const cssVar = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+
+async function j(p){ const r = await fetch(BASE + p); if(!r.ok) throw new Error(p); return r.json(); }
+
+async function boot(){
+  let man;
+  try { man = await j('manifest.json'); }
+  catch(e){
+    $('meta').textContent = 'Could not load data/manifest.json — serve this folder over HTTP (python -m http.server) rather than opening the file directly.';
+    return;
+  }
+  S.manifest = man.datasets;
+  $('ds').innerHTML = man.datasets.filter(d=>d.name!=='political_events')
+    .map(d=>`<option value="${d.name}">${d.name.replace(/_/g,' ')} (${d.rows.toLocaleString()} rows)</option>`).join('');
+  try { S.events = await j('political_events.json'); } catch(e){ S.events = []; }
+  $('cat').innerHTML = '<table><thead><tr><th>dataset</th><th class="n">rows</th><th>span</th><th>licence</th></tr></thead><tbody>'
+    + man.datasets.map(d=>`<tr><td><a href="${BASE}${d.name}.csv">${d.name}.csv</a> · <a href="${BASE}${d.name}.json">json</a></td>`
+      + `<td class="n">${d.rows.toLocaleString()}</td><td class="muted">${(d.span||['','']).join(' → ')}</td>`
+      + `<td class="muted">${d.licence||''}</td></tr>`).join('') + '</tbody></table>';
+  $('ds').onchange = load; ['from','to'].forEach(k=>$(k).oninput = draw);
+  $('series').onchange = draw;
+  $('log').onclick = e => { if(!S.canLog) return; S.log=!S.log; e.target.setAttribute('aria-pressed',S.log); draw(); };
+  $('evt').onclick = e => { S.showEvt=!S.showEvt; e.target.setAttribute('aria-pressed',S.showEvt); draw(); };
+  $('dl').onclick = () => window.open(BASE + S.ds + '.csv','_blank');
+  await load();
+}
+
+async function load(){
+  S.ds = $('ds').value;
+  S.meta = S.manifest.find(d=>d.name===S.ds);
+  S.rows = await j(S.ds + '.json');
+  const ser = [...new Set(S.rows.map(r=>String(r.series)))].sort();
+  const want = (DEFAULTS[S.ds]||[]).filter(x=>ser.includes(x));
+  const pick = want.length ? want : ser.slice(0, Math.min(5, ser.length));
+  $('series').innerHTML = ser.map(s=>`<option value="${s}"${pick.includes(s)?' selected':''}>${s}</option>`).join('');
+  $('sc').textContent = `(${ser.length}, ctrl-click for more)`;
+  $('meta').textContent = S.meta.note || '';
+  // Mixed units on one linear axis hide the small series entirely: gold is ~$2,000/oz and
+  // US gas is ~$3/mmbtu, so gas flatlines against the axis. Switch to log automatically
+  // and say why, rather than showing a chart that looks empty.
+  const sel = S.rows.filter(r=>pick.includes(String(r.series)));
+  const units = new Set(sel.map(r=>String(r.unit||'')));
+  S.mixedUnits = units.size > 1;
+  // A log axis cannot plot zero or negative values - it drops them silently. policy_changes
+  // is signed (a cut is negative basis points), so log would hide every cut and leave a
+  // chart that looks like nobody ever eased. Force linear and disable the toggle.
+  S.canLog = sel.every(r => +r.value > 0);
+  if (!S.canLog) S.log = false;
+  else if (S.mixedUnits) S.log = true;
+  $('log').setAttribute('aria-pressed', String(S.log));
+  $('log').disabled = !S.canLog;
+  $('log').title = S.canLog ? '' : 'This dataset contains zero or negative values, which a log axis cannot show.';
+  draw();
+}
+
+function draw(){
+  const from = +$('from').value, to = +$('to').value;
+  const picked = [...$('series').selectedOptions].map(o=>o.value);
+  const yr = r => +String(r.date).slice(0,4);
+  const inRange = r => yr(r) >= from && yr(r) <= to;
+  const rows = S.rows.filter(r=>inRange(r) && picked.includes(String(r.series)));
+
+  const dates = [...new Set(rows.map(r=>String(r.date)))].sort();
+  // Some datasets carry MANY rows per (date, series) - companies_top has ten companies per
+  // year per metric. Building a Map keyed on date silently keeps only the last one, which
+  // plots a meaningless line. Sum instead, and say so: "combined top 10" is a real series.
+  const multi = rows.length > new Set(rows.map(r=>String(r.date)+'|'+r.series)).size;
+  S.aggregated = multi;
+  const datasets = picked.map((s,i)=>{
+    const m = new Map();
+    rows.filter(r=>String(r.series)===s).forEach(r=>{
+      const k = String(r.date);
+      m.set(k, (m.get(k)||0) + (+r.value||0));
+    });
+    return {label:s + (multi?' (combined)':''), data:dates.map(d=>m.has(d)?m.get(d):null),
+            borderColor:PAL[i%PAL.length], borderWidth:2, pointRadius:multi?3:0,
+            pointHoverRadius:5, tension:.1, spanGaps:true};
+  });
+
+  const evts = S.showEvt ? S.events.filter(e=>{const y=+String(e.date).slice(0,4); return y>=from&&y<=to;}) : [];
+  const ann = evts.map(e=>{
+    const idx = nearest(dates, String(e.date));
+    return idx<0 ? null : {x:idx, title:e.title, date:e.date, cat:e.category, url:e.source_url};
+  }).filter(Boolean);
+
+  const uSel = new Set(rows.map(r=>String(r.unit||'')));
+  $('lg').innerHTML = picked.map((s,i)=>`<span><span class="sw" style="background:${PAL[i%PAL.length]}"></span>${s}</span>`).join('')
+    + (ann.length?`<span><span class="sw" style="background:var(--mut);height:12px;width:2px"></span>${ann.length} events</span>`:'')
+    + (uSel.size>1?`<span class="muted">mixed units (${[...uSel].join(', ')}) — log scale ${S.log?'on':'off, values are not comparable'}</span>`:'')
+    + (S.canLog===false?`<span class="muted">signed values — linear axis only</span>`:'')
+    + (S.aggregated?`<span class="muted">summed across all entities per year (combined top 10)</span>`:'');
+
+  const mut = cssVar('--text-muted') || '#898781';
+  const grid = matchMedia('(prefers-color-scheme:dark)').matches ? '#2c2c2a' : '#e1e0d9';
+  const evtLines = {id:'evtLines', afterDraw(ch){
+    if(!ann.length) return;
+    const {ctx, chartArea:a, scales:{x}} = ch;
+    ctx.save(); ctx.strokeStyle = mut; ctx.globalAlpha=.45; ctx.lineWidth=1; ctx.setLineDash([3,3]);
+    ann.forEach(p=>{ const px = x.getPixelForValue(p.x);
+      ctx.beginPath(); ctx.moveTo(px,a.top); ctx.lineTo(px,a.bottom); ctx.stroke(); });
+    ctx.restore();
+  }};
+
+  if(S.chart) S.chart.destroy();
+  S.chart = new Chart($('c'), {type:'line', data:{labels:dates, datasets}, plugins:[evtLines],
+    options:{responsive:true, maintainAspectRatio:false, interaction:{mode:'index',intersect:false},
+      plugins:{legend:{display:false}, tooltip:{callbacks:{
+        label:c=>`${c.dataset.label}: ${c.parsed.y===null?'—':(+c.parsed.y).toLocaleString()}`,
+        afterBody:items=>{ const i=items[0].dataIndex; const hit=ann.filter(p=>p.x===i);
+          return hit.length?hit.map(p=>`◆ ${p.title}`):[]; }}}},
+      scales:{ y:{type:S.log?'logarithmic':'linear', grid:{color:grid}, border:{display:false},
+                  ticks:{color:mut,font:{size:11},callback:v=>(+v).toLocaleString()}},
+               x:{grid:{display:false}, border:{color:grid},
+                  ticks:{color:mut,font:{size:11},maxRotation:0,autoSkip:true,maxTicksLimit:10,
+                         callback:i=>String(dates[i]).slice(0,4)}}}}});
+
+  $('tbl').innerHTML = evts.length
+    ? '<table><thead><tr><th>date</th><th>event</th><th>category</th><th>severity</th><th>source</th></tr></thead><tbody>'
+      + evts.sort((a,b)=>String(a.date).localeCompare(String(b.date))).map(e=>
+        `<tr><td class="muted">${e.date}</td><td>${e.title}</td><td class="muted">${e.category}</td>`
+        + `<td class="muted">${e.severity}</td><td><a href="${e.source_url}" target="_blank" rel="noopener">link</a></td></tr>`).join('')
+      + '</tbody></table>'
+    : '<p class="muted">No political events in this range, or the overlay is off.</p>';
+}
+
+function nearest(sorted, target){
+  if(!sorted.length) return -1;
+  let best=-1, bd=Infinity;
+  for(let i=0;i<sorted.length;i++){
+    const d = Math.abs(Date.parse(sorted[i]) - Date.parse(target));
+    if(d<bd){bd=d;best=i;}
+  }
+  return bd <= 400*864e5 ? best : -1;   // ignore events far outside the plotted span
+}
+
+boot();
+</script>
+</body>
+</html>

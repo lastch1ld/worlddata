@@ -1,0 +1,23 @@
+date,title,category,severity,region,source_url
+2001-09-11,September 11 attacks,conflict,major,US,https://en.wikipedia.org/wiki/September_11_attacks
+2003-03-20,Invasion of Iraq begins,conflict,major,Middle East,https://en.wikipedia.org/wiki/2003_invasion_of_Iraq
+2008-09-15,Lehman Brothers files for bankruptcy,financial,major,US,https://en.wikipedia.org/wiki/Bankruptcy_of_Lehman_Brothers
+2010-05-02,First Greek bailout agreed,financial,major,Europe,https://en.wikipedia.org/wiki/First_Economic_Adjustment_Programme_for_Greece
+2011-12-17,Arab Spring begins,conflict,major,Middle East,https://en.wikipedia.org/wiki/Arab_Spring
+2014-03-18,Russia annexes Crimea,conflict,major,Europe,https://en.wikipedia.org/wiki/Annexation_of_Crimea_by_the_Russian_Federation
+2015-12-12,Paris Agreement adopted,policy,major,Global,https://en.wikipedia.org/wiki/Paris_Agreement
+2016-06-23,United Kingdom votes to leave the EU,policy,major,Europe,https://en.wikipedia.org/wiki/2016_United_Kingdom_European_Union_membership_referendum
+2016-11-08,Donald Trump elected US President,election,major,US,https://en.wikipedia.org/wiki/2016_United_States_presidential_election
+2018-03-22,US announces tariffs on Chinese goods,policy,major,Global,https://en.wikipedia.org/wiki/China%E2%80%93United_States_trade_war
+2020-03-11,WHO declares COVID-19 a pandemic,health,major,Global,https://en.wikipedia.org/wiki/COVID-19_pandemic
+2020-04-20,WTI crude futures settle negative,financial,major,Global,https://en.wikipedia.org/wiki/2020_Russia%E2%80%93Saudi_Arabia_oil_price_war
+2020-11-03,Joe Biden elected US President,election,major,US,https://en.wikipedia.org/wiki/2020_United_States_presidential_election
+2022-02-24,Russia invades Ukraine,conflict,major,Europe,https://en.wikipedia.org/wiki/Russian_invasion_of_Ukraine
+2022-09-23,UK mini-budget triggers gilt crisis,financial,major,Europe,https://en.wikipedia.org/wiki/September_2022_United_Kingdom_mini-budget
+2023-03-10,Silicon Valley Bank fails,financial,major,US,https://en.wikipedia.org/wiki/Collapse_of_Silicon_Valley_Bank
+2023-03-19,UBS agrees to acquire Credit Suisse,financial,major,Europe,https://en.wikipedia.org/wiki/Acquisition_of_Credit_Suisse_by_UBS
+2023-10-07,Hamas attack on Israel and subsequent war,conflict,major,Middle East,https://en.wikipedia.org/wiki/Gaza_war
+2024-11-05,Donald Trump elected US President,election,major,US,https://en.wikipedia.org/wiki/2024_United_States_presidential_election
+1997-07-02,Asian financial crisis begins,financial,major,Asia,https://en.wikipedia.org/wiki/1997_Asian_financial_crisis
+1999-01-01,Euro introduced,policy,major,Europe,https://en.wikipedia.org/wiki/History_of_the_euro
+2015-01-15,SNB abandons the EUR/CHF floor,policy,major,Europe,https://en.wikipedia.org/wiki/Swiss_franc

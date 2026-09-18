@@ -1,0 +1,671 @@
+date,year,series,label,value,unit
+1960-12-31,1960,copper,Copper,678.75583333333,$/mt
+1961-12-31,1961,copper,Copper,633.08416666667,$/mt
+1962-12-31,1962,copper,Copper,645.14333333333,$/mt
+1963-12-31,1963,copper,Copper,645.95083333333,$/mt
+1964-12-31,1964,copper,Copper,969.75333333333,$/mt
+1965-12-31,1965,copper,Copper,1292.84416666667,$/mt
+1966-12-31,1966,copper,Copper,1531.51333333333,$/mt
+1967-12-31,1967,copper,Copper,1134.7725,$/mt
+1968-12-31,1968,copper,Copper,1241.9525,$/mt
+1969-12-31,1969,copper,Copper,1467.34,$/mt
+1970-12-31,1970,copper,Copper,1415.7,$/mt
+1971-12-31,1971,copper,Copper,1081.41666666667,$/mt
+1972-12-31,1972,copper,Copper,1057.675,$/mt
+1973-12-31,1973,copper,Copper,1785.35833333333,$/mt
+1974-12-31,1974,copper,Copper,2058.5,$/mt
+1975-12-31,1975,copper,Copper,1234.75,$/mt
+1976-12-31,1976,copper,Copper,1400.75,$/mt
+1977-12-31,1977,copper,Copper,1308.75,$/mt
+1978-12-31,1978,copper,Copper,1364.83333333333,$/mt
+1979-12-31,1979,copper,Copper,1985.25833333333,$/mt
+1980-12-31,1980,copper,Copper,2182.09166666667,$/mt
+1981-12-31,1981,copper,Copper,1741.95,$/mt
+1982-12-31,1982,copper,Copper,1480.44166666667,$/mt
+1983-12-31,1983,copper,Copper,1591.925,$/mt
+1984-12-31,1984,copper,Copper,1377.31666666667,$/mt
+1985-12-31,1985,copper,Copper,1417.38333333333,$/mt
+1986-12-31,1986,copper,Copper,1373.78166666667,$/mt
+1987-12-31,1987,copper,Copper,1782.50333333333,$/mt
+1988-12-31,1988,copper,Copper,2601.67166666667,$/mt
+1989-12-31,1989,copper,Copper,2848.41,$/mt
+1990-12-31,1990,copper,Copper,2661.4825,$/mt
+1991-12-31,1991,copper,Copper,2338.7825,$/mt
+1992-12-31,1992,copper,Copper,2281.1575,$/mt
+1993-12-31,1993,copper,Copper,1913.07666666667,$/mt
+1994-12-31,1994,copper,Copper,2307.4175,$/mt
+1995-12-31,1995,copper,Copper,2935.60583333333,$/mt
+1996-12-31,1996,copper,Copper,2294.85666666667,$/mt
+1997-12-31,1997,copper,Copper,2276.76666666667,$/mt
+1998-12-31,1998,copper,Copper,1654.05833333333,$/mt
+1999-12-31,1999,copper,Copper,1572.86083333333,$/mt
+2000-12-31,2000,copper,Copper,1813.46916666667,$/mt
+2001-12-31,2001,copper,Copper,1578.28833333333,$/mt
+2002-12-31,2002,copper,Copper,1559.4775,$/mt
+2003-12-31,2003,copper,Copper,1779.14483333333,$/mt
+2004-12-31,2004,copper,Copper,2865.88491666667,$/mt
+2005-12-31,2005,copper,Copper,3678.87641666667,$/mt
+2006-12-31,2006,copper,Copper,6722.1345,$/mt
+2007-12-31,2007,copper,Copper,7118.226,$/mt
+2008-12-31,2008,copper,Copper,6955.87983333333,$/mt
+2009-12-31,2009,copper,Copper,5149.73858333333,$/mt
+2010-12-31,2010,copper,Copper,7534.77958333333,$/mt
+2011-12-31,2011,copper,Copper,8828.1875,$/mt
+2012-12-31,2012,copper,Copper,7962.34706281927,$/mt
+2013-12-31,2013,copper,Copper,7332.10047748447,$/mt
+2014-12-31,2014,copper,Copper,6863.3975,$/mt
+2015-12-31,2015,copper,Copper,5510.45666666667,$/mt
+2016-12-31,2016,copper,Copper,4867.8975,$/mt
+2017-12-31,2017,copper,Copper,6169.94,$/mt
+2018-12-31,2018,copper,Copper,6529.79833333333,$/mt
+2019-12-31,2019,copper,Copper,6010.145,$/mt
+2020-12-31,2020,copper,Copper,6173.77083333333,$/mt
+2021-12-31,2021,copper,Copper,9317.05,$/mt
+2022-12-31,2022,copper,Copper,8822.36583333333,$/mt
+2023-12-31,2023,copper,Copper,8490.29083333333,$/mt
+2024-12-31,2024,copper,Copper,9142.14,$/mt
+2025-12-31,2025,copper,Copper,9947.305,$/mt
+1960-12-31,1960,gas_europe,"Natural gas, Europe",0.40477399635,$/mmbtu
+1961-12-31,1961,gas_europe,"Natural gas, Europe",0.40477399635,$/mmbtu
+1962-12-31,1962,gas_europe,"Natural gas, Europe",0.40477399635,$/mmbtu
+1963-12-31,1963,gas_europe,"Natural gas, Europe",0.39135113795,$/mmbtu
+1964-12-31,1964,gas_europe,"Natural gas, Europe",0.38414980236,$/mmbtu
+1965-12-31,1965,gas_europe,"Natural gas, Europe",0.41076610522,$/mmbtu
+1966-12-31,1966,gas_europe,"Natural gas, Europe",0.42492866514,$/mmbtu
+1967-12-31,1967,gas_europe,"Natural gas, Europe",0.45664737628,$/mmbtu
+1968-12-31,1968,gas_europe,"Natural gas, Europe",0.45180187737,$/mmbtu
+1969-12-31,1969,gas_europe,"Natural gas, Europe",0.45181991824,$/mmbtu
+1970-12-31,1970,gas_europe,"Natural gas, Europe",0.44721801014,$/mmbtu
+1971-12-31,1971,gas_europe,"Natural gas, Europe",0.50224354379,$/mmbtu
+1972-12-31,1972,gas_europe,"Natural gas, Europe",0.54216598655,$/mmbtu
+1973-12-31,1973,gas_europe,"Natural gas, Europe",0.69350672431,$/mmbtu
+1974-12-31,1974,gas_europe,"Natural gas, Europe",1.73,$/mmbtu
+1975-12-31,1975,gas_europe,"Natural gas, Europe",1.68209359077,$/mmbtu
+1976-12-31,1976,gas_europe,"Natural gas, Europe",1.73511329971,$/mmbtu
+1977-12-31,1977,gas_europe,"Natural gas, Europe",1.79162260682,$/mmbtu
+1978-12-31,1978,gas_europe,"Natural gas, Europe",2.30221809927,$/mmbtu
+1979-12-31,1979,gas_europe,"Natural gas, Europe",3.25948857485,$/mmbtu
+1980-12-31,1980,gas_europe,"Natural gas, Europe",4.22,$/mmbtu
+1981-12-31,1981,gas_europe,"Natural gas, Europe",4.6,$/mmbtu
+1982-12-31,1982,gas_europe,"Natural gas, Europe",4.45,$/mmbtu
+1983-12-31,1983,gas_europe,"Natural gas, Europe",4.05,$/mmbtu
+1984-12-31,1984,gas_europe,"Natural gas, Europe",3.76,$/mmbtu
+1985-12-31,1985,gas_europe,"Natural gas, Europe",3.65,$/mmbtu
+1986-12-31,1986,gas_europe,"Natural gas, Europe",3.65,$/mmbtu
+1987-12-31,1987,gas_europe,"Natural gas, Europe",2.59,$/mmbtu
+1988-12-31,1988,gas_europe,"Natural gas, Europe",2.36,$/mmbtu
+1989-12-31,1989,gas_europe,"Natural gas, Europe",2.09,$/mmbtu
+1990-12-31,1990,gas_europe,"Natural gas, Europe",2.82,$/mmbtu
+1991-12-31,1991,gas_europe,"Natural gas, Europe",3.11416666667,$/mmbtu
+1992-12-31,1992,gas_europe,"Natural gas, Europe",2.55833333333,$/mmbtu
+1993-12-31,1993,gas_europe,"Natural gas, Europe",2.67166666667,$/mmbtu
+1994-12-31,1994,gas_europe,"Natural gas, Europe",2.44333333333,$/mmbtu
+1995-12-31,1995,gas_europe,"Natural gas, Europe",2.7275,$/mmbtu
+1996-12-31,1996,gas_europe,"Natural gas, Europe",2.84416666667,$/mmbtu
+1997-12-31,1997,gas_europe,"Natural gas, Europe",2.73833333333,$/mmbtu
+1998-12-31,1998,gas_europe,"Natural gas, Europe",2.41583333333,$/mmbtu
+1999-12-31,1999,gas_europe,"Natural gas, Europe",2.13083333333,$/mmbtu
+2000-12-31,2000,gas_europe,"Natural gas, Europe",3.85833333333,$/mmbtu
+2001-12-31,2001,gas_europe,"Natural gas, Europe",4.0575,$/mmbtu
+2002-12-31,2002,gas_europe,"Natural gas, Europe",3.05166666667,$/mmbtu
+2003-12-31,2003,gas_europe,"Natural gas, Europe",3.90666666667,$/mmbtu
+2004-12-31,2004,gas_europe,"Natural gas, Europe",4.2775,$/mmbtu
+2005-12-31,2005,gas_europe,"Natural gas, Europe",6.32666666667,$/mmbtu
+2006-12-31,2006,gas_europe,"Natural gas, Europe",8.47083333333,$/mmbtu
+2007-12-31,2007,gas_europe,"Natural gas, Europe",8.555,$/mmbtu
+2008-12-31,2008,gas_europe,"Natural gas, Europe",13.40666666667,$/mmbtu
+2009-12-31,2009,gas_europe,"Natural gas, Europe",8.71,$/mmbtu
+2010-12-31,2010,gas_europe,"Natural gas, Europe",8.2875,$/mmbtu
+2011-12-31,2011,gas_europe,"Natural gas, Europe",10.515,$/mmbtu
+2012-12-31,2012,gas_europe,"Natural gas, Europe",11.47333333333,$/mmbtu
+2013-12-31,2013,gas_europe,"Natural gas, Europe",11.78583333333,$/mmbtu
+2014-12-31,2014,gas_europe,"Natural gas, Europe",10.05166666667,$/mmbtu
+2015-12-31,2015,gas_europe,"Natural gas, Europe",6.82118307834,$/mmbtu
+2016-12-31,2016,gas_europe,"Natural gas, Europe",4.563422844,$/mmbtu
+2017-12-31,2017,gas_europe,"Natural gas, Europe",5.71704330393,$/mmbtu
+2018-12-31,2018,gas_europe,"Natural gas, Europe",7.68167965387,$/mmbtu
+2019-12-31,2019,gas_europe,"Natural gas, Europe",4.80235126619,$/mmbtu
+2020-12-31,2020,gas_europe,"Natural gas, Europe",3.24202403939,$/mmbtu
+2021-12-31,2021,gas_europe,"Natural gas, Europe",16.11587794838,$/mmbtu
+2022-12-31,2022,gas_europe,"Natural gas, Europe",40.3401571422,$/mmbtu
+2023-12-31,2023,gas_europe,"Natural gas, Europe",13.1134032462,$/mmbtu
+2024-12-31,2024,gas_europe,"Natural gas, Europe",10.96230953259,$/mmbtu
+2025-12-31,2025,gas_europe,"Natural gas, Europe",11.96139454039,$/mmbtu
+1977-12-31,1977,gas_index,Natural gas index,19.9880355208,2010=100
+1978-12-31,1978,gas_index,Natural gas index,24.00148012192,2010=100
+1979-12-31,1979,gas_index,Natural gas index,32.32629349773,2010=100
+1980-12-31,1980,gas_index,Natural gas index,43.21876737981,2010=100
+1981-12-31,1981,gas_index,Natural gas index,50.03815006758,2010=100
+1982-12-31,1982,gas_index,Natural gas index,55.18852991845,2010=100
+1983-12-31,1983,gas_index,Natural gas index,54.49254000038,2010=100
+1984-12-31,1984,gas_index,Natural gas index,53.66408920027,2010=100
+1985-12-31,1985,gas_index,Natural gas index,51.38527894934,2010=100
+1986-12-31,1986,gas_index,Natural gas index,43.6271516914,2010=100
+1987-12-31,1987,gas_index,Natural gas index,34.77075125625,2010=100
+1988-12-31,1988,gas_index,Natural gas index,33.90331064772,2010=100
+1989-12-31,1989,gas_index,Natural gas index,32.76123905177,2010=100
+1990-12-31,1990,gas_index,Natural gas index,36.49577572325,2010=100
+1991-12-31,1991,gas_index,Natural gas index,35.56101158628,2010=100
+1992-12-31,1992,gas_index,Natural gas index,36.11192267322,2010=100
+1993-12-31,1993,gas_index,Natural gas index,40.83079967514,2010=100
+1994-12-31,1994,gas_index,Natural gas index,37.08524651801,2010=100
+1995-12-31,1995,gas_index,Natural gas index,36.22020966874,2010=100
+1996-12-31,1996,gas_index,Natural gas index,49.20780498201,2010=100
+1997-12-31,1997,gas_index,Natural gas index,45.8026496691,2010=100
+1998-12-31,1998,gas_index,Natural gas index,38.8724799835,2010=100
+1999-12-31,1999,gas_index,Natural gas index,39.78053927833,2010=100
+2000-12-31,2000,gas_index,Natural gas index,73.85279959296,2010=100
+2001-12-31,2001,gas_index,Natural gas index,70.46602308371,2010=100
+2002-12-31,2002,gas_index,Natural gas index,58.14935926036,2010=100
+2003-12-31,2003,gas_index,Natural gas index,88.4684909748,2010=100
+2004-12-31,2004,gas_index,Natural gas index,95.39253807764,2010=100
+2005-12-31,2005,gas_index,Natural gas index,142.40132869325,2010=100
+2006-12-31,2006,gas_index,Natural gas index,126.66129646702,2010=100
+2007-12-31,2007,gas_index,Natural gas index,130.66007798703,2010=100
+2008-12-31,2008,gas_index,Natural gas index,179.77797816996,2010=100
+2009-12-31,2009,gas_index,Natural gas index,95.43093884111,2010=100
+2010-12-31,2010,gas_index,Natural gas index,100.0,2010=100
+2011-12-31,2011,gas_index,Natural gas index,108.47349086896,2010=100
+2012-12-31,2012,gas_index,Natural gas index,99.17776376874,2010=100
+2013-12-31,2013,gas_index,Natural gas index,112.0612275893,2010=100
+2014-12-31,2014,gas_index,Natural gas index,111.70982886732,2010=100
+2015-12-31,2015,gas_index,Natural gas index,71.57513725025,2010=100
+2016-12-31,2016,gas_index,Natural gas index,56.95308992058,2010=100
+2017-12-31,2017,gas_index,Natural gas index,68.9667024167,2010=100
+2018-12-31,2018,gas_index,Natural gas index,82.1169899507,2010=100
+2019-12-31,2019,gas_index,Natural gas index,61.14597573991,2010=100
+2020-12-31,2020,gas_index,Natural gas index,45.50604354308,2010=100
+2021-12-31,2021,gas_index,Natural gas index,130.67448026946,2010=100
+2022-12-31,2022,gas_index,Natural gas index,281.59297040431,2010=100
+2023-12-31,2023,gas_index,Natural gas index,102.90549072049,2010=100
+2024-12-31,2024,gas_index,Natural gas index,87.43058173821,2010=100
+2025-12-31,2025,gas_index,Natural gas index,107.81259660415,2010=100
+1977-12-31,1977,gas_lng_japan,"Liquefied natural gas, Japan",2.77116287282,$/mmbtu
+1978-12-31,1978,gas_lng_japan,"Liquefied natural gas, Japan",3.03608084204,$/mmbtu
+1979-12-31,1979,gas_lng_japan,"Liquefied natural gas, Japan",3.69242291557,$/mmbtu
+1980-12-31,1980,gas_lng_japan,"Liquefied natural gas, Japan",5.69622732832,$/mmbtu
+1981-12-31,1981,gas_lng_japan,"Liquefied natural gas, Japan",6.0303414353400004,$/mmbtu
+1982-12-31,1982,gas_lng_japan,"Liquefied natural gas, Japan",6.05162239889,$/mmbtu
+1983-12-31,1983,gas_lng_japan,"Liquefied natural gas, Japan",5.54581574773,$/mmbtu
+1984-12-31,1984,gas_lng_japan,"Liquefied natural gas, Japan",5.23768078193,$/mmbtu
+1985-12-31,1985,gas_lng_japan,"Liquefied natural gas, Japan",5.23,$/mmbtu
+1986-12-31,1986,gas_lng_japan,"Liquefied natural gas, Japan",4.1,$/mmbtu
+1987-12-31,1987,gas_lng_japan,"Liquefied natural gas, Japan",3.35,$/mmbtu
+1988-12-31,1988,gas_lng_japan,"Liquefied natural gas, Japan",3.34,$/mmbtu
+1989-12-31,1989,gas_lng_japan,"Liquefied natural gas, Japan",3.28,$/mmbtu
+1990-12-31,1990,gas_lng_japan,"Liquefied natural gas, Japan",3.64,$/mmbtu
+1991-12-31,1991,gas_lng_japan,"Liquefied natural gas, Japan",3.99,$/mmbtu
+1992-12-31,1992,gas_lng_japan,"Liquefied natural gas, Japan",3.59511258333,$/mmbtu
+1993-12-31,1993,gas_lng_japan,"Liquefied natural gas, Japan",3.50659875,$/mmbtu
+1994-12-31,1994,gas_lng_japan,"Liquefied natural gas, Japan",3.18,$/mmbtu
+1995-12-31,1995,gas_lng_japan,"Liquefied natural gas, Japan",3.44916666667,$/mmbtu
+1996-12-31,1996,gas_lng_japan,"Liquefied natural gas, Japan",3.6675,$/mmbtu
+1997-12-31,1997,gas_lng_japan,"Liquefied natural gas, Japan",3.90833333333,$/mmbtu
+1998-12-31,1998,gas_lng_japan,"Liquefied natural gas, Japan",3.01916666667,$/mmbtu
+1999-12-31,1999,gas_lng_japan,"Liquefied natural gas, Japan",3.1375,$/mmbtu
+2000-12-31,2000,gas_lng_japan,"Liquefied natural gas, Japan",4.7125,$/mmbtu
+2001-12-31,2001,gas_lng_japan,"Liquefied natural gas, Japan",4.63416666667,$/mmbtu
+2002-12-31,2002,gas_lng_japan,"Liquefied natural gas, Japan",4.28166666667,$/mmbtu
+2003-12-31,2003,gas_lng_japan,"Liquefied natural gas, Japan",4.73083333333,$/mmbtu
+2004-12-31,2004,gas_lng_japan,"Liquefied natural gas, Japan",5.1275,$/mmbtu
+2005-12-31,2005,gas_lng_japan,"Liquefied natural gas, Japan",5.99,$/mmbtu
+2006-12-31,2006,gas_lng_japan,"Liquefied natural gas, Japan",7.075,$/mmbtu
+2007-12-31,2007,gas_lng_japan,"Liquefied natural gas, Japan",7.68333333333,$/mmbtu
+2008-12-31,2008,gas_lng_japan,"Liquefied natural gas, Japan",12.52666666667,$/mmbtu
+2009-12-31,2009,gas_lng_japan,"Liquefied natural gas, Japan",8.93583333333,$/mmbtu
+2010-12-31,2010,gas_lng_japan,"Liquefied natural gas, Japan",10.84833333333,$/mmbtu
+2011-12-31,2011,gas_lng_japan,"Liquefied natural gas, Japan",14.65583333333,$/mmbtu
+2012-12-31,2012,gas_lng_japan,"Liquefied natural gas, Japan",16.55333333333,$/mmbtu
+2013-12-31,2013,gas_lng_japan,"Liquefied natural gas, Japan",15.95583333333,$/mmbtu
+2014-12-31,2014,gas_lng_japan,"Liquefied natural gas, Japan",16.03573555249,$/mmbtu
+2015-12-31,2015,gas_lng_japan,"Liquefied natural gas, Japan",10.93468742351,$/mmbtu
+2016-12-31,2016,gas_lng_japan,"Liquefied natural gas, Japan",7.37244395799,$/mmbtu
+2017-12-31,2017,gas_lng_japan,"Liquefied natural gas, Japan",8.60612419447,$/mmbtu
+2018-12-31,2018,gas_lng_japan,"Liquefied natural gas, Japan",10.66987582278,$/mmbtu
+2019-12-31,2019,gas_lng_japan,"Liquefied natural gas, Japan",10.56430189901,$/mmbtu
+2020-12-31,2020,gas_lng_japan,"Liquefied natural gas, Japan",8.31334757085,$/mmbtu
+2021-12-31,2021,gas_lng_japan,"Liquefied natural gas, Japan",10.76164902384,$/mmbtu
+2022-12-31,2022,gas_lng_japan,"Liquefied natural gas, Japan",18.42692483862,$/mmbtu
+2023-12-31,2023,gas_lng_japan,"Liquefied natural gas, Japan",14.38710799668,$/mmbtu
+2024-12-31,2024,gas_lng_japan,"Liquefied natural gas, Japan",12.85416259236,$/mmbtu
+2025-12-31,2025,gas_lng_japan,"Liquefied natural gas, Japan",12.01535977624,$/mmbtu
+1960-12-31,1960,gas_us,"Natural gas, US",0.14,$/mmbtu
+1961-12-31,1961,gas_us,"Natural gas, US",0.15,$/mmbtu
+1962-12-31,1962,gas_us,"Natural gas, US",0.16,$/mmbtu
+1963-12-31,1963,gas_us,"Natural gas, US",0.16,$/mmbtu
+1964-12-31,1964,gas_us,"Natural gas, US",0.15,$/mmbtu
+1965-12-31,1965,gas_us,"Natural gas, US",0.16,$/mmbtu
+1966-12-31,1966,gas_us,"Natural gas, US",0.16,$/mmbtu
+1967-12-31,1967,gas_us,"Natural gas, US",0.16,$/mmbtu
+1968-12-31,1968,gas_us,"Natural gas, US",0.16,$/mmbtu
+1969-12-31,1969,gas_us,"Natural gas, US",0.17,$/mmbtu
+1970-12-31,1970,gas_us,"Natural gas, US",0.17,$/mmbtu
+1971-12-31,1971,gas_us,"Natural gas, US",0.18,$/mmbtu
+1972-12-31,1972,gas_us,"Natural gas, US",0.19,$/mmbtu
+1973-12-31,1973,gas_us,"Natural gas, US",0.21,$/mmbtu
+1974-12-31,1974,gas_us,"Natural gas, US",0.29,$/mmbtu
+1975-12-31,1975,gas_us,"Natural gas, US",0.43,$/mmbtu
+1976-12-31,1976,gas_us,"Natural gas, US",0.58083333333,$/mmbtu
+1977-12-31,1977,gas_us,"Natural gas, US",0.79,$/mmbtu
+1978-12-31,1978,gas_us,"Natural gas, US",0.90583333333,$/mmbtu
+1979-12-31,1979,gas_us,"Natural gas, US",1.18,$/mmbtu
+1980-12-31,1980,gas_us,"Natural gas, US",1.58916666667,$/mmbtu
+1981-12-31,1981,gas_us,"Natural gas, US",1.98333333333,$/mmbtu
+1982-12-31,1982,gas_us,"Natural gas, US",2.465,$/mmbtu
+1983-12-31,1983,gas_us,"Natural gas, US",2.5925,$/mmbtu
+1984-12-31,1984,gas_us,"Natural gas, US",2.655,$/mmbtu
+1985-12-31,1985,gas_us,"Natural gas, US",2.51083333333,$/mmbtu
+1986-12-31,1986,gas_us,"Natural gas, US",1.935,$/mmbtu
+1987-12-31,1987,gas_us,"Natural gas, US",1.6625,$/mmbtu
+1988-12-31,1988,gas_us,"Natural gas, US",1.68166666667,$/mmbtu
+1989-12-31,1989,gas_us,"Natural gas, US",1.69666666667,$/mmbtu
+1990-12-31,1990,gas_us,"Natural gas, US",1.69833333333,$/mmbtu
+1991-12-31,1991,gas_us,"Natural gas, US",1.48666666667,$/mmbtu
+1992-12-31,1992,gas_us,"Natural gas, US",1.77166666667,$/mmbtu
+1993-12-31,1993,gas_us,"Natural gas, US",2.12083333333,$/mmbtu
+1994-12-31,1994,gas_us,"Natural gas, US",1.92,$/mmbtu
+1995-12-31,1995,gas_us,"Natural gas, US",1.7225,$/mmbtu
+1996-12-31,1996,gas_us,"Natural gas, US",2.73416666667,$/mmbtu
+1997-12-31,1997,gas_us,"Natural gas, US",2.48175,$/mmbtu
+1998-12-31,1998,gas_us,"Natural gas, US",2.08691666667,$/mmbtu
+1999-12-31,1999,gas_us,"Natural gas, US",2.26666666667,$/mmbtu
+2000-12-31,2000,gas_us,"Natural gas, US",4.30833333333,$/mmbtu
+2001-12-31,2001,gas_us,"Natural gas, US",3.95583333333,$/mmbtu
+2002-12-31,2002,gas_us,"Natural gas, US",3.355,$/mmbtu
+2003-12-31,2003,gas_us,"Natural gas, US",5.49198266667,$/mmbtu
+2004-12-31,2004,gas_us,"Natural gas, US",5.89486713407,$/mmbtu
+2005-12-31,2005,gas_us,"Natural gas, US",8.91567282687,$/mmbtu
+2006-12-31,2006,gas_us,"Natural gas, US",6.71954309398,$/mmbtu
+2007-12-31,2007,gas_us,"Natural gas, US",6.98195068699,$/mmbtu
+2008-12-31,2008,gas_us,"Natural gas, US",8.85720241075,$/mmbtu
+2009-12-31,2009,gas_us,"Natural gas, US",3.95029166667,$/mmbtu
+2010-12-31,2010,gas_us,"Natural gas, US",4.38525376984,$/mmbtu
+2011-12-31,2011,gas_us,"Natural gas, US",3.99857855339,$/mmbtu
+2012-12-31,2012,gas_us,"Natural gas, US",2.75204166667,$/mmbtu
+2013-12-31,2013,gas_us,"Natural gas, US",3.72398333333,$/mmbtu
+2014-12-31,2014,gas_us,"Natural gas, US",4.36949166667,$/mmbtu
+2015-12-31,2015,gas_us,"Natural gas, US",2.61370833333,$/mmbtu
+2016-12-31,2016,gas_us,"Natural gas, US",2.49221666667,$/mmbtu
+2017-12-31,2017,gas_us,"Natural gas, US",2.961075,$/mmbtu
+2018-12-31,2018,gas_us,"Natural gas, US",3.159725,$/mmbtu
+2019-12-31,2019,gas_us,"Natural gas, US",2.56588333333,$/mmbtu
+2020-12-31,2020,gas_us,"Natural gas, US",2.014375,$/mmbtu
+2021-12-31,2021,gas_us,"Natural gas, US",3.85140833333,$/mmbtu
+2022-12-31,2022,gas_us,"Natural gas, US",6.36831666667,$/mmbtu
+2023-12-31,2023,gas_us,"Natural gas, US",2.53780833333,$/mmbtu
+2024-12-31,2024,gas_us,"Natural gas, US",2.19110833333,$/mmbtu
+2025-12-31,2025,gas_us,"Natural gas, US",3.525225,$/mmbtu
+1960-12-31,1960,gold,Gold,35.27,$/troy oz
+1961-12-31,1961,gold,Gold,35.25,$/troy oz
+1962-12-31,1962,gold,Gold,35.23,$/troy oz
+1963-12-31,1963,gold,Gold,35.09,$/troy oz
+1964-12-31,1964,gold,Gold,35.1,$/troy oz
+1965-12-31,1965,gold,Gold,35.12,$/troy oz
+1966-12-31,1966,gold,Gold,35.13,$/troy oz
+1967-12-31,1967,gold,Gold,34.95,$/troy oz
+1968-12-31,1968,gold,Gold,38.925,$/troy oz
+1969-12-31,1969,gold,Gold,41.08333333333,$/troy oz
+1970-12-31,1970,gold,Gold,35.94166666667,$/troy oz
+1971-12-31,1971,gold,Gold,40.80416666667,$/troy oz
+1972-12-31,1972,gold,Gold,58.15916666667,$/troy oz
+1973-12-31,1973,gold,Gold,97.32583333333,$/troy oz
+1974-12-31,1974,gold,Gold,159.245,$/troy oz
+1975-12-31,1975,gold,Gold,161.02916666667,$/troy oz
+1976-12-31,1976,gold,Gold,124.81583333333,$/troy oz
+1977-12-31,1977,gold,Gold,147.72083333333,$/troy oz
+1978-12-31,1978,gold,Gold,193.23916666667,$/troy oz
+1979-12-31,1979,gold,Gold,306.6675,$/troy oz
+1980-12-31,1980,gold,Gold,607.86416666667,$/troy oz
+1981-12-31,1981,gold,Gold,459.75416666667,$/troy oz
+1982-12-31,1982,gold,Gold,375.79666666667,$/troy oz
+1983-12-31,1983,gold,Gold,422.53,$/troy oz
+1984-12-31,1984,gold,Gold,360.4775,$/troy oz
+1985-12-31,1985,gold,Gold,317.9075,$/troy oz
+1986-12-31,1986,gold,Gold,367.69416666667,$/troy oz
+1987-12-31,1987,gold,Gold,446.4725,$/troy oz
+1988-12-31,1988,gold,Gold,437.04833333333,$/troy oz
+1989-12-31,1989,gold,Gold,381.43166666667,$/troy oz
+1990-12-31,1990,gold,Gold,383.46666666667,$/troy oz
+1991-12-31,1991,gold,Gold,362.1825,$/troy oz
+1992-12-31,1992,gold,Gold,343.73333333333,$/troy oz
+1993-12-31,1993,gold,Gold,359.77,$/troy oz
+1994-12-31,1994,gold,Gold,384.01166666667,$/troy oz
+1995-12-31,1995,gold,Gold,384.16416666667,$/troy oz
+1996-12-31,1996,gold,Gold,387.69583333333,$/troy oz
+1997-12-31,1997,gold,Gold,331.09583333333,$/troy oz
+1998-12-31,1998,gold,Gold,294.16083333333,$/troy oz
+1999-12-31,1999,gold,Gold,278.76833333333,$/troy oz
+2000-12-31,2000,gold,Gold,279.03166666667,$/troy oz
+2001-12-31,2001,gold,Gold,270.98916666667,$/troy oz
+2002-12-31,2002,gold,Gold,309.97166666667,$/troy oz
+2003-12-31,2003,gold,Gold,363.50916666667,$/troy oz
+2004-12-31,2004,gold,Gold,409.21158333333,$/troy oz
+2005-12-31,2005,gold,Gold,444.84258333333,$/troy oz
+2006-12-31,2006,gold,Gold,604.33583333333,$/troy oz
+2007-12-31,2007,gold,Gold,696.72025,$/troy oz
+2008-12-31,2008,gold,Gold,871.70725,$/troy oz
+2009-12-31,2009,gold,Gold,972.96591666667,$/troy oz
+2010-12-31,2010,gold,Gold,1224.66425,$/troy oz
+2011-12-31,2011,gold,Gold,1569.21083333333,$/troy oz
+2012-12-31,2012,gold,Gold,1669.51766666667,$/troy oz
+2013-12-31,2013,gold,Gold,1411.46230174415,$/troy oz
+2014-12-31,2014,gold,Gold,1265.5775,$/troy oz
+2015-12-31,2015,gold,Gold,1160.66333333333,$/troy oz
+2016-12-31,2016,gold,Gold,1248.98833333333,$/troy oz
+2017-12-31,2017,gold,Gold,1257.55916666667,$/troy oz
+2018-12-31,2018,gold,Gold,1269.22666666667,$/troy oz
+2019-12-31,2019,gold,Gold,1392.49833333333,$/troy oz
+2020-12-31,2020,gold,Gold,1770.25416666667,$/troy oz
+2021-12-31,2021,gold,Gold,1799.62916666667,$/troy oz
+2022-12-31,2022,gold,Gold,1800.6025,$/troy oz
+2023-12-31,2023,gold,Gold,1942.66583333333,$/troy oz
+2024-12-31,2024,gold,Gold,2387.7025,$/troy oz
+2025-12-31,2025,gold,Gold,3441.50583333333,$/troy oz
+1960-12-31,1960,oil_brent,"Crude oil, Brent",1.63000011444,$/bbl
+1961-12-31,1961,oil_brent,"Crude oil, Brent",1.57,$/bbl
+1962-12-31,1962,oil_brent,"Crude oil, Brent",1.52,$/bbl
+1963-12-31,1963,oil_brent,"Crude oil, Brent",1.5,$/bbl
+1964-12-31,1964,oil_brent,"Crude oil, Brent",1.45,$/bbl
+1965-12-31,1965,oil_brent,"Crude oil, Brent",1.42,$/bbl
+1966-12-31,1966,oil_brent,"Crude oil, Brent",1.36,$/bbl
+1967-12-31,1967,oil_brent,"Crude oil, Brent",1.33,$/bbl
+1968-12-31,1968,oil_brent,"Crude oil, Brent",1.32,$/bbl
+1969-12-31,1969,oil_brent,"Crude oil, Brent",1.27,$/bbl
+1970-12-31,1970,oil_brent,"Crude oil, Brent",1.21,$/bbl
+1971-12-31,1971,oil_brent,"Crude oil, Brent",1.69,$/bbl
+1972-12-31,1972,oil_brent,"Crude oil, Brent",1.82,$/bbl
+1973-12-31,1973,oil_brent,"Crude oil, Brent",2.8075,$/bbl
+1974-12-31,1974,oil_brent,"Crude oil, Brent",10.9749994278,$/bbl
+1975-12-31,1975,oil_brent,"Crude oil, Brent",10.43250012398,$/bbl
+1976-12-31,1976,oil_brent,"Crude oil, Brent",11.63000011444,$/bbl
+1977-12-31,1977,oil_brent,"Crude oil, Brent",12.56500005722,$/bbl
+1978-12-31,1978,oil_brent,"Crude oil, Brent",12.91666666667,$/bbl
+1979-12-31,1979,oil_brent,"Crude oil, Brent",32.11250003179,$/bbl
+1980-12-31,1980,oil_brent,"Crude oil, Brent",37.89166704814,$/bbl
+1981-12-31,1981,oil_brent,"Crude oil, Brent",36.6758330663,$/bbl
+1982-12-31,1982,oil_brent,"Crude oil, Brent",33.41833289464,$/bbl
+1983-12-31,1983,oil_brent,"Crude oil, Brent",29.82916704814,$/bbl
+1984-12-31,1984,oil_brent,"Crude oil, Brent",28.80166657766,$/bbl
+1985-12-31,1985,oil_brent,"Crude oil, Brent",27.32916666667,$/bbl
+1986-12-31,1986,oil_brent,"Crude oil, Brent",14.77083333333,$/bbl
+1987-12-31,1987,oil_brent,"Crude oil, Brent",18.34166666667,$/bbl
+1988-12-31,1988,oil_brent,"Crude oil, Brent",14.97083333333,$/bbl
+1989-12-31,1989,oil_brent,"Crude oil, Brent",18.21666666667,$/bbl
+1990-12-31,1990,oil_brent,"Crude oil, Brent",23.68333333333,$/bbl
+1991-12-31,1991,oil_brent,"Crude oil, Brent",20.06666666667,$/bbl
+1992-12-31,1992,oil_brent,"Crude oil, Brent",19.3125,$/bbl
+1993-12-31,1993,oil_brent,"Crude oil, Brent",17.02083333333,$/bbl
+1994-12-31,1994,oil_brent,"Crude oil, Brent",15.83,$/bbl
+1995-12-31,1995,oil_brent,"Crude oil, Brent",17.06583333333,$/bbl
+1996-12-31,1996,oil_brent,"Crude oil, Brent",20.65,$/bbl
+1997-12-31,1997,oil_brent,"Crude oil, Brent",19.09020833333,$/bbl
+1998-12-31,1998,oil_brent,"Crude oil, Brent",12.71654166667,$/bbl
+1999-12-31,1999,oil_brent,"Crude oil, Brent",17.80833333333,$/bbl
+2000-12-31,2000,oil_brent,"Crude oil, Brent",28.27291590909,$/bbl
+2001-12-31,2001,oil_brent,"Crude oil, Brent",24.42157153589,$/bbl
+2002-12-31,2002,oil_brent,"Crude oil, Brent",24.96947770777,$/bbl
+2003-12-31,2003,oil_brent,"Crude oil, Brent",28.85139058285,$/bbl
+2004-12-31,2004,oil_brent,"Crude oil, Brent",38.30067968175,$/bbl
+2005-12-31,2005,oil_brent,"Crude oil, Brent",54.43413041126,$/bbl
+2006-12-31,2006,oil_brent,"Crude oil, Brent",65.39138122067,$/bbl
+2007-12-31,2007,oil_brent,"Crude oil, Brent",72.69617052595,$/bbl
+2008-12-31,2008,oil_brent,"Crude oil, Brent",97.63648418188,$/bbl
+2009-12-31,2009,oil_brent,"Crude oil, Brent",61.86220689033,$/bbl
+2010-12-31,2010,oil_brent,"Crude oil, Brent",79.63562997992,$/bbl
+2011-12-31,2011,oil_brent,"Crude oil, Brent",110.93992536389,$/bbl
+2012-12-31,2012,oil_brent,"Crude oil, Brent",111.96555833961,$/bbl
+2013-12-31,2013,oil_brent,"Crude oil, Brent",108.85637454514,$/bbl
+2014-12-31,2014,oil_brent,"Crude oil, Brent",98.9375,$/bbl
+2015-12-31,2015,oil_brent,"Crude oil, Brent",52.37,$/bbl
+2016-12-31,2016,oil_brent,"Crude oil, Brent",44.0475,$/bbl
+2017-12-31,2017,oil_brent,"Crude oil, Brent",54.3925,$/bbl
+2018-12-31,2018,oil_brent,"Crude oil, Brent",71.07166666667,$/bbl
+2019-12-31,2019,oil_brent,"Crude oil, Brent",64.03166666667,$/bbl
+2020-12-31,2020,oil_brent,"Crude oil, Brent",42.3,$/bbl
+2021-12-31,2021,oil_brent,"Crude oil, Brent",70.44333333333,$/bbl
+2022-12-31,2022,oil_brent,"Crude oil, Brent",99.82416666667,$/bbl
+2023-12-31,2023,oil_brent,"Crude oil, Brent",82.61625,$/bbl
+2024-12-31,2024,oil_brent,"Crude oil, Brent",80.69866666667,$/bbl
+2025-12-31,2025,oil_brent,"Crude oil, Brent",69.03525,$/bbl
+1960-12-31,1960,oil_crude_average,"Crude oil, average",1.63000011444,$/bbl
+1961-12-31,1961,oil_crude_average,"Crude oil, average",1.57,$/bbl
+1962-12-31,1962,oil_crude_average,"Crude oil, average",1.52,$/bbl
+1963-12-31,1963,oil_crude_average,"Crude oil, average",1.5,$/bbl
+1964-12-31,1964,oil_crude_average,"Crude oil, average",1.45,$/bbl
+1965-12-31,1965,oil_crude_average,"Crude oil, average",1.42,$/bbl
+1966-12-31,1966,oil_crude_average,"Crude oil, average",1.36,$/bbl
+1967-12-31,1967,oil_crude_average,"Crude oil, average",1.33,$/bbl
+1968-12-31,1968,oil_crude_average,"Crude oil, average",1.32,$/bbl
+1969-12-31,1969,oil_crude_average,"Crude oil, average",1.27,$/bbl
+1970-12-31,1970,oil_crude_average,"Crude oil, average",1.21,$/bbl
+1971-12-31,1971,oil_crude_average,"Crude oil, average",1.69,$/bbl
+1972-12-31,1972,oil_crude_average,"Crude oil, average",1.82,$/bbl
+1973-12-31,1973,oil_crude_average,"Crude oil, average",2.8075,$/bbl
+1974-12-31,1974,oil_crude_average,"Crude oil, average",10.9749994278,$/bbl
+1975-12-31,1975,oil_crude_average,"Crude oil, average",10.43250012398,$/bbl
+1976-12-31,1976,oil_crude_average,"Crude oil, average",11.63000011444,$/bbl
+1977-12-31,1977,oil_crude_average,"Crude oil, average",12.56500005722,$/bbl
+1978-12-31,1978,oil_crude_average,"Crude oil, average",12.91666666667,$/bbl
+1979-12-31,1979,oil_crude_average,"Crude oil, average",30.9645832777,$/bbl
+1980-12-31,1980,oil_crude_average,"Crude oil, average",36.86874993642,$/bbl
+1981-12-31,1981,oil_crude_average,"Crude oil, average",35.48499965668,$/bbl
+1982-12-31,1982,oil_crude_average,"Crude oil, average",32.64722212685,$/bbl
+1983-12-31,1983,oil_crude_average,"Crude oil, average",29.65777783924,$/bbl
+1984-12-31,1984,oil_crude_average,"Crude oil, average",28.55749999152,$/bbl
+1985-12-31,1985,oil_crude_average,"Crude oil, average",27.18333333333,$/bbl
+1986-12-31,1986,oil_crude_average,"Crude oil, average",14.35,$/bbl
+1987-12-31,1987,oil_crude_average,"Crude oil, average",18.14583333333,$/bbl
+1988-12-31,1988,oil_crude_average,"Crude oil, average",14.71805555556,$/bbl
+1989-12-31,1989,oil_crude_average,"Crude oil, average",17.83888888889,$/bbl
+1990-12-31,1990,oil_crude_average,"Crude oil, average",22.87916666667,$/bbl
+1991-12-31,1991,oil_crude_average,"Crude oil, average",19.37083333333,$/bbl
+1992-12-31,1992,oil_crude_average,"Crude oil, average",19.02083333333,$/bbl
+1993-12-31,1993,oil_crude_average,"Crude oil, average",16.84166666667,$/bbl
+1994-12-31,1994,oil_crude_average,"Crude oil, average",15.88666666667,$/bbl
+1995-12-31,1995,oil_crude_average,"Crude oil, average",17.18333333333,$/bbl
+1996-12-31,1996,oil_crude_average,"Crude oil, average",20.42,$/bbl
+1997-12-31,1997,oil_crude_average,"Crude oil, average",19.17104272487,$/bbl
+1998-12-31,1998,oil_crude_average,"Crude oil, average",13.06444166667,$/bbl
+1999-12-31,1999,oil_crude_average,"Crude oil, average",18.07138888889,$/bbl
+2000-12-31,2000,oil_crude_average,"Crude oil, average",28.22971944444,$/bbl
+2001-12-31,2001,oil_crude_average,"Crude oil, average",24.35182500429,$/bbl
+2002-12-31,2002,oil_crude_average,"Crude oil, average",24.92774838181,$/bbl
+2003-12-31,2003,oil_crude_average,"Crude oil, average",28.89890318948,$/bbl
+2004-12-31,2004,oil_crude_average,"Crude oil, average",37.73338770304,$/bbl
+2005-12-31,2005,oil_crude_average,"Crude oil, average",53.39102459679,$/bbl
+2006-12-31,2006,oil_crude_average,"Crude oil, average",64.2882591402,$/bbl
+2007-12-31,2007,oil_crude_average,"Crude oil, average",71.11655901006,$/bbl
+2008-12-31,2008,oil_crude_average,"Crude oil, average",96.99045375846,$/bbl
+2009-12-31,2009,oil_crude_average,"Crude oil, average",61.75692221551,$/bbl
+2010-12-31,2010,oil_crude_average,"Crude oil, average",79.04077178472,$/bbl
+2011-12-31,2011,oil_crude_average,"Crude oil, average",104.00939752553,$/bbl
+2012-12-31,2012,oil_crude_average,"Crude oil, average",105.00962888488,$/bbl
+2013-12-31,2013,oil_crude_average,"Crude oil, average",104.07749749759,$/bbl
+2014-12-31,2014,oil_crude_average,"Crude oil, average",96.235,$/bbl
+2015-12-31,2015,oil_crude_average,"Crude oil, average",50.75277777778,$/bbl
+2016-12-31,2016,oil_crude_average,"Crude oil, average",42.81194444444,$/bbl
+2017-12-31,2017,oil_crude_average,"Crude oil, average",52.805,$/bbl
+2018-12-31,2018,oil_crude_average,"Crude oil, average",68.3475,$/bbl
+2019-12-31,2019,oil_crude_average,"Crude oil, average",61.4075,$/bbl
+2020-12-31,2020,oil_crude_average,"Crude oil, average",41.25777777778,$/bbl
+2021-12-31,2021,oil_crude_average,"Crude oil, average",69.07055555556,$/bbl
+2022-12-31,2022,oil_crude_average,"Crude oil, average",97.10138888889,$/bbl
+2023-12-31,2023,oil_crude_average,"Crude oil, average",80.75569444444,$/bbl
+2024-12-31,2024,oil_crude_average,"Crude oil, average",78.73372222222,$/bbl
+2025-12-31,2025,oil_crude_average,"Crude oil, average",67.42536111111,$/bbl
+1960-12-31,1960,oil_dubai,"Crude oil, Dubai",1.63000011444,$/bbl
+1961-12-31,1961,oil_dubai,"Crude oil, Dubai",1.57,$/bbl
+1962-12-31,1962,oil_dubai,"Crude oil, Dubai",1.52,$/bbl
+1963-12-31,1963,oil_dubai,"Crude oil, Dubai",1.5,$/bbl
+1964-12-31,1964,oil_dubai,"Crude oil, Dubai",1.45,$/bbl
+1965-12-31,1965,oil_dubai,"Crude oil, Dubai",1.42,$/bbl
+1966-12-31,1966,oil_dubai,"Crude oil, Dubai",1.36,$/bbl
+1967-12-31,1967,oil_dubai,"Crude oil, Dubai",1.33,$/bbl
+1968-12-31,1968,oil_dubai,"Crude oil, Dubai",1.32,$/bbl
+1969-12-31,1969,oil_dubai,"Crude oil, Dubai",1.27,$/bbl
+1970-12-31,1970,oil_dubai,"Crude oil, Dubai",1.21,$/bbl
+1971-12-31,1971,oil_dubai,"Crude oil, Dubai",1.69,$/bbl
+1972-12-31,1972,oil_dubai,"Crude oil, Dubai",1.82,$/bbl
+1973-12-31,1973,oil_dubai,"Crude oil, Dubai",2.8075,$/bbl
+1974-12-31,1974,oil_dubai,"Crude oil, Dubai",10.9749994278,$/bbl
+1975-12-31,1975,oil_dubai,"Crude oil, Dubai",10.43250012398,$/bbl
+1976-12-31,1976,oil_dubai,"Crude oil, Dubai",11.63000011444,$/bbl
+1977-12-31,1977,oil_dubai,"Crude oil, Dubai",12.56500005722,$/bbl
+1978-12-31,1978,oil_dubai,"Crude oil, Dubai",12.91666666667,$/bbl
+1979-12-31,1979,oil_dubai,"Crude oil, Dubai",29.81666652362,$/bbl
+1980-12-31,1980,oil_dubai,"Crude oil, Dubai",35.84583282471,$/bbl
+1981-12-31,1981,oil_dubai,"Crude oil, Dubai",34.29416624705,$/bbl
+1982-12-31,1982,oil_dubai,"Crude oil, Dubai",31.75666681925,$/bbl
+1983-12-31,1983,oil_dubai,"Crude oil, Dubai",28.72916666667,$/bbl
+1984-12-31,1984,oil_dubai,"Crude oil, Dubai",27.49333333969,$/bbl
+1985-12-31,1985,oil_dubai,"Crude oil, Dubai",26.45833333333,$/bbl
+1986-12-31,1986,oil_dubai,"Crude oil, Dubai",13.19583333333,$/bbl
+1987-12-31,1987,oil_dubai,"Crude oil, Dubai",16.9375,$/bbl
+1988-12-31,1988,oil_dubai,"Crude oil, Dubai",13.21666666667,$/bbl
+1989-12-31,1989,oil_dubai,"Crude oil, Dubai",15.70416666667,$/bbl
+1990-12-31,1990,oil_dubai,"Crude oil, Dubai",20.4625,$/bbl
+1991-12-31,1991,oil_dubai,"Crude oil, Dubai",16.5625,$/bbl
+1992-12-31,1992,oil_dubai,"Crude oil, Dubai",17.1875,$/bbl
+1993-12-31,1993,oil_dubai,"Crude oil, Dubai",14.94166666667,$/bbl
+1994-12-31,1994,oil_dubai,"Crude oil, Dubai",14.66666666667,$/bbl
+1995-12-31,1995,oil_dubai,"Crude oil, Dubai",16.115,$/bbl
+1996-12-31,1996,oil_dubai,"Crude oil, Dubai",18.54,$/bbl
+1997-12-31,1997,oil_dubai,"Crude oil, Dubai",18.09708333333,$/bbl
+1998-12-31,1998,oil_dubai,"Crude oil, Dubai",12.12758333333,$/bbl
+1999-12-31,1999,oil_dubai,"Crude oil, Dubai",17.165,$/bbl
+2000-12-31,2000,oil_dubai,"Crude oil, Dubai",26.08411742424,$/bbl
+2001-12-31,2001,oil_dubai,"Crude oil, Dubai",22.71482058943,$/bbl
+2002-12-31,2002,oil_dubai,"Crude oil, Dubai",23.72059993514,$/bbl
+2003-12-31,2003,oil_dubai,"Crude oil, Dubai",26.73814078675,$/bbl
+2004-12-31,2004,oil_dubai,"Crude oil, Dubai",33.45586608319,$/bbl
+2005-12-31,2005,oil_dubai,"Crude oil, Dubai",49.29415891053,$/bbl
+2006-12-31,2006,oil_dubai,"Crude oil, Dubai",61.43081200366,$/bbl
+2007-12-31,2007,oil_dubai,"Crude oil, Dubai",68.36905389916,$/bbl
+2008-12-31,2008,oil_dubai,"Crude oil, Dubai",93.77713346608,$/bbl
+2009-12-31,2009,oil_dubai,"Crude oil, Dubai",61.75491975657,$/bbl
+2010-12-31,2010,oil_dubai,"Crude oil, Dubai",78.06115481942,$/bbl
+2011-12-31,2011,oil_dubai,"Crude oil, Dubai",106.03393828555,$/bbl
+2012-12-31,2012,oil_dubai,"Crude oil, Dubai",108.90444988418,$/bbl
+2013-12-31,2013,oil_dubai,"Crude oil, Dubai",105.43335233547,$/bbl
+2014-12-31,2014,oil_dubai,"Crude oil, Dubai",96.655,$/bbl
+2015-12-31,2015,oil_dubai,"Crude oil, Dubai",51.17916666667,$/bbl
+2016-12-31,2016,oil_dubai,"Crude oil, Dubai",41.20083333333,$/bbl
+2017-12-31,2017,oil_dubai,"Crude oil, Dubai",53.11583333333,$/bbl
+2018-12-31,2018,oil_dubai,"Crude oil, Dubai",69.15166666667,$/bbl
+2019-12-31,2019,oil_dubai,"Crude oil, Dubai",63.1775,$/bbl
+2020-12-31,2020,oil_dubai,"Crude oil, Dubai",42.165,$/bbl
+2021-12-31,2021,oil_dubai,"Crude oil, Dubai",68.805,$/bbl
+2022-12-31,2022,oil_dubai,"Crude oil, Dubai",97.04916666667,$/bbl
+2023-12-31,2023,oil_dubai,"Crude oil, Dubai",81.98166666667,$/bbl
+2024-12-31,2024,oil_dubai,"Crude oil, Dubai",79.65833333333,$/bbl
+2025-12-31,2025,oil_dubai,"Crude oil, Dubai",68.34833333333,$/bbl
+1982-12-31,1982,oil_wti,"Crude oil, WTI",32.76666666667,$/bbl
+1983-12-31,1983,oil_wti,"Crude oil, WTI",30.41499980291,$/bbl
+1984-12-31,1984,oil_wti,"Crude oil, WTI",29.37750005722,$/bbl
+1985-12-31,1985,oil_wti,"Crude oil, WTI",27.7625,$/bbl
+1986-12-31,1986,oil_wti,"Crude oil, WTI",15.08333333333,$/bbl
+1987-12-31,1987,oil_wti,"Crude oil, WTI",19.15833333333,$/bbl
+1988-12-31,1988,oil_wti,"Crude oil, WTI",15.96666666667,$/bbl
+1989-12-31,1989,oil_wti,"Crude oil, WTI",19.59583333333,$/bbl
+1990-12-31,1990,oil_wti,"Crude oil, WTI",24.49166666667,$/bbl
+1991-12-31,1991,oil_wti,"Crude oil, WTI",21.48333333333,$/bbl
+1992-12-31,1992,oil_wti,"Crude oil, WTI",20.5625,$/bbl
+1993-12-31,1993,oil_wti,"Crude oil, WTI",18.5625,$/bbl
+1994-12-31,1994,oil_wti,"Crude oil, WTI",17.16333333333,$/bbl
+1995-12-31,1995,oil_wti,"Crude oil, WTI",18.36916666667,$/bbl
+1996-12-31,1996,oil_wti,"Crude oil, WTI",22.07,$/bbl
+1997-12-31,1997,oil_wti,"Crude oil, WTI",20.32583650794,$/bbl
+1998-12-31,1998,oil_wti,"Crude oil, WTI",14.3492,$/bbl
+1999-12-31,1999,oil_wti,"Crude oil, WTI",19.24083333333,$/bbl
+2000-12-31,2000,oil_wti,"Crude oil, WTI",30.332125,$/bbl
+2001-12-31,2001,oil_wti,"Crude oil, WTI",25.91908288755,$/bbl
+2002-12-31,2002,oil_wti,"Crude oil, WTI",26.0931675025,$/bbl
+2003-12-31,2003,oil_wti,"Crude oil, WTI",31.10717819885,$/bbl
+2004-12-31,2004,oil_wti,"Crude oil, WTI",41.44361734417,$/bbl
+2005-12-31,2005,oil_wti,"Crude oil, WTI",56.44478446858,$/bbl
+2006-12-31,2006,oil_wti,"Crude oil, WTI",66.04258419627,$/bbl
+2007-12-31,2007,oil_wti,"Crude oil, WTI",72.28445260508,$/bbl
+2008-12-31,2008,oil_wti,"Crude oil, WTI",99.55774362743,$/bbl
+2009-12-31,2009,oil_wti,"Crude oil, WTI",61.65363999962,$/bbl
+2010-12-31,2010,oil_wti,"Crude oil, WTI",79.42553055481,$/bbl
+2011-12-31,2011,oil_wti,"Crude oil, WTI",95.05432892714,$/bbl
+2012-12-31,2012,oil_wti,"Crude oil, WTI",94.15887843084,$/bbl
+2013-12-31,2013,oil_wti,"Crude oil, WTI",97.94276561215,$/bbl
+2014-12-31,2014,oil_wti,"Crude oil, WTI",93.1125,$/bbl
+2015-12-31,2015,oil_wti,"Crude oil, WTI",48.70916666667,$/bbl
+2016-12-31,2016,oil_wti,"Crude oil, WTI",43.1875,$/bbl
+2017-12-31,2017,oil_wti,"Crude oil, WTI",50.90666666667,$/bbl
+2018-12-31,2018,oil_wti,"Crude oil, WTI",64.81916666667,$/bbl
+2019-12-31,2019,oil_wti,"Crude oil, WTI",57.01333333333,$/bbl
+2020-12-31,2020,oil_wti,"Crude oil, WTI",39.30833333333,$/bbl
+2021-12-31,2021,oil_wti,"Crude oil, WTI",67.96333333333,$/bbl
+2022-12-31,2022,oil_wti,"Crude oil, WTI",94.43083333333,$/bbl
+2023-12-31,2023,oil_wti,"Crude oil, WTI",77.66916666667,$/bbl
+2024-12-31,2024,oil_wti,"Crude oil, WTI",75.84416666667,$/bbl
+2025-12-31,2025,oil_wti,"Crude oil, WTI",64.8925,$/bbl
+1960-12-31,1960,silver,Silver,0.9137,$/troy oz
+1961-12-31,1961,silver,Silver,0.92444166667,$/troy oz
+1962-12-31,1962,silver,Silver,1.083725,$/troy oz
+1963-12-31,1963,silver,Silver,1.27910833333,$/troy oz
+1964-12-31,1964,silver,Silver,1.293,$/troy oz
+1965-12-31,1965,silver,Silver,1.293,$/troy oz
+1966-12-31,1966,silver,Silver,1.293,$/troy oz
+1967-12-31,1967,silver,Silver,1.54918333333,$/troy oz
+1968-12-31,1968,silver,Silver,2.14463333333,$/troy oz
+1969-12-31,1969,silver,Silver,1.79066666667,$/troy oz
+1970-12-31,1970,silver,Silver,1.77083333333,$/troy oz
+1971-12-31,1971,silver,Silver,1.54564166667,$/troy oz
+1972-12-31,1972,silver,Silver,1.68456666667,$/troy oz
+1973-12-31,1973,silver,Silver,2.55755833333,$/troy oz
+1974-12-31,1974,silver,Silver,4.70798,$/troy oz
+1975-12-31,1975,silver,Silver,4.418515,$/troy oz
+1976-12-31,1976,silver,Silver,4.355625,$/troy oz
+1977-12-31,1977,silver,Silver,4.63608333333,$/troy oz
+1978-12-31,1978,silver,Silver,5.41876666667,$/troy oz
+1979-12-31,1979,silver,Silver,11.099575,$/troy oz
+1980-12-31,1980,silver,Silver,20.80436666667,$/troy oz
+1981-12-31,1981,silver,Silver,10.52318333333,$/troy oz
+1982-12-31,1982,silver,Silver,7.92989166667,$/troy oz
+1983-12-31,1983,silver,Silver,11.42628333333,$/troy oz
+1984-12-31,1984,silver,Silver,8.144025,$/troy oz
+1985-12-31,1985,silver,Silver,6.11523333333,$/troy oz
+1986-12-31,1986,silver,Silver,5.43919166667,$/troy oz
+1987-12-31,1987,silver,Silver,7.01009166667,$/troy oz
+1988-12-31,1988,silver,Silver,6.53045833333,$/troy oz
+1989-12-31,1989,silver,Silver,5.50709166667,$/troy oz
+1990-12-31,1990,silver,Silver,4.833225,$/troy oz
+1991-12-31,1991,silver,Silver,4.05135833333,$/troy oz
+1992-12-31,1992,silver,Silver,3.94600833333,$/troy oz
+1993-12-31,1993,silver,Silver,4.3084,$/troy oz
+1994-12-31,1994,silver,Silver,5.2847,$/troy oz
+1995-12-31,1995,silver,Silver,5.20024166667,$/troy oz
+1996-12-31,1996,silver,Silver,5.2013,$/troy oz
+1997-12-31,1997,silver,Silver,4.90603333333,$/troy oz
+1998-12-31,1998,silver,Silver,5.55079166667,$/troy oz
+1999-12-31,1999,silver,Silver,5.21545833333,$/troy oz
+2000-12-31,2000,silver,Silver,4.95324166667,$/troy oz
+2001-12-31,2001,silver,Silver,4.376,$/troy oz
+2002-12-31,2002,silver,Silver,4.60105,$/troy oz
+2003-12-31,2003,silver,Silver,4.87624166667,$/troy oz
+2004-12-31,2004,silver,Silver,6.65786666667,$/troy oz
+2005-12-31,2005,silver,Silver,7.30836666667,$/troy oz
+2006-12-31,2006,silver,Silver,11.55923333333,$/troy oz
+2007-12-31,2007,silver,Silver,13.391975,$/troy oz
+2008-12-31,2008,silver,Silver,14.99653333333,$/troy oz
+2009-12-31,2009,silver,Silver,14.64353333333,$/troy oz
+2010-12-31,2010,silver,Silver,20.15295833333,$/troy oz
+2011-12-31,2011,silver,Silver,35.22411666667,$/troy oz
+2012-12-31,2012,silver,Silver,31.13740833333,$/troy oz
+2013-12-31,2013,silver,Silver,23.84968611739,$/troy oz
+2014-12-31,2014,silver,Silver,19.0715,$/troy oz
+2015-12-31,2015,silver,Silver,15.72066666667,$/troy oz
+2016-12-31,2016,silver,Silver,17.14675,$/troy oz
+2017-12-31,2017,silver,Silver,17.06616666667,$/troy oz
+2018-12-31,2018,silver,Silver,15.71375,$/troy oz
+2019-12-31,2019,silver,Silver,16.21758333333,$/troy oz
+2020-12-31,2020,silver,Silver,20.53658333333,$/troy oz
+2021-12-31,2021,silver,Silver,25.16458333333,$/troy oz
+2022-12-31,2022,silver,Silver,21.79441666667,$/troy oz
+2023-12-31,2023,silver,Silver,23.39858333333,$/troy oz
+2024-12-31,2024,silver,Silver,28.26916666667,$/troy oz
+2025-12-31,2025,silver,Silver,39.80466666667,$/troy oz

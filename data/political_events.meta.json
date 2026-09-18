@@ -1,0 +1,30 @@
+{
+ "name": "political_events",
+ "rows": 22,
+ "columns": [
+  "date",
+  "title",
+  "category",
+  "severity",
+  "region",
+  "source_url",
+  "series",
+  "value",
+  "unit"
+ ],
+ "source": "curated; every row carries its own source_url",
+ "licence": "CC0 for the compilation; see source_url per row",
+ "note": "Hand-curated. Severity is editorial. Extend collectors/events_seed.csv.",
+ "retrieved": "2026-09-18",
+ "span": [
+  "1997-07-02",
+  "2024-11-05"
+ ],
+ "series": [
+  "conflict",
+  "election",
+  "financial",
+  "health",
+  "policy"
+ ]
+}

@@ -1,0 +1,370 @@
+date,year,series,metric,company,rank,value,unit,list_depth,source_list
+2017-12-31,2017,assets_top10,assets,Industrial and Commercial Bank of China,1.0,3420.2,USD billions,10,Forbes Global 2000
+2017-12-31,2017,assets_top10,assets,China Construction Bank,2.0,2826.0,USD billions,10,Forbes Global 2000
+2017-12-31,2017,assets_top10,assets,Citigroup,3.0,2739.8,USD billions,10,Forbes Global 2000
+2017-12-31,2017,assets_top10,assets,Berkshire Hathaway,4.0,561.1,USD billions,10,Forbes Global 2000
+2017-12-31,2017,assets_top10,assets,JPMorgan Chase,5.0,2423.8,USD billions,10,Forbes Global 2000
+2017-12-31,2017,assets_top10,assets,Bank of China,6.0,2589.6,USD billions,10,Forbes Global 2000
+2017-12-31,2017,assets_top10,assets,Wells Fargo,7.0,1849.2,USD billions,10,Forbes Global 2000
+2017-12-31,2017,assets_top10,assets,Apple Inc.,8.0,293.3,USD billions,10,Forbes Global 2000
+2017-12-31,2017,assets_top10,assets,ExxonMobil,9.0,336.8,USD billions,10,Forbes Global 2000
+2017-12-31,2017,assets_top10,assets,Toyota Motor,10.0,406.7,USD billions,10,Forbes Global 2000
+2018-12-31,2018,assets_top10,assets,Industrial and Commercial Bank of China,1.0,4210.9,USD billions,10,Forbes Global 2000
+2018-12-31,2018,assets_top10,assets,China Construction Bank,2.0,3631.6,USD billions,10,Forbes Global 2000
+2018-12-31,2018,assets_top10,assets,JPMorgan Chase,3.0,2609.8,USD billions,10,Forbes Global 2000
+2018-12-31,2018,assets_top10,assets,Berkshire Hathaway,4.0,702.7,USD billions,10,Forbes Global 2000
+2018-12-31,2018,assets_top10,assets,Citigroup,5.0,3439.3,USD billions,10,Forbes Global 2000
+2018-12-31,2018,assets_top10,assets,Bank of America,6.0,2196.8,USD billions,10,Forbes Global 2000
+2018-12-31,2018,assets_top10,assets,Wells Fargo,7.0,1915.4,USD billions,10,Forbes Global 2000
+2018-12-31,2018,assets_top10,assets,Apple Inc.,8.0,367.5,USD billions,10,Forbes Global 2000
+2018-12-31,2018,assets_top10,assets,Bank of China,9.0,3204.2,USD billions,10,Forbes Global 2000
+2018-12-31,2018,assets_top10,assets,American Express,10.0,1066.4,USD billions,10,Forbes Global 2000
+2019-12-31,2019,assets_top10,assets,Industrial and Commercial Bank of China,1.0,4034.5,USD billions,10,Forbes Global 2000
+2019-12-31,2019,assets_top10,assets,JPMorgan Chase,2.0,2737.2,USD billions,10,Forbes Global 2000
+2019-12-31,2019,assets_top10,assets,China Construction Bank,3.0,3382.4,USD billions,10,Forbes Global 2000
+2019-12-31,2019,assets_top10,assets,Citigroup,4.0,3293.1,USD billions,10,Forbes Global 2000
+2019-12-31,2019,assets_top10,assets,Bank of America,5.0,2377.2,USD billions,10,Forbes Global 2000
+2019-12-31,2019,assets_top10,assets,Apple Inc.,6.0,373.7,USD billions,10,Forbes Global 2000
+2019-12-31,2019,assets_top10,assets,Ping An Insurance,7.0,1038.3,USD billions,10,Forbes Global 2000
+2019-12-31,2019,assets_top10,assets,American Express,8.0,3097.6,USD billions,10,Forbes Global 2000
+2019-12-31,2019,assets_top10,assets,Royal Dutch Shell,9.0,399.2,USD billions,10,Forbes Global 2000
+2019-12-31,2019,assets_top10,assets,Wells Fargo,10.0,1887.8,USD billions,10,Forbes Global 2000
+2020-12-31,2020,assets_top10,assets,Industrial and Commercial Bank of China,1.0,4322.5,USD billions,10,Forbes Global 2000
+2020-12-31,2020,assets_top10,assets,China Construction Bank,2.0,3822.0,USD billions,10,Forbes Global 2000
+2020-12-31,2020,assets_top10,assets,JPMorgan Chase,3.0,3139.4,USD billions,10,Forbes Global 2000
+2020-12-31,2020,assets_top10,assets,Berkshire Hathaway,4.0,817.7,USD billions,10,Forbes Global 2000
+2020-12-31,2020,assets_top10,assets,Citigroup,5.0,3697.5,USD billions,10,Forbes Global 2000
+2020-12-31,2020,assets_top10,assets,Saudi Aramco,6.0,398.3,USD billions,10,Forbes Global 2000
+2020-12-31,2020,assets_top10,assets,Ping An Insurance,7.0,1218.6,USD billions,10,Forbes Global 2000
+2020-12-31,2020,assets_top10,assets,Bank of America,8.0,2620.0,USD billions,10,Forbes Global 2000
+2020-12-31,2020,assets_top10,assets,Apple Inc.,9.0,320.4,USD billions,10,Forbes Global 2000
+2020-12-31,2020,assets_top10,assets,Bank of China,10.0,3387.0,USD billions,10,Forbes Global 2000
+2021-12-31,2021,assets_top10,assets,Industrial and Commercial Bank of China,1.0,4914.7,USD billions,10,Forbes Global 2000
+2021-12-31,2021,assets_top10,assets,JPMorgan Chase,2.0,3689.3,USD billions,10,Forbes Global 2000
+2021-12-31,2021,assets_top10,assets,Berkshire Hathaway,3.0,873.7,USD billions,10,Forbes Global 2000
+2021-12-31,2021,assets_top10,assets,China Construction Bank,4.0,4301.7,USD billions,10,Forbes Global 2000
+2021-12-31,2021,assets_top10,assets,Saudi Aramco,5.0,510.3,USD billions,10,Forbes Global 2000
+2021-12-31,2021,assets_top10,assets,Apple Inc.,6.0,354.1,USD billions,10,Forbes Global 2000
+2021-12-31,2021,assets_top10,assets,Bank of America,6.0,2832.2,USD billions,10,Forbes Global 2000
+2021-12-31,2021,assets_top10,assets,Ping An Insurance,6.0,1453.8,USD billions,10,Forbes Global 2000
+2021-12-31,2021,assets_top10,assets,Citigroup,9.0,4159.9,USD billions,10,Forbes Global 2000
+2021-12-31,2021,assets_top10,assets,"Amazon.com, Inc.",10.0,321.2,USD billions,10,Forbes Global 2000
+2022-12-31,2022,assets_top10,assets,Berkshire Hathaway,1.0,958.8,USD billions,10,Forbes Global 2000
+2022-12-31,2022,assets_top10,assets,Industrial and Commercial Bank of China,2.0,5518.5,USD billions,10,Forbes Global 2000
+2022-12-31,2022,assets_top10,assets,Saudi Aramco,3.0,576.0,USD billions,10,Forbes Global 2000
+2022-12-31,2022,assets_top10,assets,JPMorgan Chase,4.0,3954.7,USD billions,10,Forbes Global 2000
+2022-12-31,2022,assets_top10,assets,China Construction Bank,5.0,4747.0,USD billions,10,Forbes Global 2000
+2022-12-31,2022,assets_top10,assets,"Amazon.com, Inc.",6.0,420.6,USD billions,10,Forbes Global 2000
+2022-12-31,2022,assets_top10,assets,Apple Inc.,7.0,381.2,USD billions,10,Forbes Global 2000
+2022-12-31,2022,assets_top10,assets,Citigroup,8.0,4561.1,USD billions,10,Forbes Global 2000
+2022-12-31,2022,assets_top10,assets,Bank of America,9.0,3238.2,USD billions,10,Forbes Global 2000
+2022-12-31,2022,assets_top10,assets,Toyota,10.0,552.5,USD billions,10,Forbes Global 2000
+2023-12-31,2023,assets_top10,assets,JPMorgan Chase,1.0,3700.0,USD billions,10,Forbes Global 2000
+2023-12-31,2023,assets_top10,assets,Saudi Aramco,2.0,3694.0,USD billions,10,Forbes Global 2000
+2023-12-31,2023,assets_top10,assets,Citigroup,3.0,6100.0,USD billions,10,Forbes Global 2000
+2023-12-31,2023,assets_top10,assets,Industrial and Commercial Bank of China,4.0,5000.0,USD billions,10,Forbes Global 2000
+2023-12-31,2023,assets_top10,assets,China Construction Bank,5.0,5400.0,USD billions,10,Forbes Global 2000
+2023-12-31,2023,assets_top10,assets,Bank of America,6.0,3200.0,USD billions,10,Forbes Global 2000
+2023-12-31,2023,assets_top10,assets,Alphabet,7.0,369.5,USD billions,10,Forbes Global 2000
+2023-12-31,2023,assets_top10,assets,Berkshire Hathaway,8.0,653.9,USD billions,10,Forbes Global 2000
+2023-12-31,2023,assets_top10,assets,Microsoft,9.0,380.1,USD billions,10,Forbes Global 2000
+2023-12-31,2023,assets_top10,assets,Apple Inc.,10.0,332.2,USD billions,10,Forbes Global 2000
+2017-12-31,2017,market_cap_top10,market_cap,Industrial and Commercial Bank of China,1.0,198.0,USD billions,10,Forbes Global 2000
+2017-12-31,2017,market_cap_top10,market_cap,China Construction Bank,2.0,162.8,USD billions,10,Forbes Global 2000
+2017-12-31,2017,market_cap_top10,market_cap,Citigroup,3.0,152.7,USD billions,10,Forbes Global 2000
+2017-12-31,2017,market_cap_top10,market_cap,Berkshire Hathaway,4.0,360.1,USD billions,10,Forbes Global 2000
+2017-12-31,2017,market_cap_top10,market_cap,JPMorgan Chase,5.0,234.2,USD billions,10,Forbes Global 2000
+2017-12-31,2017,market_cap_top10,market_cap,Bank of China,6.0,143.0,USD billions,10,Forbes Global 2000
+2017-12-31,2017,market_cap_top10,market_cap,Wells Fargo,7.0,256.0,USD billions,10,Forbes Global 2000
+2017-12-31,2017,market_cap_top10,market_cap,Apple Inc.,8.0,586.0,USD billions,10,Forbes Global 2000
+2017-12-31,2017,market_cap_top10,market_cap,ExxonMobil,9.0,363.3,USD billions,10,Forbes Global 2000
+2017-12-31,2017,market_cap_top10,market_cap,Toyota Motor,10.0,177.0,USD billions,10,Forbes Global 2000
+2018-12-31,2018,market_cap_top10,market_cap,Industrial and Commercial Bank of China,1.0,311.0,USD billions,10,Forbes Global 2000
+2018-12-31,2018,market_cap_top10,market_cap,China Construction Bank,2.0,261.2,USD billions,10,Forbes Global 2000
+2018-12-31,2018,market_cap_top10,market_cap,JPMorgan Chase,3.0,387.7,USD billions,10,Forbes Global 2000
+2018-12-31,2018,market_cap_top10,market_cap,Berkshire Hathaway,4.0,491.9,USD billions,10,Forbes Global 2000
+2018-12-31,2018,market_cap_top10,market_cap,Citigroup,5.0,184.1,USD billions,10,Forbes Global 2000
+2018-12-31,2018,market_cap_top10,market_cap,Bank of America,6.0,231.9,USD billions,10,Forbes Global 2000
+2018-12-31,2018,market_cap_top10,market_cap,Wells Fargo,7.0,265.3,USD billions,10,Forbes Global 2000
+2018-12-31,2018,market_cap_top10,market_cap,Apple Inc.,8.0,926.9,USD billions,10,Forbes Global 2000
+2018-12-31,2018,market_cap_top10,market_cap,Bank of China,9.0,158.6,USD billions,10,Forbes Global 2000
+2018-12-31,2018,market_cap_top10,market_cap,American Express,10.0,181.4,USD billions,10,Forbes Global 2000
+2019-12-31,2019,market_cap_top10,market_cap,Industrial and Commercial Bank of China,1.0,305.1,USD billions,10,Forbes Global 2000
+2019-12-31,2019,market_cap_top10,market_cap,JPMorgan Chase,2.0,368.5,USD billions,10,Forbes Global 2000
+2019-12-31,2019,market_cap_top10,market_cap,China Construction Bank,3.0,225.0,USD billions,10,Forbes Global 2000
+2019-12-31,2019,market_cap_top10,market_cap,Citigroup,4.0,197.0,USD billions,10,Forbes Global 2000
+2019-12-31,2019,market_cap_top10,market_cap,Bank of America,5.0,287.3,USD billions,10,Forbes Global 2000
+2019-12-31,2019,market_cap_top10,market_cap,Apple Inc.,6.0,961.3,USD billions,10,Forbes Global 2000
+2019-12-31,2019,market_cap_top10,market_cap,Ping An Insurance,7.0,220.2,USD billions,10,Forbes Global 2000
+2019-12-31,2019,market_cap_top10,market_cap,American Express,8.0,143.0,USD billions,10,Forbes Global 2000
+2019-12-31,2019,market_cap_top10,market_cap,Royal Dutch Shell,9.0,264.9,USD billions,10,Forbes Global 2000
+2019-12-31,2019,market_cap_top10,market_cap,Wells Fargo,10.0,214.7,USD billions,10,Forbes Global 2000
+2020-12-31,2020,market_cap_top10,market_cap,Industrial and Commercial Bank of China,1.0,242.3,USD billions,10,Forbes Global 2000
+2020-12-31,2020,market_cap_top10,market_cap,China Construction Bank,2.0,203.8,USD billions,10,Forbes Global 2000
+2020-12-31,2020,market_cap_top10,market_cap,JPMorgan Chase,3.0,291.7,USD billions,10,Forbes Global 2000
+2020-12-31,2020,market_cap_top10,market_cap,Berkshire Hathaway,4.0,455.4,USD billions,10,Forbes Global 2000
+2020-12-31,2020,market_cap_top10,market_cap,Citigroup,5.0,147.2,USD billions,10,Forbes Global 2000
+2020-12-31,2020,market_cap_top10,market_cap,Saudi Aramco,6.0,1284.8,USD billions,10,Forbes Global 2000
+2020-12-31,2020,market_cap_top10,market_cap,Ping An Insurance,7.0,187.2,USD billions,10,Forbes Global 2000
+2020-12-31,2020,market_cap_top10,market_cap,Bank of America,8.0,208.6,USD billions,10,Forbes Global 2000
+2020-12-31,2020,market_cap_top10,market_cap,Apple Inc.,9.0,1285.5,USD billions,10,Forbes Global 2000
+2020-12-31,2020,market_cap_top10,market_cap,Bank of China,10.0,112.8,USD billions,10,Forbes Global 2000
+2021-12-31,2021,market_cap_top10,market_cap,Industrial and Commercial Bank of China,1.0,249.5,USD billions,10,Forbes Global 2000
+2021-12-31,2021,market_cap_top10,market_cap,JPMorgan Chase,2.0,464.8,USD billions,10,Forbes Global 2000
+2021-12-31,2021,market_cap_top10,market_cap,Berkshire Hathaway,3.0,624.4,USD billions,10,Forbes Global 2000
+2021-12-31,2021,market_cap_top10,market_cap,China Construction Bank,4.0,210.4,USD billions,10,Forbes Global 2000
+2021-12-31,2021,market_cap_top10,market_cap,Saudi Aramco,5.0,1897.2,USD billions,10,Forbes Global 2000
+2021-12-31,2021,market_cap_top10,market_cap,Apple Inc.,6.0,2252.3,USD billions,10,Forbes Global 2000
+2021-12-31,2021,market_cap_top10,market_cap,Bank of America,6.0,336.3,USD billions,10,Forbes Global 2000
+2021-12-31,2021,market_cap_top10,market_cap,Ping An Insurance,6.0,211.2,USD billions,10,Forbes Global 2000
+2021-12-31,2021,market_cap_top10,market_cap,Citigroup,9.0,140.1,USD billions,10,Forbes Global 2000
+2021-12-31,2021,market_cap_top10,market_cap,"Amazon.com, Inc.",10.0,1711.8,USD billions,10,Forbes Global 2000
+2022-12-31,2022,market_cap_top10,market_cap,Berkshire Hathaway,1.0,741.5,USD billions,10,Forbes Global 2000
+2022-12-31,2022,market_cap_top10,market_cap,Industrial and Commercial Bank of China,2.0,214.4,USD billions,10,Forbes Global 2000
+2022-12-31,2022,market_cap_top10,market_cap,Saudi Aramco,3.0,2292.1,USD billions,10,Forbes Global 2000
+2022-12-31,2022,market_cap_top10,market_cap,JPMorgan Chase,4.0,374.5,USD billions,10,Forbes Global 2000
+2022-12-31,2022,market_cap_top10,market_cap,China Construction Bank,5.0,181.3,USD billions,10,Forbes Global 2000
+2022-12-31,2022,market_cap_top10,market_cap,"Amazon.com, Inc.",6.0,1468.4,USD billions,10,Forbes Global 2000
+2022-12-31,2022,market_cap_top10,market_cap,Apple Inc.,7.0,2640.3,USD billions,10,Forbes Global 2000
+2022-12-31,2022,market_cap_top10,market_cap,Citigroup,8.0,133.4,USD billions,10,Forbes Global 2000
+2022-12-31,2022,market_cap_top10,market_cap,Bank of America,9.0,303.1,USD billions,10,Forbes Global 2000
+2022-12-31,2022,market_cap_top10,market_cap,Toyota,10.0,237.7,USD billions,10,Forbes Global 2000
+2017-12-31,2017,profit_top10,profit,Industrial and Commercial Bank of China,1.0,44.2,USD billions,10,Forbes Global 2000
+2017-12-31,2017,profit_top10,profit,China Construction Bank,2.0,36.4,USD billions,10,Forbes Global 2000
+2017-12-31,2017,profit_top10,profit,Citigroup,3.0,28.8,USD billions,10,Forbes Global 2000
+2017-12-31,2017,profit_top10,profit,Berkshire Hathaway,4.0,24.1,USD billions,10,Forbes Global 2000
+2017-12-31,2017,profit_top10,profit,JPMorgan Chase,5.0,23.5,USD billions,10,Forbes Global 2000
+2017-12-31,2017,profit_top10,profit,Bank of China,6.0,27.2,USD billions,10,Forbes Global 2000
+2017-12-31,2017,profit_top10,profit,Wells Fargo,7.0,22.7,USD billions,10,Forbes Global 2000
+2017-12-31,2017,profit_top10,profit,Apple Inc.,8.0,53.7,USD billions,10,Forbes Global 2000
+2017-12-31,2017,profit_top10,profit,ExxonMobil,9.0,16.2,USD billions,10,Forbes Global 2000
+2017-12-31,2017,profit_top10,profit,Toyota Motor,10.0,19.3,USD billions,10,Forbes Global 2000
+2018-12-31,2018,profit_top10,profit,Industrial and Commercial Bank of China,1.0,43.7,USD billions,10,Forbes Global 2000
+2018-12-31,2018,profit_top10,profit,China Construction Bank,2.0,37.1,USD billions,10,Forbes Global 2000
+2018-12-31,2018,profit_top10,profit,JPMorgan Chase,3.0,26.5,USD billions,10,Forbes Global 2000
+2018-12-31,2018,profit_top10,profit,Berkshire Hathaway,4.0,39.7,USD billions,10,Forbes Global 2000
+2018-12-31,2018,profit_top10,profit,Citigroup,5.0,29.6,USD billions,10,Forbes Global 2000
+2018-12-31,2018,profit_top10,profit,Bank of America,6.0,16.6,USD billions,10,Forbes Global 2000
+2018-12-31,2018,profit_top10,profit,Wells Fargo,7.0,21.7,USD billions,10,Forbes Global 2000
+2018-12-31,2018,profit_top10,profit,Apple Inc.,8.0,53.3,USD billions,10,Forbes Global 2000
+2018-12-31,2018,profit_top10,profit,Bank of China,9.0,26.4,USD billions,10,Forbes Global 2000
+2018-12-31,2018,profit_top10,profit,American Express,10.0,13.9,USD billions,10,Forbes Global 2000
+2019-12-31,2019,profit_top10,profit,Industrial and Commercial Bank of China,1.0,45.2,USD billions,10,Forbes Global 2000
+2019-12-31,2019,profit_top10,profit,JPMorgan Chase,2.0,32.7,USD billions,10,Forbes Global 2000
+2019-12-31,2019,profit_top10,profit,China Construction Bank,3.0,38.8,USD billions,10,Forbes Global 2000
+2019-12-31,2019,profit_top10,profit,Citigroup,4.0,30.9,USD billions,10,Forbes Global 2000
+2019-12-31,2019,profit_top10,profit,Bank of America,5.0,28.5,USD billions,10,Forbes Global 2000
+2019-12-31,2019,profit_top10,profit,Apple Inc.,6.0,59.4,USD billions,10,Forbes Global 2000
+2019-12-31,2019,profit_top10,profit,Ping An Insurance,7.0,16.3,USD billions,10,Forbes Global 2000
+2019-12-31,2019,profit_top10,profit,American Express,8.0,27.5,USD billions,10,Forbes Global 2000
+2019-12-31,2019,profit_top10,profit,Royal Dutch Shell,9.0,23.3,USD billions,10,Forbes Global 2000
+2019-12-31,2019,profit_top10,profit,Wells Fargo,10.0,23.1,USD billions,10,Forbes Global 2000
+2020-12-31,2020,profit_top10,profit,Industrial and Commercial Bank of China,1.0,45.3,USD billions,10,Forbes Global 2000
+2020-12-31,2020,profit_top10,profit,China Construction Bank,2.0,38.9,USD billions,10,Forbes Global 2000
+2020-12-31,2020,profit_top10,profit,JPMorgan Chase,3.0,30.0,USD billions,10,Forbes Global 2000
+2020-12-31,2020,profit_top10,profit,Berkshire Hathaway,4.0,81.4,USD billions,10,Forbes Global 2000
+2020-12-31,2020,profit_top10,profit,Citigroup,5.0,30.9,USD billions,10,Forbes Global 2000
+2020-12-31,2020,profit_top10,profit,Saudi Aramco,6.0,88.2,USD billions,10,Forbes Global 2000
+2020-12-31,2020,profit_top10,profit,Ping An Insurance,7.0,18.8,USD billions,10,Forbes Global 2000
+2020-12-31,2020,profit_top10,profit,Bank of America,8.0,24.1,USD billions,10,Forbes Global 2000
+2020-12-31,2020,profit_top10,profit,Apple Inc.,9.0,57.2,USD billions,10,Forbes Global 2000
+2020-12-31,2020,profit_top10,profit,Bank of China,10.0,27.2,USD billions,10,Forbes Global 2000
+2021-12-31,2021,profit_top10,profit,Industrial and Commercial Bank of China,1.0,45.8,USD billions,10,Forbes Global 2000
+2021-12-31,2021,profit_top10,profit,JPMorgan Chase,2.0,40.4,USD billions,10,Forbes Global 2000
+2021-12-31,2021,profit_top10,profit,Berkshire Hathaway,3.0,42.5,USD billions,10,Forbes Global 2000
+2021-12-31,2021,profit_top10,profit,China Construction Bank,4.0,39.3,USD billions,10,Forbes Global 2000
+2021-12-31,2021,profit_top10,profit,Saudi Aramco,5.0,49.3,USD billions,10,Forbes Global 2000
+2021-12-31,2021,profit_top10,profit,Apple Inc.,6.0,63.9,USD billions,10,Forbes Global 2000
+2021-12-31,2021,profit_top10,profit,Bank of America,6.0,17.9,USD billions,10,Forbes Global 2000
+2021-12-31,2021,profit_top10,profit,Ping An Insurance,6.0,20.8,USD billions,10,Forbes Global 2000
+2021-12-31,2021,profit_top10,profit,Citigroup,9.0,31.3,USD billions,10,Forbes Global 2000
+2021-12-31,2021,profit_top10,profit,"Amazon.com, Inc.",10.0,21.3,USD billions,10,Forbes Global 2000
+2022-12-31,2022,profit_top10,profit,Berkshire Hathaway,1.0,89.9,USD billions,10,Forbes Global 2000
+2022-12-31,2022,profit_top10,profit,Industrial and Commercial Bank of China,2.0,54.0,USD billions,10,Forbes Global 2000
+2022-12-31,2022,profit_top10,profit,Saudi Aramco,3.0,105.4,USD billions,10,Forbes Global 2000
+2022-12-31,2022,profit_top10,profit,JPMorgan Chase,4.0,42.1,USD billions,10,Forbes Global 2000
+2022-12-31,2022,profit_top10,profit,China Construction Bank,5.0,46.9,USD billions,10,Forbes Global 2000
+2022-12-31,2022,profit_top10,profit,"Amazon.com, Inc.",6.0,33.4,USD billions,10,Forbes Global 2000
+2022-12-31,2022,profit_top10,profit,Apple Inc.,7.0,100.6,USD billions,10,Forbes Global 2000
+2022-12-31,2022,profit_top10,profit,Citigroup,8.0,37.4,USD billions,10,Forbes Global 2000
+2022-12-31,2022,profit_top10,profit,Bank of America,9.0,31.0,USD billions,10,Forbes Global 2000
+2022-12-31,2022,profit_top10,profit,Toyota,10.0,28.2,USD billions,10,Forbes Global 2000
+2023-12-31,2023,profit_top10,profit,JPMorgan Chase,1.0,41.8,USD billions,10,Forbes Global 2000
+2023-12-31,2023,profit_top50,profit,Amazon,1.0,79.9,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,profit_top10,profit,Saudi Aramco,2.0,61.69,USD billions,10,Forbes Global 2000
+2023-12-31,2023,profit_top50,profit,Walmart,2.0,21.8,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,profit_top10,profit,Citigroup,3.0,52.47,USD billions,10,Forbes Global 2000
+2023-12-31,2023,profit_top50,profit,State Grid Corporation of China,3.0,9.2,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,profit_top10,profit,Industrial and Commercial Bank of China,4.0,48.25,USD billions,10,Forbes Global 2000
+2023-12-31,2023,profit_top50,profit,Saudi Aramco,4.0,106.0,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,profit_top10,profit,China Construction Bank,5.0,37.92,USD billions,10,Forbes Global 2000
+2023-12-31,2023,profit_top50,profit,China National Petroleum Corporation,5.0,25.2,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,profit_top10,profit,Bank of America,6.0,28.62,USD billions,10,Forbes Global 2000
+2023-12-31,2023,profit_top50,profit,China Petrochemical Corporation,6.0,9.3,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,profit_top10,profit,Alphabet,7.0,58.59,USD billions,10,Forbes Global 2000
+2023-12-31,2023,profit_top50,profit,Apple,7.0,112.0,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,profit_top10,profit,Berkshire Hathaway,8.0,156.36,USD billions,10,Forbes Global 2000
+2023-12-31,2023,profit_top50,profit,Alphabet,8.0,132.0,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,profit_top10,profit,Microsoft,9.0,69.02,USD billions,10,Forbes Global 2000
+2023-12-31,2023,profit_top50,profit,UnitedHealth Group,9.0,14.4,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,profit_top10,profit,Apple Inc.,10.0,94.32,USD billions,10,Forbes Global 2000
+2023-12-31,2023,profit_top50,profit,Berkshire Hathaway,10.0,88.9,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,profit_top50,profit,CVS Health,11.0,8.3,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,profit_top50,profit,Volkswagen Group,12.0,17.9,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,profit_top50,profit,ExxonMobil,13.0,36.0,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,profit_top50,profit,Vitol,14.0,13.0,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,profit_top50,profit,Shell,15.0,19.3,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,profit_top50,profit,China State Construction Engineering,16.0,4.2,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,profit_top50,profit,Toyota,17.0,34.2,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,profit_top50,profit,McKesson,18.0,3.0,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,profit_top50,profit,Microsoft,19.0,101.0,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,profit_top50,profit,Cencora,20.0,1.7,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,profit_top50,profit,Trafigura,21.0,7.3,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,profit_top50,profit,Costco,22.0,6.2,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,profit_top50,profit,JPMorgan Chase,23.0,49.5,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,profit_top50,profit,Industrial and Commercial Bank of China,24.0,51.4,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,profit_top50,profit,TotalEnergies,26.0,21.3,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,profit_top50,profit,Glencore,27.0,4.2,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,profit_top50,profit,Nvidia,28.0,120.0,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,profit_top50,profit,BP,29.0,15.2,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,profit_top50,profit,Cardinal Health,30.0,0.26,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,profit_top50,profit,Stellantis,31.0,20.1,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,profit_top50,profit,Chevron,32.0,21.3,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,profit_top50,profit,China Construction Bank,33.0,46.9,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,profit_top50,profit,Samsung Electronics,34.0,11.0,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,profit_top50,profit,Foxconn,35.0,4.5,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,profit_top50,profit,Cigna,36.0,5.1,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,profit_top50,profit,Agricultural Bank of China,37.0,38.0,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,profit_top50,profit,China Railway Engineering Corporation,38.0,2.1,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,profit_top50,profit,Cargill,39.0,17.6,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,profit_top50,profit,Ford Motor Company,40.0,4.3,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,profit_top50,profit,Bank of China,41.0,32.7,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,profit_top50,profit,Bank of America,42.0,26.5,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,profit_top50,profit,General Motors,43.0,10.1,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,profit_top50,profit,Elevance Health,44.0,5.9,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,profit_top50,profit,BMW Group,45.0,12.2,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,profit_top50,profit,Mercedes-Benz Group,46.0,15.4,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,profit_top50,profit,Meta Platforms,47.0,62.3,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,profit_top50,profit,China Railway Construction Corporation,48.0,1.7,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,profit_top50,profit,Baowu,49.0,2.4,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,profit_top50,profit,Citigroup,50.0,9.2,USD billions,50,Wikipedia largest by revenue
+2017-12-31,2017,revenue_top10,revenue,Industrial and Commercial Bank of China,1.0,171.1,USD billions,10,Forbes Global 2000
+2017-12-31,2017,revenue_top10,revenue,China Construction Bank,2.0,146.8,USD billions,10,Forbes Global 2000
+2017-12-31,2017,revenue_top10,revenue,Citigroup,3.0,131.9,USD billions,10,Forbes Global 2000
+2017-12-31,2017,revenue_top10,revenue,Berkshire Hathaway,4.0,210.8,USD billions,10,Forbes Global 2000
+2017-12-31,2017,revenue_top10,revenue,JPMorgan Chase,5.0,99.9,USD billions,10,Forbes Global 2000
+2017-12-31,2017,revenue_top10,revenue,Bank of China,6.0,122.0,USD billions,10,Forbes Global 2000
+2017-12-31,2017,revenue_top10,revenue,Wells Fargo,7.0,91.4,USD billions,10,Forbes Global 2000
+2017-12-31,2017,revenue_top10,revenue,Apple Inc.,8.0,233.3,USD billions,10,Forbes Global 2000
+2017-12-31,2017,revenue_top10,revenue,ExxonMobil,9.0,236.8,USD billions,10,Forbes Global 2000
+2017-12-31,2017,revenue_top10,revenue,Toyota Motor,10.0,235.8,USD billions,10,Forbes Global 2000
+2018-12-31,2018,revenue_top10,revenue,Industrial and Commercial Bank of China,1.0,165.3,USD billions,10,Forbes Global 2000
+2018-12-31,2018,revenue_top10,revenue,China Construction Bank,2.0,143.2,USD billions,10,Forbes Global 2000
+2018-12-31,2018,revenue_top10,revenue,JPMorgan Chase,3.0,118.2,USD billions,10,Forbes Global 2000
+2018-12-31,2018,revenue_top10,revenue,Berkshire Hathaway,4.0,235.2,USD billions,10,Forbes Global 2000
+2018-12-31,2018,revenue_top10,revenue,Citigroup,5.0,129.3,USD billions,10,Forbes Global 2000
+2018-12-31,2018,revenue_top10,revenue,Bank of America,6.0,92.2,USD billions,10,Forbes Global 2000
+2018-12-31,2018,revenue_top10,revenue,Wells Fargo,7.0,103.0,USD billions,10,Forbes Global 2000
+2018-12-31,2018,revenue_top10,revenue,Apple Inc.,8.0,247.5,USD billions,10,Forbes Global 2000
+2018-12-31,2018,revenue_top10,revenue,Bank of China,9.0,118.2,USD billions,10,Forbes Global 2000
+2018-12-31,2018,revenue_top10,revenue,American Express,10.0,141.6,USD billions,10,Forbes Global 2000
+2019-12-31,2019,revenue_top10,revenue,Industrial and Commercial Bank of China,1.0,175.9,USD billions,10,Forbes Global 2000
+2019-12-31,2019,revenue_top10,revenue,JPMorgan Chase,2.0,132.9,USD billions,10,Forbes Global 2000
+2019-12-31,2019,revenue_top10,revenue,China Construction Bank,3.0,150.3,USD billions,10,Forbes Global 2000
+2019-12-31,2019,revenue_top10,revenue,Citigroup,4.0,137.5,USD billions,10,Forbes Global 2000
+2019-12-31,2019,revenue_top10,revenue,Bank of America,5.0,111.9,USD billions,10,Forbes Global 2000
+2019-12-31,2019,revenue_top10,revenue,Apple Inc.,6.0,261.7,USD billions,10,Forbes Global 2000
+2019-12-31,2019,revenue_top10,revenue,Ping An Insurance,7.0,151.8,USD billions,10,Forbes Global 2000
+2019-12-31,2019,revenue_top10,revenue,American Express,8.0,126.7,USD billions,10,Forbes Global 2000
+2019-12-31,2019,revenue_top10,revenue,Royal Dutch Shell,9.0,382.6,USD billions,10,Forbes Global 2000
+2019-12-31,2019,revenue_top10,revenue,Wells Fargo,10.0,101.5,USD billions,10,Forbes Global 2000
+2020-12-31,2020,revenue_top10,revenue,Industrial and Commercial Bank of China,1.0,177.2,USD billions,10,Forbes Global 2000
+2020-12-31,2020,revenue_top10,revenue,China Construction Bank,2.0,162.1,USD billions,10,Forbes Global 2000
+2020-12-31,2020,revenue_top10,revenue,JPMorgan Chase,3.0,142.9,USD billions,10,Forbes Global 2000
+2020-12-31,2020,revenue_top10,revenue,Berkshire Hathaway,4.0,254.6,USD billions,10,Forbes Global 2000
+2020-12-31,2020,revenue_top10,revenue,Citigroup,5.0,148.7,USD billions,10,Forbes Global 2000
+2020-12-31,2020,revenue_top10,revenue,Saudi Aramco,6.0,329.8,USD billions,10,Forbes Global 2000
+2020-12-31,2020,revenue_top10,revenue,Ping An Insurance,7.0,155.0,USD billions,10,Forbes Global 2000
+2020-12-31,2020,revenue_top10,revenue,Bank of America,8.0,112.1,USD billions,10,Forbes Global 2000
+2020-12-31,2020,revenue_top10,revenue,Apple Inc.,9.0,267.7,USD billions,10,Forbes Global 2000
+2020-12-31,2020,revenue_top10,revenue,Bank of China,10.0,135.4,USD billions,10,Forbes Global 2000
+2021-12-31,2021,revenue_top10,revenue,Industrial and Commercial Bank of China,1.0,190.5,USD billions,10,Forbes Global 2000
+2021-12-31,2021,revenue_top10,revenue,JPMorgan Chase,2.0,136.2,USD billions,10,Forbes Global 2000
+2021-12-31,2021,revenue_top10,revenue,Berkshire Hathaway,3.0,245.5,USD billions,10,Forbes Global 2000
+2021-12-31,2021,revenue_top10,revenue,China Construction Bank,4.0,173.5,USD billions,10,Forbes Global 2000
+2021-12-31,2021,revenue_top10,revenue,Saudi Aramco,5.0,229.7,USD billions,10,Forbes Global 2000
+2021-12-31,2021,revenue_top10,revenue,Apple Inc.,6.0,294.0,USD billions,10,Forbes Global 2000
+2021-12-31,2021,revenue_top10,revenue,Bank of America,6.0,98.8,USD billions,10,Forbes Global 2000
+2021-12-31,2021,revenue_top10,revenue,Ping An Insurance,6.0,169.1,USD billions,10,Forbes Global 2000
+2021-12-31,2021,revenue_top10,revenue,Citigroup,9.0,153.9,USD billions,10,Forbes Global 2000
+2021-12-31,2021,revenue_top10,revenue,"Amazon.com, Inc.",10.0,386.1,USD billions,10,Forbes Global 2000
+2022-12-31,2022,revenue_top10,revenue,Berkshire Hathaway,1.0,276.1,USD billions,10,Forbes Global 2000
+2022-12-31,2022,revenue_top10,revenue,Industrial and Commercial Bank of China,2.0,208.1,USD billions,10,Forbes Global 2000
+2022-12-31,2022,revenue_top10,revenue,Saudi Aramco,3.0,400.4,USD billions,10,Forbes Global 2000
+2022-12-31,2022,revenue_top10,revenue,JPMorgan Chase,4.0,124.5,USD billions,10,Forbes Global 2000
+2022-12-31,2022,revenue_top10,revenue,China Construction Bank,5.0,202.1,USD billions,10,Forbes Global 2000
+2022-12-31,2022,revenue_top10,revenue,"Amazon.com, Inc.",6.0,469.8,USD billions,10,Forbes Global 2000
+2022-12-31,2022,revenue_top10,revenue,Apple Inc.,7.0,678.7,USD billions,10,Forbes Global 2000
+2022-12-31,2022,revenue_top10,revenue,Citigroup,8.0,181.4,USD billions,10,Forbes Global 2000
+2022-12-31,2022,revenue_top10,revenue,Bank of America,9.0,96.8,USD billions,10,Forbes Global 2000
+2022-12-31,2022,revenue_top10,revenue,Toyota,10.0,281.8,USD billions,10,Forbes Global 2000
+2023-12-31,2023,revenue_top10,revenue,JPMorgan Chase,1.0,179.93,USD billions,10,Forbes Global 2000
+2023-12-31,2023,revenue_top50,revenue,Amazon,1.0,716.0,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,revenue_top10,revenue,Saudi Aramco,2.0,393.16,USD billions,10,Forbes Global 2000
+2023-12-31,2023,revenue_top50,revenue,Walmart,2.0,713.0,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,revenue_top10,revenue,Citigroup,3.0,216.77,USD billions,10,Forbes Global 2000
+2023-12-31,2023,revenue_top50,revenue,State Grid Corporation of China,3.0,545.0,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,revenue_top10,revenue,Industrial and Commercial Bank of China,4.0,203.08,USD billions,10,Forbes Global 2000
+2023-12-31,2023,revenue_top50,revenue,Saudi Aramco,4.0,480.0,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,revenue_top10,revenue,China Construction Bank,5.0,186.14,USD billions,10,Forbes Global 2000
+2023-12-31,2023,revenue_top50,revenue,China National Petroleum Corporation,5.0,476.0,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,revenue_top10,revenue,Bank of America,6.0,133.84,USD billions,10,Forbes Global 2000
+2023-12-31,2023,revenue_top50,revenue,China Petrochemical Corporation,6.0,429.0,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,revenue_top10,revenue,Alphabet,7.0,282.85,USD billions,10,Forbes Global 2000
+2023-12-31,2023,revenue_top50,revenue,Apple,7.0,416.0,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,revenue_top10,revenue,Berkshire Hathaway,8.0,589.47,USD billions,10,Forbes Global 2000
+2023-12-31,2023,revenue_top50,revenue,Alphabet,8.0,402.0,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,revenue_top10,revenue,Microsoft,9.0,207.59,USD billions,10,Forbes Global 2000
+2023-12-31,2023,revenue_top50,revenue,UnitedHealth Group,9.0,400.0,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,revenue_top10,revenue,Apple Inc.,10.0,385.1,USD billions,10,Forbes Global 2000
+2023-12-31,2023,revenue_top50,revenue,Berkshire Hathaway,10.0,371.0,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,revenue_top50,revenue,CVS Health,11.0,357.0,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,revenue_top50,revenue,Volkswagen Group,12.0,348.0,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,revenue_top50,revenue,ExxonMobil,13.0,344.0,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,revenue_top50,revenue,Vitol,14.0,331.0,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,revenue_top50,revenue,Shell,15.0,323.0,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,revenue_top50,revenue,China State Construction Engineering,16.0,320.0,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,revenue_top50,revenue,Toyota,17.0,312.0,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,revenue_top50,revenue,McKesson,18.0,308.0,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,revenue_top50,revenue,Microsoft,19.0,281.0,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,revenue_top50,revenue,Cencora,20.0,262.0,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,revenue_top50,revenue,Trafigura,21.0,244.0,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,revenue_top50,revenue,Costco,22.0,242.0,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,revenue_top50,revenue,JPMorgan Chase,23.0,239.0,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,revenue_top50,revenue,Industrial and Commercial Bank of China,24.0,222.0,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,revenue_top50,revenue,Schwarz Gruppe,25.0,220.0,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,revenue_top50,revenue,TotalEnergies,26.0,218.0,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,revenue_top50,revenue,Glencore,27.0,217.0,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,revenue_top50,revenue,Nvidia,28.0,215.0,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,revenue_top50,revenue,BP,29.0,213.0,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,revenue_top50,revenue,Cardinal Health,30.0,205.0,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,revenue_top50,revenue,Stellantis,31.0,204.0,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,revenue_top50,revenue,Chevron,32.0,200.0,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,revenue_top50,revenue,China Construction Bank,33.0,199.0,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,revenue_top50,revenue,Samsung Electronics,34.0,198.0,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,revenue_top50,revenue,Foxconn,35.0,197.0,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,revenue_top50,revenue,Cigna,36.0,195.0,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,revenue_top50,revenue,Agricultural Bank of China,37.0,192.0,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,revenue_top50,revenue,China Railway Engineering Corporation,38.0,178.0,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,revenue_top50,revenue,Cargill,39.0,177.0,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,revenue_top50,revenue,Ford Motor Company,40.0,176.0,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,revenue_top50,revenue,Bank of China,41.0,172.0,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,revenue_top50,revenue,Bank of America,42.0,171.0,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,revenue_top50,revenue,General Motors,43.0,171.0,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,revenue_top50,revenue,Elevance Health,44.0,171.0,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,revenue_top50,revenue,BMW Group,45.0,168.0,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,revenue_top50,revenue,Mercedes-Benz Group,46.0,165.0,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,revenue_top50,revenue,Meta Platforms,47.0,164.0,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,revenue_top50,revenue,China Railway Construction Corporation,48.0,160.0,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,revenue_top50,revenue,Baowu,49.0,157.0,USD billions,50,Wikipedia largest by revenue
+2023-12-31,2023,revenue_top50,revenue,Citigroup,50.0,156.0,USD billions,50,Wikipedia largest by revenue
