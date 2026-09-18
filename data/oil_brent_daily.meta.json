@@ -11,6 +11,8 @@
  "source": "https://github.com/datasets/oil-prices",
  "licence": "ODC-PDDL-1.0",
  "note": "Brent crude spot price, daily, from US EIA.",
+ "json_rows": 9087,
+ "json_thinned": false,
  "retrieved": "2026-09-18",
  "span": [
   "1987-05-20",

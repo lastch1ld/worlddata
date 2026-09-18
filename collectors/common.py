@@ -22,6 +22,7 @@ import requests
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 CACHE = ROOT / "cache"
+JSON_ROW_CAP = 60_000   # above this the browser JSON is thinned; see write()
 UA = {"User-Agent": "worlddata-collector/0.1 (+https://github.com/lastch1ld/worlddata)"}
 
 
@@ -58,11 +59,29 @@ def write(name, df, source, licence, note="", value_col="value"):
     df = df.reset_index(drop=True)
 
     df.to_csv(DATA / f"{name}.csv", index=False)
+
+    # The CSV is canonical and complete. The JSON exists for the browser, and above a few
+    # tens of thousands of rows it stops being useful for that: market_drivers as raw JSON
+    # is 45 MB, which doubles the repo and hangs the page before it draws anything. Above
+    # JSON_ROW_CAP the JSON is thinned to month-end per series - enough to chart, useless
+    # for analysis - and the metadata says so, so nobody mistakes it for the full data.
+    json_df, thinned = df, False
+    if len(df) > JSON_ROW_CAP and "date" in df.columns and "series" in df.columns:
+        d = df.copy()
+        d["_m"] = pd.to_datetime(d["date"], errors="coerce").dt.to_period("M")
+        json_df = (d.dropna(subset=["_m"]).sort_values("date")
+                   .groupby(["series", "_m"], as_index=False).last().drop(columns="_m"))
+        thinned = True
     (DATA / f"{name}.json").write_text(
-        df.to_json(orient="records", date_format="iso"), encoding="utf-8")
+        json_df.to_json(orient="records", date_format="iso"), encoding="utf-8")
+
     meta = {"name": name, "rows": len(df), "columns": list(df.columns),
             "source": source, "licence": licence, "note": note,
+            "json_rows": len(json_df), "json_thinned": thinned,
             "retrieved": date.today().isoformat()}
+    if thinned:
+        meta["json_note"] = ("JSON is thinned to month-end per series for the browser. "
+                             "Use the CSV for anything real - it is complete.")
     if "date" in df.columns:
         meta["span"] = [str(df["date"].min()), str(df["date"].max())]
     if "series" in df.columns:

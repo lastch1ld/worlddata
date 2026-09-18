@@ -11,6 +11,8 @@
  "source": "https://github.com/datasets/s-and-p-500",
  "licence": "ODC-PDDL-1.0",
  "note": "Shiller S&P 500 monthly series including CAPE (PE10). Units differ per series.",
+ "json_rows": 16812,
+ "json_thinned": false,
  "retrieved": "2026-09-18",
  "span": [
   "1871-01-01",

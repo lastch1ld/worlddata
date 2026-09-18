@@ -16,6 +16,8 @@
  "source": "derived from data/central_bank_rates.csv (BIS)",
  "licence": "BIS - free use with attribution",
  "note": "Every policy-rate change. severity by move size: >=75bp major, >=25bp standard, <25bp minor.",
+ "json_rows": 6741,
+ "json_thinned": false,
  "retrieved": "2026-09-18",
  "span": [
   "1946-10-01",

@@ -11,6 +11,8 @@
  "source": "https://data.bis.org/static/bulk/WS_CBPOL_csv_flat.zip",
  "licence": "BIS - free use with attribution",
  "note": "Official policy rate, monthly. One row per country per month.",
+ "json_rows": 25043,
+ "json_thinned": false,
  "retrieved": "2026-09-18",
  "span": [
   "1945-01-01",

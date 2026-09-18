@@ -11,6 +11,8 @@
  "source": "https://github.com/datasets/finance-vix",
  "licence": "ODC-PDDL-1.0",
  "note": "CBOE Volatility Index, daily close.",
+ "json_rows": 9274,
+ "json_thinned": false,
  "retrieved": "2026-09-18",
  "span": [
   "1990-01-02",

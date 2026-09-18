@@ -1,0 +1,29 @@
+{
+ "name": "geopolitical_risk_daily",
+ "rows": 76160,
+ "columns": [
+  "date",
+  "series",
+  "scope",
+  "value",
+  "unit"
+ ],
+ "source": "https://www.matteoiacoviello.com/gpr_files/data_gpr_daily_recent.xls",
+ "licence": "Free for research with attribution. Caldara & Iacoviello (2022), Measuring Geopolitical Risk, AER",
+ "note": "Daily geopolitical risk, 1985 onwards, with threat/act split and moving averages.",
+ "json_rows": 2505,
+ "json_thinned": true,
+ "retrieved": "2026-09-18",
+ "json_note": "JSON is thinned to month-end per series for the browser. Use the CSV for anything real - it is complete.",
+ "span": [
+  "1985-01-01",
+  "2026-09-14"
+ ],
+ "series": [
+  "Geopolitical acts (daily)",
+  "Geopolitical risk (daily)",
+  "Geopolitical risk, 30-day average",
+  "Geopolitical risk, 7-day average",
+  "Geopolitical threats (daily)"
+ ]
+}

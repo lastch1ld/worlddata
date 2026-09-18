@@ -16,6 +16,8 @@
  "source": "collectors/events_seed.csv (curated) + English Wikipedia year pages",
  "licence": "CC0 for the curated compilation; Wikipedia text CC BY-SA 4.0",
  "note": "22 hand-curated rows (verified, win on conflict) plus 12244 parsed from Wikipedia year articles. Severity for scraped rows follows the HIGH_IMPACT rule in events_wiki.py, not a human judgement. Extend collectors/events_seed.csv to add curated rows.",
+ "json_rows": 12266,
+ "json_thinned": false,
  "retrieved": "2026-09-18",
  "span": [
   "1946-01-07",

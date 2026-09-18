@@ -12,6 +12,8 @@
  "source": "https://thedocs.worldbank.org/en/doc/18675f1d1639c7a34d463f59263ba0a2-0050012025/related/CMO-Historical-Data-Annual.xlsx",
  "licence": "World Bank Open Data, CC BY 4.0",
  "note": "Annual nominal USD prices. Units vary by commodity - see the unit column.",
+ "json_rows": 670,
+ "json_thinned": false,
  "retrieved": "2026-09-18",
  "span": [
   "1960-12-31",

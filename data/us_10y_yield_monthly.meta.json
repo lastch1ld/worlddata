@@ -11,6 +11,8 @@
  "source": "https://github.com/datasets/bond-yields-us-10y",
  "licence": "odc-pddl",
  "note": "US 10-year Treasury yield, monthly.",
+ "json_rows": 880,
+ "json_thinned": false,
  "retrieved": "2026-09-18",
  "span": [
   "1953-04-01",

@@ -12,13 +12,16 @@ DATA = ROOT / "data"
 
 
 def build():
-    from collectors import commodities, companies, datahub, events, rates, registry
+    from collectors import (commodities, companies, datahub, events, fred, georisk,
+                            rates, registry)
     print("building datasets\n")
     rates.collect()
     commodities.collect()
     companies.collect()
     events.collect()          # policy changes derive from rates, so this runs last
     datahub.collect()
+    fred.collect()
+    georisk.collect()
     registry.collect()
     manifest()
 
@@ -54,6 +57,11 @@ def check():
         assert len(df) == meta["rows"], (
             f"{name}: csv has {len(df)} rows, meta claims {meta['rows']}")
         assert list(df.columns) == meta["columns"], f"{name}: column drift"
+        js = json.loads((DATA / f"{name}.json").read_text(encoding="utf-8"))
+        assert len(js) == meta.get("json_rows", len(df)), (
+            f"{name}: json has {len(js)} rows, meta claims {meta.get('json_rows')}")
+        if meta.get("json_thinned"):
+            assert len(js) < len(df), f"{name}: marked thinned but json is not smaller"
         assert df["value"].notna().any(), f"{name}: all values null"
         if "date" in df.columns:
             bad = pd.to_datetime(df["date"], errors="coerce").isna().sum()

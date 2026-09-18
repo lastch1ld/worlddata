@@ -16,6 +16,8 @@
  "source": "https://en.wikipedia.org/wiki/Forbes_Global_2000 ; https://en.wikipedia.org/wiki/List_of_largest_companies_by_revenue",
  "licence": "Wikipedia CC BY-SA 4.0",
  "note": "Top 10 per year (Forbes Global 2000) plus current top 50 by revenue. list_depth says how deep each list goes - free sources do NOT provide top 100 per year. See the module docstring for how to get that.",
+ "json_rows": 369,
+ "json_thinned": false,
  "retrieved": "2026-09-18",
  "span": [
   "2017-12-31",

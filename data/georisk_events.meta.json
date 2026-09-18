@@ -1,0 +1,28 @@
+{
+ "name": "georisk_events",
+ "rows": 11,
+ "columns": [
+  "date",
+  "title",
+  "series",
+  "category",
+  "severity",
+  "value",
+  "unit",
+  "source_url",
+  "origin"
+ ],
+ "source": "https://www.matteoiacoviello.com/gpr_files/data_gpr_daily_recent.xls",
+ "licence": "Free for research with attribution. Caldara & Iacoviello (2022), Measuring Geopolitical Risk, AER",
+ "note": "Dates the GPR authors annotated as notable geopolitical spikes, with the index level on the day. Researcher-curated, so a higher standard than the Wikipedia-derived rows in political_events.",
+ "json_rows": 11,
+ "json_thinned": false,
+ "retrieved": "2026-09-18",
+ "span": [
+  "1986-04-16",
+  "2022-02-25"
+ ],
+ "series": [
+  "geopolitical spike"
+ ]
+}

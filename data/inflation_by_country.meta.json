@@ -11,6 +11,8 @@
  "source": "https://github.com/datasets/inflation",
  "licence": "ODC-PDDL-1.0",
  "note": "World Bank consumer price inflation, by country and year.",
+ "json_rows": 13778,
+ "json_thinned": false,
  "retrieved": "2026-09-18",
  "span": [
   "1961-12-31",

@@ -11,6 +11,8 @@
  "source": "https://github.com/datasets/gold-prices",
  "licence": "ODC-PDDL-1.0",
  "note": "Gold price, monthly.",
+ "json_rows": 2324,
+ "json_thinned": false,
  "retrieved": "2026-09-18",
  "span": [
   "1833-01-01",
