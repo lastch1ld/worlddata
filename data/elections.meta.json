@@ -1,0 +1,29 @@
+{
+ "name": "elections",
+ "rows": 1027,
+ "columns": [
+  "date",
+  "title",
+  "series",
+  "country",
+  "category",
+  "severity",
+  "value",
+  "unit",
+  "source_url",
+  "origin"
+ ],
+ "source": "https://www.parlgov.org/data/parlgov-development_csv-utf-8/election.csv",
+ "licence": "Free for research with attribution. ParlGov (Doring & Manow).",
+ "note": "National elections in ~37 democracies since 1900, with turnout where the electorate is known. `severity` is major for early elections - a government falling - and standard for scheduled ones, because that is the distinction that matters when overlaying them on a price.",
+ "json_rows": 1027,
+ "json_thinned": false,
+ "retrieved": "2026-09-18",
+ "span": [
+  "1900-05-27",
+  "2023-06-25"
+ ],
+ "series": [
+  "election"
+ ]
+}

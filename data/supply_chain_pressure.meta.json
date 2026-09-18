@@ -1,0 +1,23 @@
+{
+ "name": "supply_chain_pressure",
+ "rows": 344,
+ "columns": [
+  "date",
+  "series",
+  "value",
+  "unit"
+ ],
+ "source": "https://www.newyorkfed.org/medialibrary/research/interactives/gscpi/downloads/gscpi_data.xlsx",
+ "licence": "Free use with attribution to the Federal Reserve Bank of New York.",
+ "note": "Monthly, 1997 onwards. Transport costs plus PMI delivery-time and backlog subcomponents across six economies, expressed as standard deviations from average. Zero is normal. The 2021 peak above 4 is the container crisis. Revised when its inputs revise.",
+ "json_rows": 344,
+ "json_thinned": false,
+ "retrieved": "2026-09-18",
+ "span": [
+  "1998-01-31",
+  "2026-08-31"
+ ],
+ "series": [
+  "Global supply chain pressure"
+ ]
+}

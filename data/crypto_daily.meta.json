@@ -1,0 +1,28 @@
+{
+ "name": "crypto_daily",
+ "rows": 18853,
+ "columns": [
+  "date",
+  "series",
+  "value",
+  "volume",
+  "unit"
+ ],
+ "source": "https://www.bitstamp.net/api/v2/ohlc/",
+ "licence": "Bitstamp public market data, free to use. Attribute Bitstamp.",
+ "note": "Daily close and volume for five pairs, 2012 onwards. Included as a CONTROL: crypto shares risk appetite with other assets but not the policy rate, the banking system or a lender of last resort, so an event that moves both suggests a sentiment or liquidity channel rather than a policy one. One exchange's tape, not a composite - early years are thin.",
+ "json_rows": 18853,
+ "json_thinned": false,
+ "retrieved": "2026-09-18",
+ "span": [
+  "2012-01-01",
+  "2026-09-18"
+ ],
+ "series": [
+  "Bitcoin (BTC/USD)",
+  "Bitcoin Cash (BCH/USD)",
+  "Ethereum (ETH/USD)",
+  "Litecoin (LTC/USD)",
+  "XRP (XRP/USD)"
+ ]
+}

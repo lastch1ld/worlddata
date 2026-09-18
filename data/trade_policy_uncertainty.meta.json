@@ -1,0 +1,32 @@
+{
+ "name": "trade_policy_uncertainty",
+ "rows": 24540,
+ "columns": [
+  "date",
+  "series",
+  "scope",
+  "value",
+  "unit"
+ ],
+ "source": "https://www.matteoiacoviello.com/tpu_files/tpu_web_latest.xlsx",
+ "licence": "Free for research with attribution. Baker, Bloom & Davis (2016) QJE; Caldara et al. (2020) JME; Ahir, Bloom & Furceri (2022) NBER WP",
+ "note": "Trade policy uncertainty, monthly back to 1960 and daily. Kept apart from general EPU because trade shocks reach FX and commodities through different plumbing than domestic policy fights. TPU_RAW is the article count, TPU the scaled index.",
+ "json_rows": 24540,
+ "json_thinned": false,
+ "retrieved": "2026-09-18",
+ "span": [
+  "1960-01-01",
+  "2026-09-14"
+ ],
+ "series": [
+  "N7 (monthly)",
+  "NUMBER_ARTICLES (daily)",
+  "TPU (monthly)",
+  "TPUD_ARTICLES (daily)",
+  "TPUD_index (daily)",
+  "TPUD_index_MA30 (daily)",
+  "TPUD_index_MA7 (daily)",
+  "TPU_RAW (monthly)",
+  "TPU_SHARE (monthly)"
+ ]
+}

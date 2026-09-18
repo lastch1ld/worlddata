@@ -1,0 +1,28 @@
+{
+ "name": "fed_communications",
+ "rows": 4630,
+ "columns": [
+  "date",
+  "title",
+  "series",
+  "category",
+  "severity",
+  "value",
+  "unit",
+  "source_url",
+  "origin"
+ ],
+ "source": "https://www.federalreserve.gov/json/ne-press.json",
+ "licence": "US federal work, public domain. Attribute the Federal Reserve Board.",
+ "note": "Every Federal Reserve Board press release the Fed publishes as JSON, typed by the Fed itself. Goes back to 2016 only - that is the extent of the feed, not a filter applied here. Monetary Policy releases are marked major; supervisory and administrative notices are standard.",
+ "json_rows": 4630,
+ "json_thinned": false,
+ "retrieved": "2026-09-18",
+ "span": [
+  "2006-01-03",
+  "2026-09-16"
+ ],
+ "series": [
+  "Fed press release"
+ ]
+}
