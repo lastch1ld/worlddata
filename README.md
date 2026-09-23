@@ -142,6 +142,11 @@ credit = mk[mk.channel == "credit"]
 const gpr = await (await fetch("data/geopolitical_risk.json")).json();
 ```
 
+```bash
+# plain JDK 17+, no build tool: latest value of every series in a CSV
+java examples/java/LatestValues.java data/central_bank_rates.csv
+```
+
 Tidy long format (`date, series, value, …`) rather than one column per series: less pretty
 to read, but adding a country or a commodity never changes the schema, which is what matters
 when other people import it.
