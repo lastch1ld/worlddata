@@ -1,0 +1,5 @@
+date,series,value,unit,source_repo,treatment
+1849-12-31,Lambeth + Others,130.1,"deaths per 10,000 (1851 population)",github.com/NickCH-K/causaldata,Mix Dirty and Clean
+1854-12-31,Lambeth + Others,84.9,"deaths per 10,000 (1851 population)",github.com/NickCH-K/causaldata,Mix Dirty and Clean
+1849-12-31,Non-Lambeth Only,134.9,"deaths per 10,000 (1851 population)",github.com/NickCH-K/causaldata,Dirty
+1854-12-31,Non-Lambeth Only,146.6,"deaths per 10,000 (1851 population)",github.com/NickCH-K/causaldata,Dirty

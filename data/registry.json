@@ -241,5 +241,515 @@
    "reference"
   ],
   "vendored": false
+ },
+ {
+  "key": "causaldata-mroz",
+  "title": "US women's labour-force participation (Mroz 1987)",
+  "publisher": "causaldata (Huntington-Klein)",
+  "licence": "MIT (package); data per original source",
+  "format": "csv",
+  "url": "https://raw.githubusercontent.com/NickCH-K/causaldata/main/Python/causaldata/Mroz/Mroz.csv",
+  "repo": "NickCH-K/causaldata",
+  "topics": [
+   "causal-inference",
+   "microdata",
+   "labour"
+  ],
+  "vendored": false
+ },
+ {
+  "key": "causaldata-abortion",
+  "title": "Abortion legalisation and STI incidence, ages 15-19",
+  "publisher": "causaldata (Huntington-Klein)",
+  "licence": "MIT (package); data per original source",
+  "format": "dta",
+  "url": "https://raw.githubusercontent.com/NickCH-K/causaldata/main/Python/causaldata/abortion/abortion.dta",
+  "repo": "NickCH-K/causaldata",
+  "topics": [
+   "causal-inference",
+   "microdata",
+   "health"
+  ],
+  "vendored": false
+ },
+ {
+  "key": "causaldata-adult-services",
+  "title": "Internet-mediated sex-worker survey (Cunningham & Kendall)",
+  "publisher": "causaldata (Huntington-Klein)",
+  "licence": "MIT (package); data per original source",
+  "format": "dta",
+  "url": "https://raw.githubusercontent.com/NickCH-K/causaldata/main/Python/causaldata/adult_services/adult_services.dta",
+  "repo": "NickCH-K/causaldata",
+  "topics": [
+   "causal-inference",
+   "microdata",
+   "labour"
+  ],
+  "vendored": false
+ },
+ {
+  "key": "causaldata-auto",
+  "title": "1979 automobiles, Consumer Reports and EPA",
+  "publisher": "causaldata (Huntington-Klein)",
+  "licence": "MIT (package); data per original source",
+  "format": "dta",
+  "url": "https://raw.githubusercontent.com/NickCH-K/causaldata/main/Python/causaldata/auto/auto.dta",
+  "repo": "NickCH-K/causaldata",
+  "topics": [
+   "causal-inference",
+   "microdata",
+   "consumer"
+  ],
+  "vendored": false
+ },
+ {
+  "key": "causaldata-avocado",
+  "title": "California conventional avocado prices and volumes",
+  "publisher": "causaldata (Huntington-Klein)",
+  "licence": "MIT (package); data per original source",
+  "format": "dta",
+  "url": "https://raw.githubusercontent.com/NickCH-K/causaldata/main/Python/causaldata/avocado/avocado.dta",
+  "repo": "NickCH-K/causaldata",
+  "topics": [
+   "causal-inference",
+   "microdata",
+   "consumer"
+  ],
+  "vendored": false
+ },
+ {
+  "key": "causaldata-black-politicians",
+  "title": "Field experiment: legislator responses to constituent emails (Broockman)",
+  "publisher": "causaldata (Huntington-Klein)",
+  "licence": "MIT (package); data per original source",
+  "format": "csv",
+  "url": "https://raw.githubusercontent.com/NickCH-K/causaldata/main/Python/causaldata/black_politicians/black_politicians.csv",
+  "repo": "NickCH-K/causaldata",
+  "topics": [
+   "causal-inference",
+   "microdata",
+   "politics"
+  ],
+  "vendored": false
+ },
+ {
+  "key": "causaldata-castle",
+  "title": "Castle-doctrine statutes and violent crime (Cheng & Hoekstra)",
+  "publisher": "causaldata (Huntington-Klein)",
+  "licence": "MIT (package); data per original source",
+  "format": "dta",
+  "url": "https://raw.githubusercontent.com/NickCH-K/causaldata/main/Python/causaldata/castle/castle.dta",
+  "repo": "NickCH-K/causaldata",
+  "topics": [
+   "causal-inference",
+   "microdata",
+   "crime"
+  ],
+  "vendored": false
+ },
+ {
+  "key": "causaldata-ccdrug",
+  "title": "Crown Court drug sentencing, England and Wales 2012-2015",
+  "publisher": "causaldata (Huntington-Klein)",
+  "licence": "MIT (package); data per original source",
+  "format": "dta",
+  "url": "https://raw.githubusercontent.com/NickCH-K/causaldata/main/Python/causaldata/ccdrug/ccdrug.dta",
+  "repo": "NickCH-K/causaldata",
+  "topics": [
+   "causal-inference",
+   "microdata",
+   "crime"
+  ],
+  "vendored": false
+ },
+ {
+  "key": "causaldata-close-college",
+  "title": "Card (1995): college proximity, education and earnings",
+  "publisher": "causaldata (Huntington-Klein)",
+  "licence": "MIT (package); data per original source",
+  "format": "dta",
+  "url": "https://raw.githubusercontent.com/NickCH-K/causaldata/main/Python/causaldata/close_college/close_college.dta",
+  "repo": "NickCH-K/causaldata",
+  "topics": [
+   "causal-inference",
+   "microdata",
+   "education"
+  ],
+  "vendored": false
+ },
+ {
+  "key": "causaldata-close-elections-lmb",
+  "title": "Close US House elections and ADA scores (Lee, Moretti & Butler)",
+  "publisher": "causaldata (Huntington-Klein)",
+  "licence": "MIT (package); data per original source",
+  "format": "dta",
+  "url": "https://raw.githubusercontent.com/NickCH-K/causaldata/main/Python/causaldata/close_elections_lmb/close_elections_lmb.dta",
+  "repo": "NickCH-K/causaldata",
+  "topics": [
+   "causal-inference",
+   "microdata",
+   "politics"
+  ],
+  "vendored": false
+ },
+ {
+  "key": "causaldata-cps-mixtape",
+  "title": "CPS comparison group for the NSW job-training experiment",
+  "publisher": "causaldata (Huntington-Klein)",
+  "licence": "MIT (package); data per original source",
+  "format": "dta",
+  "url": "https://raw.githubusercontent.com/NickCH-K/causaldata/main/Python/causaldata/cps_mixtape/cps_mixtape.dta",
+  "repo": "NickCH-K/causaldata",
+  "topics": [
+   "causal-inference",
+   "microdata",
+   "labour"
+  ],
+  "vendored": false
+ },
+ {
+  "key": "causaldata-credit-cards",
+  "title": "Taiwanese credit-card payment behaviour (UCI)",
+  "publisher": "causaldata (Huntington-Klein)",
+  "licence": "MIT (package); data per original source",
+  "format": "dta",
+  "url": "https://raw.githubusercontent.com/NickCH-K/causaldata/main/Python/causaldata/credit_cards/credit_cards.dta",
+  "repo": "NickCH-K/causaldata",
+  "topics": [
+   "causal-inference",
+   "microdata",
+   "finance"
+  ],
+  "vendored": false
+ },
+ {
+  "key": "causaldata-gapminder",
+  "title": "Life expectancy and GDP per capita by country and year",
+  "publisher": "causaldata (Huntington-Klein)",
+  "licence": "MIT (package); data per original source",
+  "format": "csv",
+  "url": "https://raw.githubusercontent.com/NickCH-K/causaldata/main/Python/causaldata/gapminder/gapminder.csv",
+  "repo": "NickCH-K/causaldata",
+  "topics": [
+   "causal-inference",
+   "microdata",
+   "macro"
+  ],
+  "vendored": true
+ },
+ {
+  "key": "causaldata-google-stock",
+  "title": "Google vs S&P 500 daily returns around the 2015 reorganisation",
+  "publisher": "causaldata (Huntington-Klein)",
+  "licence": "MIT (package); data per original source",
+  "format": "csv",
+  "url": "https://raw.githubusercontent.com/NickCH-K/causaldata/main/Python/causaldata/google_stock/google_stock_data.csv",
+  "repo": "NickCH-K/causaldata",
+  "topics": [
+   "causal-inference",
+   "microdata",
+   "finance"
+  ],
+  "vendored": false
+ },
+ {
+  "key": "causaldata-gov-transfers",
+  "title": "Government transfer programme at the income cutoff (Manacorda et al.)",
+  "publisher": "causaldata (Huntington-Klein)",
+  "licence": "MIT (package); data per original source",
+  "format": "csv",
+  "url": "https://raw.githubusercontent.com/NickCH-K/causaldata/main/Python/causaldata/gov_transfers/Government_Transfers_RDD_Data.csv",
+  "repo": "NickCH-K/causaldata",
+  "topics": [
+   "causal-inference",
+   "microdata",
+   "policy"
+  ],
+  "vendored": false
+ },
+ {
+  "key": "causaldata-gov-transfers-density",
+  "title": "Wider income range for density-discontinuity tests (Manacorda et al.)",
+  "publisher": "causaldata (Huntington-Klein)",
+  "licence": "MIT (package); data per original source",
+  "format": "csv",
+  "url": "https://raw.githubusercontent.com/NickCH-K/causaldata/main/Python/causaldata/gov_transfers_density/Government_Transfers_McCrary.csv",
+  "repo": "NickCH-K/causaldata",
+  "topics": [
+   "causal-inference",
+   "microdata",
+   "policy"
+  ],
+  "vendored": false
+ },
+ {
+  "key": "causaldata-greek-data",
+  "title": "Fictional heart-transplant study from Hernan & Robins",
+  "publisher": "causaldata (Huntington-Klein)",
+  "licence": "MIT (package); data per original source",
+  "format": "dta",
+  "url": "https://raw.githubusercontent.com/NickCH-K/causaldata/main/Python/causaldata/greek_data/greek_data.dta",
+  "repo": "NickCH-K/causaldata",
+  "topics": [
+   "causal-inference",
+   "microdata",
+   "health"
+  ],
+  "vendored": false
+ },
+ {
+  "key": "causaldata-mortgages",
+  "title": "GI Bill mortgage subsidy and home ownership (Fetter)",
+  "publisher": "causaldata (Huntington-Klein)",
+  "licence": "MIT (package); data per original source",
+  "format": "csv",
+  "url": "https://raw.githubusercontent.com/NickCH-K/causaldata/main/Python/causaldata/mortgages/fetter_mortgages.csv",
+  "repo": "NickCH-K/causaldata",
+  "topics": [
+   "causal-inference",
+   "microdata",
+   "policy"
+  ],
+  "vendored": false
+ },
+ {
+  "key": "causaldata-nhefs",
+  "title": "NHANES I Epidemiologic Follow-up Study, 67 variables",
+  "publisher": "causaldata (Huntington-Klein)",
+  "licence": "MIT (package); data per original source",
+  "format": "dta",
+  "url": "https://raw.githubusercontent.com/NickCH-K/causaldata/main/Python/causaldata/nhefs/nhefs.dta",
+  "repo": "NickCH-K/causaldata",
+  "topics": [
+   "causal-inference",
+   "microdata",
+   "health"
+  ],
+  "vendored": false
+ },
+ {
+  "key": "causaldata-nhefs-codebook",
+  "title": "Variable descriptions for nhefs",
+  "publisher": "causaldata (Huntington-Klein)",
+  "licence": "MIT (package); data per original source",
+  "format": "dta",
+  "url": "https://raw.githubusercontent.com/NickCH-K/causaldata/main/Python/causaldata/nhefs_codebook/nhefs_codebook.dta",
+  "repo": "NickCH-K/causaldata",
+  "topics": [
+   "causal-inference",
+   "microdata",
+   "health"
+  ],
+  "vendored": false
+ },
+ {
+  "key": "causaldata-nhefs-complete",
+  "title": "NHEFS, complete cases on key smoking and weight variables",
+  "publisher": "causaldata (Huntington-Klein)",
+  "licence": "MIT (package); data per original source",
+  "format": "dta",
+  "url": "https://raw.githubusercontent.com/NickCH-K/causaldata/main/Python/causaldata/nhefs_complete/nhefs_complete.dta",
+  "repo": "NickCH-K/causaldata",
+  "topics": [
+   "causal-inference",
+   "microdata",
+   "health"
+  ],
+  "vendored": false
+ },
+ {
+  "key": "causaldata-nsw-mixtape",
+  "title": "National Supported Work job-training experiment (LaLonde)",
+  "publisher": "causaldata (Huntington-Klein)",
+  "licence": "MIT (package); data per original source",
+  "format": "dta",
+  "url": "https://raw.githubusercontent.com/NickCH-K/causaldata/main/Python/causaldata/nsw_mixtape/nsw_mixtape.dta",
+  "repo": "NickCH-K/causaldata",
+  "topics": [
+   "causal-inference",
+   "microdata",
+   "labour"
+  ],
+  "vendored": false
+ },
+ {
+  "key": "causaldata-organ-donations",
+  "title": "State organ-donation rates around California's 2011 policy change",
+  "publisher": "causaldata (Huntington-Klein)",
+  "licence": "MIT (package); data per original source",
+  "format": "csv",
+  "url": "https://raw.githubusercontent.com/NickCH-K/causaldata/main/Python/causaldata/organ_donations/organ_donation.csv",
+  "repo": "NickCH-K/causaldata",
+  "topics": [
+   "causal-inference",
+   "microdata",
+   "health"
+  ],
+  "vendored": true
+ },
+ {
+  "key": "causaldata-restaurant-inspections",
+  "title": "Anchorage restaurant health-inspection scores",
+  "publisher": "causaldata (Huntington-Klein)",
+  "licence": "MIT (package); data per original source",
+  "format": "csv",
+  "url": "https://raw.githubusercontent.com/NickCH-K/causaldata/main/Python/causaldata/restaurant_inspections/restaurant_data.csv",
+  "repo": "NickCH-K/causaldata",
+  "topics": [
+   "causal-inference",
+   "microdata",
+   "consumer"
+  ],
+  "vendored": false
+ },
+ {
+  "key": "causaldata-ri",
+  "title": "Eight-row simulated set for randomisation inference",
+  "publisher": "causaldata (Huntington-Klein)",
+  "licence": "MIT (package); data per original source",
+  "format": "dta",
+  "url": "https://raw.githubusercontent.com/NickCH-K/causaldata/main/Python/causaldata/ri/ri.dta",
+  "repo": "NickCH-K/causaldata",
+  "topics": [
+   "causal-inference",
+   "microdata",
+   "toy"
+  ],
+  "vendored": false
+ },
+ {
+  "key": "causaldata-scorecard",
+  "title": "College Scorecard student earnings and loan repayment",
+  "publisher": "causaldata (Huntington-Klein)",
+  "licence": "MIT (package); data per original source",
+  "format": "dta",
+  "url": "https://raw.githubusercontent.com/NickCH-K/causaldata/main/Python/causaldata/scorecard/scorecard.dta",
+  "repo": "NickCH-K/causaldata",
+  "topics": [
+   "causal-inference",
+   "microdata",
+   "education"
+  ],
+  "vendored": false
+ },
+ {
+  "key": "causaldata-snow",
+  "title": "John Snow's 1855 cholera death rates by water supplier",
+  "publisher": "causaldata (Huntington-Klein)",
+  "licence": "MIT (package); data per original source",
+  "format": "dta",
+  "url": "https://raw.githubusercontent.com/NickCH-K/causaldata/main/Python/causaldata/snow/snow.dta",
+  "repo": "NickCH-K/causaldata",
+  "topics": [
+   "causal-inference",
+   "microdata",
+   "health"
+  ],
+  "vendored": true
+ },
+ {
+  "key": "causaldata-social-insure",
+  "title": "Social-network experiment on farmer insurance take-up in China (Cai et al.)",
+  "publisher": "causaldata (Huntington-Klein)",
+  "licence": "MIT (package); data per original source",
+  "format": "csv",
+  "url": "https://raw.githubusercontent.com/NickCH-K/causaldata/main/Python/causaldata/social_insure/Cai_2015.csv",
+  "repo": "NickCH-K/causaldata",
+  "topics": [
+   "causal-inference",
+   "microdata",
+   "development"
+  ],
+  "vendored": false
+ },
+ {
+  "key": "causaldata-texas",
+  "title": "Texas prison expansion and Black male incarceration (Cunningham & Kang)",
+  "publisher": "causaldata (Huntington-Klein)",
+  "licence": "MIT (package); data per original source",
+  "format": "dta",
+  "url": "https://raw.githubusercontent.com/NickCH-K/causaldata/main/Python/causaldata/texas/texas.dta",
+  "repo": "NickCH-K/causaldata",
+  "topics": [
+   "causal-inference",
+   "microdata",
+   "crime"
+  ],
+  "vendored": true
+ },
+ {
+  "key": "causaldata-thornton-hiv",
+  "title": "Malawi cash incentives for learning HIV test results (Thornton)",
+  "publisher": "causaldata (Huntington-Klein)",
+  "licence": "MIT (package); data per original source",
+  "format": "dta",
+  "url": "https://raw.githubusercontent.com/NickCH-K/causaldata/main/Python/causaldata/thornton_hiv/thornton_hiv.dta",
+  "repo": "NickCH-K/causaldata",
+  "topics": [
+   "causal-inference",
+   "microdata",
+   "development"
+  ],
+  "vendored": false
+ },
+ {
+  "key": "causaldata-titanic",
+  "title": "Titanic survival by class, age and sex",
+  "publisher": "causaldata (Huntington-Klein)",
+  "licence": "MIT (package); data per original source",
+  "format": "dta",
+  "url": "https://raw.githubusercontent.com/NickCH-K/causaldata/main/Python/causaldata/titanic/titanic.dta",
+  "repo": "NickCH-K/causaldata",
+  "topics": [
+   "causal-inference",
+   "microdata",
+   "toy"
+  ],
+  "vendored": false
+ },
+ {
+  "key": "causaldata-training-bias-reduction",
+  "title": "Eight-row job-training set for Abadie-Imbens bias-reduction matching",
+  "publisher": "causaldata (Huntington-Klein)",
+  "licence": "MIT (package); data per original source",
+  "format": "dta",
+  "url": "https://raw.githubusercontent.com/NickCH-K/causaldata/main/Python/causaldata/training_bias_reduction/training_bias_reduction.dta",
+  "repo": "NickCH-K/causaldata",
+  "topics": [
+   "causal-inference",
+   "microdata",
+   "toy"
+  ],
+  "vendored": false
+ },
+ {
+  "key": "causaldata-training-example",
+  "title": "Job-training matching results table, 25 rows",
+  "publisher": "causaldata (Huntington-Klein)",
+  "licence": "MIT (package); data per original source",
+  "format": "dta",
+  "url": "https://raw.githubusercontent.com/NickCH-K/causaldata/main/Python/causaldata/training_example/training_example.dta",
+  "repo": "NickCH-K/causaldata",
+  "topics": [
+   "causal-inference",
+   "microdata",
+   "toy"
+  ],
+  "vendored": false
+ },
+ {
+  "key": "causaldata-yule",
+  "title": "Yule (1899): poverty relief and pauperism in England",
+  "publisher": "causaldata (Huntington-Klein)",
+  "licence": "MIT (package); data per original source",
+  "format": "dta",
+  "url": "https://raw.githubusercontent.com/NickCH-K/causaldata/main/Python/causaldata/yule/yule.dta",
+  "repo": "NickCH-K/causaldata",
+  "topics": [
+   "causal-inference",
+   "microdata",
+   "policy"
+  ],
+  "vendored": false
  }
 ]

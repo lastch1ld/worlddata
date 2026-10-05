@@ -1,0 +1,50 @@
+{
+ "name": "causaldata_organ_donations",
+ "rows": 162,
+ "columns": [
+  "date",
+  "series",
+  "value",
+  "unit",
+  "source_repo"
+ ],
+ "source": "https://raw.githubusercontent.com/NickCH-K/causaldata/main/Python/causaldata/organ_donations/organ_donation.csv",
+ "licence": "MIT (causaldata package); data per original source",
+ "note": "Quarterly organ-donation rate for 27 states around California's 2011 policy change (California is the treated group). Kessler & Roth (2014), NBER w20378; difference-in-differences.",
+ "json_rows": 162,
+ "json_thinned": false,
+ "retrieved": "2026-10-05",
+ "span": [
+  "2010-12-31",
+  "2012-03-31"
+ ],
+ "series": [
+  "Alaska",
+  "Arizona",
+  "California",
+  "Colorado",
+  "Connecticut",
+  "District of Columbia",
+  "Florida",
+  "Hawaii",
+  "Louisiana",
+  "Maryland",
+  "Michigan",
+  "Minnesota",
+  "Missouri",
+  "Montana",
+  "Nebraska",
+  "New Hampshire",
+  "New Jersey",
+  "New York",
+  "North Carolina",
+  "Ohio",
+  "Pennsylvania",
+  "South Carolina",
+  "Tennessee",
+  "Virginia",
+  "Washington",
+  "Wisconsin",
+  "Wyoming"
+ ]
+}

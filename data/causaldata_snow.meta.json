@@ -1,0 +1,26 @@
+{
+ "name": "causaldata_snow",
+ "rows": 4,
+ "columns": [
+  "date",
+  "series",
+  "value",
+  "unit",
+  "source_repo",
+  "treatment"
+ ],
+ "source": "https://raw.githubusercontent.com/NickCH-K/causaldata/main/Python/causaldata/snow/snow.dta",
+ "licence": "MIT (causaldata package); data per original source",
+ "note": "John Snow's cholera death rates by water supplier, 1849 and 1854; the `treatment` column is the supplier's water status. Snow (1855), Coleman (2019); difference-in-differences.",
+ "json_rows": 4,
+ "json_thinned": false,
+ "retrieved": "2026-10-05",
+ "span": [
+  "1849-12-31",
+  "1854-12-31"
+ ],
+ "series": [
+  "Lambeth + Others",
+  "Non-Lambeth Only"
+ ]
+}

@@ -1,0 +1,163 @@
+date,series,value,unit,source_repo
+2010-12-31,Alaska,0.75,rate,github.com/NickCH-K/causaldata
+2011-03-31,Alaska,0.77,rate,github.com/NickCH-K/causaldata
+2011-06-30,Alaska,0.77,rate,github.com/NickCH-K/causaldata
+2011-09-30,Alaska,0.78,rate,github.com/NickCH-K/causaldata
+2011-12-31,Alaska,0.78,rate,github.com/NickCH-K/causaldata
+2012-03-31,Alaska,0.79,rate,github.com/NickCH-K/causaldata
+2010-12-31,Arizona,0.2634,rate,github.com/NickCH-K/causaldata
+2011-03-31,Arizona,0.2092,rate,github.com/NickCH-K/causaldata
+2011-06-30,Arizona,0.2261,rate,github.com/NickCH-K/causaldata
+2011-09-30,Arizona,0.2503,rate,github.com/NickCH-K/causaldata
+2011-12-31,Arizona,0.2351,rate,github.com/NickCH-K/causaldata
+2012-03-31,Arizona,0.2587,rate,github.com/NickCH-K/causaldata
+2010-12-31,California,0.2666,rate,github.com/NickCH-K/causaldata
+2011-03-31,California,0.2731,rate,github.com/NickCH-K/causaldata
+2011-06-30,California,0.2743,rate,github.com/NickCH-K/causaldata
+2011-09-30,California,0.2636,rate,github.com/NickCH-K/causaldata
+2011-12-31,California,0.2607,rate,github.com/NickCH-K/causaldata
+2012-03-31,California,0.2641,rate,github.com/NickCH-K/causaldata
+2010-12-31,Colorado,0.6653,rate,github.com/NickCH-K/causaldata
+2011-03-31,Colorado,0.6674,rate,github.com/NickCH-K/causaldata
+2011-06-30,Colorado,0.6736,rate,github.com/NickCH-K/causaldata
+2011-09-30,Colorado,0.6715000000000001,rate,github.com/NickCH-K/causaldata
+2011-12-31,Colorado,0.6698999999999999,rate,github.com/NickCH-K/causaldata
+2012-03-31,Colorado,0.6594,rate,github.com/NickCH-K/causaldata
+2010-12-31,Connecticut,0.3904999999999999,rate,github.com/NickCH-K/causaldata
+2011-03-31,Connecticut,0.3853,rate,github.com/NickCH-K/causaldata
+2011-06-30,Connecticut,0.3952,rate,github.com/NickCH-K/causaldata
+2011-09-30,Connecticut,0.4031,rate,github.com/NickCH-K/causaldata
+2011-12-31,Connecticut,0.3864,rate,github.com/NickCH-K/causaldata
+2012-03-31,Connecticut,0.3984,rate,github.com/NickCH-K/causaldata
+2010-12-31,District of Columbia,0.3319,rate,github.com/NickCH-K/causaldata
+2011-03-31,District of Columbia,0.2866,rate,github.com/NickCH-K/causaldata
+2011-06-30,District of Columbia,0.2951,rate,github.com/NickCH-K/causaldata
+2011-09-30,District of Columbia,0.4024,rate,github.com/NickCH-K/causaldata
+2011-12-31,District of Columbia,0.3791,rate,github.com/NickCH-K/causaldata
+2012-03-31,District of Columbia,0.3646,rate,github.com/NickCH-K/causaldata
+2010-12-31,Florida,0.3753,rate,github.com/NickCH-K/causaldata
+2011-03-31,Florida,0.3795,rate,github.com/NickCH-K/causaldata
+2011-06-30,Florida,0.3947,rate,github.com/NickCH-K/causaldata
+2011-09-30,Florida,0.4181,rate,github.com/NickCH-K/causaldata
+2011-12-31,Florida,0.4036999999999999,rate,github.com/NickCH-K/causaldata
+2012-03-31,Florida,0.407,rate,github.com/NickCH-K/causaldata
+2010-12-31,Hawaii,0.417,rate,github.com/NickCH-K/causaldata
+2011-03-31,Hawaii,0.4105,rate,github.com/NickCH-K/causaldata
+2011-06-30,Hawaii,0.4271,rate,github.com/NickCH-K/causaldata
+2011-09-30,Hawaii,0.4294,rate,github.com/NickCH-K/causaldata
+2011-12-31,Hawaii,0.4307,rate,github.com/NickCH-K/causaldata
+2012-03-31,Hawaii,0.4108,rate,github.com/NickCH-K/causaldata
+2010-12-31,Louisiana,0.5372,rate,github.com/NickCH-K/causaldata
+2011-03-31,Louisiana,0.546,rate,github.com/NickCH-K/causaldata
+2011-06-30,Louisiana,0.5619,rate,github.com/NickCH-K/causaldata
+2011-09-30,Louisiana,0.5949,rate,github.com/NickCH-K/causaldata
+2011-12-31,Louisiana,0.551,rate,github.com/NickCH-K/causaldata
+2012-03-31,Louisiana,0.5486,rate,github.com/NickCH-K/causaldata
+2010-12-31,Maryland,0.4635,rate,github.com/NickCH-K/causaldata
+2011-03-31,Maryland,0.4528999999999999,rate,github.com/NickCH-K/causaldata
+2011-06-30,Maryland,0.4679,rate,github.com/NickCH-K/causaldata
+2011-09-30,Maryland,0.4589999999999999,rate,github.com/NickCH-K/causaldata
+2011-12-31,Maryland,0.495,rate,github.com/NickCH-K/causaldata
+2012-03-31,Maryland,0.456,rate,github.com/NickCH-K/causaldata
+2010-12-31,Michigan,0.1563,rate,github.com/NickCH-K/causaldata
+2011-03-31,Michigan,0.1491,rate,github.com/NickCH-K/causaldata
+2011-06-30,Michigan,0.1923,rate,github.com/NickCH-K/causaldata
+2011-09-30,Michigan,0.2460999999999999,rate,github.com/NickCH-K/causaldata
+2011-12-31,Michigan,0.2294,rate,github.com/NickCH-K/causaldata
+2012-03-31,Michigan,0.4216,rate,github.com/NickCH-K/causaldata
+2010-12-31,Minnesota,0.5357999999999999,rate,github.com/NickCH-K/causaldata
+2011-03-31,Minnesota,0.5173,rate,github.com/NickCH-K/causaldata
+2011-06-30,Minnesota,0.5202,rate,github.com/NickCH-K/causaldata
+2011-09-30,Minnesota,0.5246,rate,github.com/NickCH-K/causaldata
+2011-12-31,Minnesota,0.528,rate,github.com/NickCH-K/causaldata
+2012-03-31,Minnesota,0.5398,rate,github.com/NickCH-K/causaldata
+2010-12-31,Missouri,0.4025,rate,github.com/NickCH-K/causaldata
+2011-03-31,Missouri,0.3987,rate,github.com/NickCH-K/causaldata
+2011-06-30,Missouri,0.4063,rate,github.com/NickCH-K/causaldata
+2011-09-30,Missouri,0.4089,rate,github.com/NickCH-K/causaldata
+2011-12-31,Missouri,0.415,rate,github.com/NickCH-K/causaldata
+2012-03-31,Missouri,0.4127,rate,github.com/NickCH-K/causaldata
+2010-12-31,Montana,0.6429,rate,github.com/NickCH-K/causaldata
+2011-03-31,Montana,0.6406000000000001,rate,github.com/NickCH-K/causaldata
+2011-06-30,Montana,0.6578,rate,github.com/NickCH-K/causaldata
+2011-09-30,Montana,0.6683,rate,github.com/NickCH-K/causaldata
+2011-12-31,Montana,0.6674,rate,github.com/NickCH-K/causaldata
+2012-03-31,Montana,0.6523,rate,github.com/NickCH-K/causaldata
+2010-12-31,Nebraska,0.4540999999999999,rate,github.com/NickCH-K/causaldata
+2011-03-31,Nebraska,0.4337,rate,github.com/NickCH-K/causaldata
+2011-06-30,Nebraska,0.436,rate,github.com/NickCH-K/causaldata
+2011-09-30,Nebraska,0.4404999999999999,rate,github.com/NickCH-K/causaldata
+2011-12-31,Nebraska,0.4389,rate,github.com/NickCH-K/causaldata
+2012-03-31,Nebraska,0.4518999999999999,rate,github.com/NickCH-K/causaldata
+2010-12-31,New Hampshire,0.5576,rate,github.com/NickCH-K/causaldata
+2011-03-31,New Hampshire,0.5594,rate,github.com/NickCH-K/causaldata
+2011-06-30,New Hampshire,0.5643,rate,github.com/NickCH-K/causaldata
+2011-09-30,New Hampshire,0.5334,rate,github.com/NickCH-K/causaldata
+2011-12-31,New Hampshire,0.5247999999999999,rate,github.com/NickCH-K/causaldata
+2012-03-31,New Hampshire,0.5253,rate,github.com/NickCH-K/causaldata
+2010-12-31,New Jersey,0.3037,rate,github.com/NickCH-K/causaldata
+2011-03-31,New Jersey,0.3109,rate,github.com/NickCH-K/causaldata
+2011-06-30,New Jersey,0.3039,rate,github.com/NickCH-K/causaldata
+2011-09-30,New Jersey,0.3109,rate,github.com/NickCH-K/causaldata
+2011-12-31,New Jersey,0.3127,rate,github.com/NickCH-K/causaldata
+2012-03-31,New Jersey,0.3334,rate,github.com/NickCH-K/causaldata
+2010-12-31,New York,0.1249,rate,github.com/NickCH-K/causaldata
+2011-03-31,New York,0.1267,rate,github.com/NickCH-K/causaldata
+2011-06-30,New York,0.1314,rate,github.com/NickCH-K/causaldata
+2011-09-30,New York,0.1451,rate,github.com/NickCH-K/causaldata
+2011-12-31,New York,0.1277,rate,github.com/NickCH-K/causaldata
+2012-03-31,New York,0.1229,rate,github.com/NickCH-K/causaldata
+2010-12-31,North Carolina,0.5239,rate,github.com/NickCH-K/causaldata
+2011-03-31,North Carolina,0.519,rate,github.com/NickCH-K/causaldata
+2011-06-30,North Carolina,0.532,rate,github.com/NickCH-K/causaldata
+2011-09-30,North Carolina,0.534,rate,github.com/NickCH-K/causaldata
+2011-12-31,North Carolina,0.5284,rate,github.com/NickCH-K/causaldata
+2012-03-31,North Carolina,0.5126,rate,github.com/NickCH-K/causaldata
+2010-12-31,Ohio,0.5545,rate,github.com/NickCH-K/causaldata
+2011-03-31,Ohio,0.5593,rate,github.com/NickCH-K/causaldata
+2011-06-30,Ohio,0.5700999999999999,rate,github.com/NickCH-K/causaldata
+2011-09-30,Ohio,0.5700999999999999,rate,github.com/NickCH-K/causaldata
+2011-12-31,Ohio,0.5751,rate,github.com/NickCH-K/causaldata
+2012-03-31,Ohio,0.5645,rate,github.com/NickCH-K/causaldata
+2010-12-31,Pennsylvania,0.4531,rate,github.com/NickCH-K/causaldata
+2011-03-31,Pennsylvania,0.4536,rate,github.com/NickCH-K/causaldata
+2011-06-30,Pennsylvania,0.4553,rate,github.com/NickCH-K/causaldata
+2011-09-30,Pennsylvania,0.4559,rate,github.com/NickCH-K/causaldata
+2011-12-31,Pennsylvania,0.4551,rate,github.com/NickCH-K/causaldata
+2012-03-31,Pennsylvania,0.4527,rate,github.com/NickCH-K/causaldata
+2010-12-31,South Carolina,0.3082999999999999,rate,github.com/NickCH-K/causaldata
+2011-03-31,South Carolina,0.2617,rate,github.com/NickCH-K/causaldata
+2011-06-30,South Carolina,0.2556,rate,github.com/NickCH-K/causaldata
+2011-09-30,South Carolina,0.2641,rate,github.com/NickCH-K/causaldata
+2011-12-31,South Carolina,0.2966,rate,github.com/NickCH-K/causaldata
+2012-03-31,South Carolina,0.228,rate,github.com/NickCH-K/causaldata
+2010-12-31,Tennessee,0.3268,rate,github.com/NickCH-K/causaldata
+2011-03-31,Tennessee,0.3249,rate,github.com/NickCH-K/causaldata
+2011-06-30,Tennessee,0.3382,rate,github.com/NickCH-K/causaldata
+2011-09-30,Tennessee,0.3428,rate,github.com/NickCH-K/causaldata
+2011-12-31,Tennessee,0.3385,rate,github.com/NickCH-K/causaldata
+2012-03-31,Tennessee,0.34,rate,github.com/NickCH-K/causaldata
+2010-12-31,Virginia,0.2645,rate,github.com/NickCH-K/causaldata
+2011-03-31,Virginia,0.3622999999999999,rate,github.com/NickCH-K/causaldata
+2011-06-30,Virginia,0.3455,rate,github.com/NickCH-K/causaldata
+2011-09-30,Virginia,0.359,rate,github.com/NickCH-K/causaldata
+2011-12-31,Virginia,0.3443,rate,github.com/NickCH-K/causaldata
+2012-03-31,Virginia,0.3701,rate,github.com/NickCH-K/causaldata
+2010-12-31,Washington,0.5811,rate,github.com/NickCH-K/causaldata
+2011-03-31,Washington,0.5893,rate,github.com/NickCH-K/causaldata
+2011-06-30,Washington,0.5882000000000001,rate,github.com/NickCH-K/causaldata
+2011-09-30,Washington,0.5846,rate,github.com/NickCH-K/causaldata
+2011-12-31,Washington,0.5842,rate,github.com/NickCH-K/causaldata
+2012-03-31,Washington,0.5947,rate,github.com/NickCH-K/causaldata
+2010-12-31,Wisconsin,0.5735,rate,github.com/NickCH-K/causaldata
+2011-03-31,Wisconsin,0.5710000000000001,rate,github.com/NickCH-K/causaldata
+2011-06-30,Wisconsin,0.5720000000000001,rate,github.com/NickCH-K/causaldata
+2011-09-30,Wisconsin,0.5688,rate,github.com/NickCH-K/causaldata
+2011-12-31,Wisconsin,0.5660000000000001,rate,github.com/NickCH-K/causaldata
+2012-03-31,Wisconsin,0.5814,rate,github.com/NickCH-K/causaldata
+2010-12-31,Wyoming,0.5931000000000001,rate,github.com/NickCH-K/causaldata
+2011-03-31,Wyoming,0.5946,rate,github.com/NickCH-K/causaldata
+2011-06-30,Wyoming,0.5937,rate,github.com/NickCH-K/causaldata
+2011-09-30,Wyoming,0.5911,rate,github.com/NickCH-K/causaldata
+2011-12-31,Wyoming,0.5854,rate,github.com/NickCH-K/causaldata
+2012-03-31,Wyoming,0.5881000000000001,rate,github.com/NickCH-K/causaldata
