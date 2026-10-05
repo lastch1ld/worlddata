@@ -12,9 +12,9 @@ DATA = ROOT / "data"
 
 
 def build():
-    from collectors import (actions, commodities, companies, cot, crypto, datahub, ecb,
-                            events, fred, georisk, rates, registry, supplychain,
-                            uncertainty)
+    from collectors import (actions, causaldata, commodities, companies, cot, crypto,
+                            datahub, ecb, events, fred, georisk, rates, registry,
+                            supplychain, uncertainty)
     print("building datasets\n")
     rates.collect()
     commodities.collect()
@@ -29,6 +29,7 @@ def build():
     supplychain.collect()
     crypto.collect()
     actions.collect()
+    causaldata.collect()
     registry.collect()
     manifest()
 

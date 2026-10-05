@@ -38,7 +38,7 @@ a{color:inherit}
 <body>
 <div class="wrap">
 <h1>worlddata</h1>
-<p class="sub">Free, importable datasets — 1,113,239 rows: US and euro area market drivers, speculative positioning, geopolitical and policy uncertainty, central bank rates, commodities, crypto, elections and political events. Everything below reads the same JSON you can download; the CSV is the complete version.</p>
+<p class="sub">Free, importable datasets — 1,125,847 rows: US and euro area market drivers, speculative positioning, geopolitical and policy uncertainty, central bank rates, commodities, crypto, elections and political events. Everything below reads the same JSON you can download; the CSV is the complete version.</p>
 
 <div class="card">
   <div class="ctl">
@@ -135,7 +135,10 @@ const DEFAULTS = {
   supply_chain_pressure: ['Global supply chain pressure'],
   crypto_daily:         ['Bitcoin (BTC/USD)','Ethereum (ETH/USD)'],
   elections:            ['election'],
-  fed_communications:   ['Fed press release']
+  fed_communications:   ['Fed press release'],
+  causaldata_gapminder: ['China: lifeExp','India: lifeExp','Switzerland: lifeExp','United States: lifeExp'],
+  causaldata_texas:     ['Texas: bmprison','Texas: wmprison'],
+  causaldata_organ_donations: ['California','New York','Florida','Michigan']
 };
 const S = {ds:null, rows:[], meta:null, events:[], chart:null, log:false, showEvt:true};
 const $ = id => document.getElementById(id);

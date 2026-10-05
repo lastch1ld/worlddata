@@ -4,7 +4,7 @@ Free, importable datasets about the world economy and the events around it, with
 UI to explore them. Every dataset is built by a script in `collectors/`, written to `data/`
 as **CSV + JSON + metadata**, and validated before it lands.
 
-**1,113,239 rows across 27 datasets, plus a 17-entry registry of external sources.**
+**1,125,847 rows across 31 datasets, plus a 51-entry registry of external sources.**
 No API key needed for any of it.
 
 The organising question is: *what happened in the world, and did money notice?* So the
@@ -44,7 +44,9 @@ rather than the level at which the market cleared.
 | `oil_wti_daily` | 9,502 | 1986–2026 | WTI crude spot, daily (US EIA) |
 | `vix_daily` | 9,274 | 1990–2026 | CBOE Volatility Index, daily close |
 | `oil_brent_daily` | 9,087 | 1987–2026 | Brent crude spot, daily (US EIA) |
+| `causaldata_texas` | 7,330 | 1985–2000 | US state panel: prison populations by race plus covariates (synthetic-control example) |
 | `policy_changes` | 6,741 | 1946–2026 | Every hike and cut, with size and direction |
+| `causaldata_gapminder` | 5,112 | 1952–2007 | Life expectancy, population, GDP per capita for 142 countries, 5-yearly |
 | `fed_communications` | 4,630 | 2006–2026 | Every Fed Board press release, typed by the Fed |
 | `gold_monthly` | 2,324 | 1833–2026 | Gold price, monthly |
 | `elections` | 1,027 | 1900–2023 | National elections in 37 democracies, with turnout |
@@ -52,7 +54,9 @@ rather than the level at which the market cleared.
 | `commodities_annual` | 670 | 1960–2025 | Gold, oil, gas, metals (World Bank Pink Sheet) |
 | `companies_top` | 369 | 2017–2023 | Largest companies by market cap, revenue, profit, assets |
 | `supply_chain_pressure` | 344 | 1998–2026 | NY Fed Global Supply Chain Pressure Index |
+| `causaldata_organ_donations` | 162 | 2010–2012 | Quarterly organ-donation rate, 27 US states, around California's 2011 policy change |
 | `georisk_events` | 11 | 1986–2022 | Geopolitical spikes labelled by the GPR authors |
+| `causaldata_snow` | 4 | 1849–1854 | John Snow's cholera death rates by water supplier |
 
 ### `market_drivers`: organised by how a shock reaches a price
 
@@ -159,7 +163,7 @@ before it draws anything; thinned it is 30,593 rows and loads in about 2.5 s.
 
 That is enough to chart and useless for analysis, so it is recorded rather than hidden: every
 `meta.json` carries `json_rows`, `json_thinned`, and a `json_note` when true, and
-`build.py --check` asserts they match the files. Four of 27 datasets are thinned
+`build.py --check` asserts they match the files. Four of 31 datasets are thinned
 (`market_drivers`, `euro_area_drivers`, `cftc_positioning`, `geopolitical_risk_daily`).
 **Use the CSV for anything real** — it is always complete.
 
@@ -188,7 +192,7 @@ The UI handles four things that otherwise produce quietly wrong charts:
 
 ## The registry: what we index but do not copy
 
-`data/registry.json` catalogues 17 open datasets, 9 of which are **not** vendored here.
+`data/registry.json` catalogues 51 open datasets, 39 of which are **not** vendored here.
 That is deliberate, and it is the part that scales:
 
 1. **Licences.** Much good open data is share-alike (CC BY-SA, ODbL). Copying it in makes
@@ -209,8 +213,17 @@ catalogue()                # everything indexed, with licence and publisher
 df = load("owid-energy")   # fetched live from source, always current
 ```
 
+34 of the entries are the [`causaldata`](https://cran.r-project.org/package=causaldata) teaching
+datasets (`causaldata-nsw-mixtape`, `causaldata-castle`, `causaldata-nhefs`, ...): mostly
+cross-sectional microdata for causal-inference examples. `load()` reads both CSV and Stata
+`.dta` entries. Four have a real time axis and are also vendored as `causaldata_*` datasets
+(`gapminder`, `texas`, `organ_donations`, `snow`). Three time-indexed ones are deliberately
+left registry-only: `avocado` (Kaggle) and `google_stock` (tidyquant/Yahoo Finance) have
+third-party terms the package does not state, and `castle` identifies states only by a
+numeric id.
+
 `python build.py --verify-links` GETs every registered URL, because a registry of dead links
-is worse than no registry. All 17 currently resolve.
+is worse than no registry. All 51 currently resolve.
 
 ## Rebuild it
 
