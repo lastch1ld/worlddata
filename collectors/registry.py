@@ -105,6 +105,56 @@ SEED = [
          repo="datasets/airport-codes", topics=["geo", "transport", "reference"], vendored=False),
 ]
 
+# The `causaldata` package (Huntington-Klein, MIT): 34 teaching datasets from the causal-inference
+# textbooks. Cross-sectional microdata, so they cannot take the tidy date/series/value shape that
+# data/ requires - they live here, fetched live from the package's own Python mirror. The package
+# is MIT but each dataset has its own origin (papers, Kaggle, UCI), hence the licence wording.
+_CD_URL = "https://raw.githubusercontent.com/NickCH-K/causaldata/main/Python/causaldata/{n}/{f}"
+CAUSALDATA = [  # (dataset, file, title, topic)
+    ("Mroz", "Mroz.csv", "US women's labour-force participation (Mroz 1987)", "labour"),
+    ("abortion", "abortion.dta", "Abortion legalisation and STI incidence, ages 15-19", "health"),
+    ("adult_services", "adult_services.dta", "Internet-mediated sex-worker survey (Cunningham & Kendall)", "labour"),
+    ("auto", "auto.dta", "1979 automobiles, Consumer Reports and EPA", "consumer"),
+    ("avocado", "avocado.dta", "California conventional avocado prices and volumes", "consumer"),
+    ("black_politicians", "black_politicians.csv", "Field experiment: legislator responses to constituent emails (Broockman)", "politics"),
+    ("castle", "castle.dta", "Castle-doctrine statutes and violent crime (Cheng & Hoekstra)", "crime"),
+    ("ccdrug", "ccdrug.dta", "Crown Court drug sentencing, England and Wales 2012-2015", "crime"),
+    ("close_college", "close_college.dta", "Card (1995): college proximity, education and earnings", "education"),
+    ("close_elections_lmb", "close_elections_lmb.dta", "Close US House elections and ADA scores (Lee, Moretti & Butler)", "politics"),
+    ("cps_mixtape", "cps_mixtape.dta", "CPS comparison group for the NSW job-training experiment", "labour"),
+    ("credit_cards", "credit_cards.dta", "Taiwanese credit-card payment behaviour (UCI)", "finance"),
+    ("gapminder", "gapminder.csv", "Life expectancy and GDP per capita by country and year", "macro"),
+    ("google_stock", "google_stock_data.csv", "Google vs S&P 500 daily returns around the 2015 reorganisation", "finance"),
+    ("gov_transfers", "Government_Transfers_RDD_Data.csv", "Government transfer programme at the income cutoff (Manacorda et al.)", "policy"),
+    ("gov_transfers_density", "Government_Transfers_McCrary.csv", "Wider income range for density-discontinuity tests (Manacorda et al.)", "policy"),
+    ("greek_data", "greek_data.dta", "Fictional heart-transplant study from Hernan & Robins", "health"),
+    ("mortgages", "fetter_mortgages.csv", "GI Bill mortgage subsidy and home ownership (Fetter)", "policy"),
+    ("nhefs", "nhefs.dta", "NHANES I Epidemiologic Follow-up Study, 67 variables", "health"),
+    ("nhefs_codebook", "nhefs_codebook.dta", "Variable descriptions for nhefs", "health"),
+    ("nhefs_complete", "nhefs_complete.dta", "NHEFS, complete cases on key smoking and weight variables", "health"),
+    ("nsw_mixtape", "nsw_mixtape.dta", "National Supported Work job-training experiment (LaLonde)", "labour"),
+    ("organ_donations", "organ_donation.csv", "State organ-donation rates around California's 2011 policy change", "health"),
+    ("restaurant_inspections", "restaurant_data.csv", "Anchorage restaurant health-inspection scores", "consumer"),
+    ("ri", "ri.dta", "Eight-row simulated set for randomisation inference", "toy"),
+    ("scorecard", "scorecard.dta", "College Scorecard student earnings and loan repayment", "education"),
+    ("snow", "snow.dta", "John Snow's 1855 cholera death rates by water supplier", "health"),
+    ("social_insure", "Cai_2015.csv", "Social-network experiment on farmer insurance take-up in China (Cai et al.)", "development"),
+    ("texas", "texas.dta", "Texas prison expansion and Black male incarceration (Cunningham & Kang)", "crime"),
+    ("thornton_hiv", "thornton_hiv.dta", "Malawi cash incentives for learning HIV test results (Thornton)", "development"),
+    ("titanic", "titanic.dta", "Titanic survival by class, age and sex", "toy"),
+    ("training_bias_reduction", "training_bias_reduction.dta", "Eight-row job-training set for Abadie-Imbens bias-reduction matching", "toy"),
+    ("training_example", "training_example.dta", "Job-training matching results table, 25 rows", "toy"),
+    ("yule", "yule.dta", "Yule (1899): poverty relief and pauperism in England", "policy"),
+]
+# Time-indexed ones that collectors/causaldata.py copies into data/; see its docstring for why not all.
+VENDORED_CD = {"gapminder", "texas", "organ_donations", "snow"}
+SEED += [dict(key="causaldata-" + n.replace("_", "-").lower(), title=t,
+              publisher="causaldata (Huntington-Klein)",
+              licence="MIT (package); data per original source", format=f.rsplit(".", 1)[1],
+              url=_CD_URL.format(n=n, f=f), repo="NickCH-K/causaldata",
+              topics=["causal-inference", "microdata", tp], vendored=n in VENDORED_CD)
+         for n, f, t, tp in CAUSALDATA]
+
 
 def catalogue(refresh=False):
     """The registry as a DataFrame. Written to data/registry.json so the UI can read it."""
@@ -123,6 +173,8 @@ def load(key, **read_kw):
     e = entries[key]
     if e["format"] == "csv":
         return pd.read_csv(io.StringIO(fetch(e["url"], binary=False)), **read_kw)
+    if e["format"] == "dta":
+        return pd.read_stata(io.BytesIO(fetch(e["url"])), **read_kw)
     if e["format"] == "geojson":
         return json.loads(fetch(e["url"], binary=False))
     raise ValueError(f"unhandled format {e['format']}")
